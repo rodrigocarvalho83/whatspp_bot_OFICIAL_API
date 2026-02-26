@@ -3,3 +3,6 @@ chromedriver-autoinstaller
 fdb
 pandas
 pytest
+webdriver-manager
+requests
+python-dotenv

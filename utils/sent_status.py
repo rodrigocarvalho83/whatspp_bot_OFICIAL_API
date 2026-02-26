@@ -15,13 +15,15 @@ def _salvar_log(log):
     with open(CAMINHO_LOG, 'w', encoding='utf-8') as f:
         json.dump(log, f, indent=2, ensure_ascii=False)
 
-def ja_enviado(codigo_pedido):
+def ja_enviado(codigo_pedido, saldo=None):
     log = _carregar_log()
-    return str(codigo_pedido) in log
+    chave = f"{codigo_pedido}_{saldo}" if saldo is not None else str(codigo_pedido)
+    return chave in log
 
-def marcar_como_enviado(codigo_pedido):
+def marcar_como_enviado(codigo_pedido, saldo=None):
     log = _carregar_log()
-    log[str(codigo_pedido)] = {
+    chave = f"{codigo_pedido}_{saldo}" if saldo is not None else str(codigo_pedido)
+    log[chave] = {
         "datahora": datetime.now().isoformat()
     }
     _salvar_log(log)

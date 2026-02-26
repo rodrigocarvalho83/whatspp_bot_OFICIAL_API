@@ -1,1 +1,1521 @@
-[]
+[
+  {
+    "numero": "5511984896954",
+    "nome": "Rodrigo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Rodrigo%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2035%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2035%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (35 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511984896954",
+    "nome": "Luis/",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Luis/%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2032%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2032%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (32 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511984896954",
+    "nome": "Lucas",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Lucas%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2029%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2029%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (29 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511984896954",
+    "nome": "Alessandra",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Alessandra%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2021%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2021%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (21 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511984896954",
+    "nome": "Renato",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Renato%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2021%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2021%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (21 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511984896954",
+    "nome": "Mario",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Mario%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2019%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2019%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (19 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511984896954",
+    "nome": "Lineu",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Lineu%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2018%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2018%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (18 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511988369391",
+    "nome": "Binho",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Binho%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2018%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2018%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (18 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511983607914",
+    "nome": "Anderson",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Anderson%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2017%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2017%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (17 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511992925800",
+    "nome": "Ricardo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Ricardo%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2015%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2015%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (15 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511974724864",
+    "nome": "Roberto",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Roberto%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2015%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2015%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (15 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511965985826",
+    "nome": "Jefferson",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Jefferson%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2014%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2014%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (14 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511995656449",
+    "nome": "Valeria",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Valeria%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2014%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2014%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (14 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511986541490",
+    "nome": "Jose",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Jose%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2013%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2013%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (13 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511999635361",
+    "nome": "Bianca",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Bianca%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2013%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2013%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (13 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511971513648",
+    "nome": "Claudia",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Claudia%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2013%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2013%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (13 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511984576119",
+    "nome": "Claudia",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Claudia%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2013%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2013%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (13 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511947292415",
+    "nome": "Bruna",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Bruna%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2013%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2013%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (13 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511967170191",
+    "nome": "Josué",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Josu%C3%A9%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2012%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2012%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (12 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511976273592",
+    "nome": "Caua",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Caua%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2012%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2012%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "log": "Cartão fidelidade (12 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511913377321",
+    "nome": "Alciene",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Alciene%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
+    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511961967103",
+    "nome": "Elaine",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Elaine%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
+    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511977057737",
+    "nome": "Vladimir",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Vladimir%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
+    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511986940690",
+    "nome": "Alexandre",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Alexandre%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
+    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511972647767",
+    "nome": "Alexandre",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Alexandre%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
+    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511992454273",
+    "nome": "Alexandre",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Alexandre%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
+    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511998307411",
+    "nome": "Rosana",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Rosana%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
+    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511939019119",
+    "nome": "Fatima",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Fatima%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
+    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511996367375",
+    "nome": "Celina",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Celina%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
+    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511941441414",
+    "nome": "Lourdes",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Lourdes%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
+    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511977122791",
+    "nome": "Simone",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Simone%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
+    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511999664103",
+    "nome": "Alex",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Alex%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
+    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511991237781",
+    "nome": "Shesmam",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Shesmam%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
+    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511991769921",
+    "nome": "Kecia",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Kecia%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
+    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511964985400",
+    "nome": "Paulo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Paulo%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
+    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511961525550",
+    "nome": "Leonardo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Leonardo%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
+    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511985855461",
+    "nome": "Vania",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Vania%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
+    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511998307693",
+    "nome": "Deny",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Deny%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
+    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511964265896",
+    "nome": "Heitor",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Heitor%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
+    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511965559887",
+    "nome": "Alessandra",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Alessandra%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%209%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\9pontos.png",
+    "log": "Cartão fidelidade (9 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511986234042",
+    "nome": "May",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20May%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%209%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\9pontos.png",
+    "log": "Cartão fidelidade (9 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511996831204",
+    "nome": "Marilia",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Marilia%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%209%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\9pontos.png",
+    "log": "Cartão fidelidade (9 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511981709029",
+    "nome": "Americo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Americo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%209%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\9pontos.png",
+    "log": "Cartão fidelidade (9 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511972083526",
+    "nome": "Joao",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Joao%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%209%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\9pontos.png",
+    "log": "Cartão fidelidade (9 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511963840798",
+    "nome": "Eudes",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Eudes%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%209%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\9pontos.png",
+    "log": "Cartão fidelidade (9 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511962893972",
+    "nome": "Wilson",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Wilson%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%209%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\9pontos.png",
+    "log": "Cartão fidelidade (9 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511974425039",
+    "nome": "Renato",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Renato%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%209%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\9pontos.png",
+    "log": "Cartão fidelidade (9 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511981211344",
+    "nome": "Cecilia",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Cecilia%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%208%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\8pontos.png",
+    "log": "Cartão fidelidade (8 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511993660482",
+    "nome": "Meire",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Meire%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%208%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\8pontos.png",
+    "log": "Cartão fidelidade (8 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511988985911",
+    "nome": "Esther",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Esther%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%208%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\8pontos.png",
+    "log": "Cartão fidelidade (8 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511982991258",
+    "nome": "Debora",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Debora%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%208%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\8pontos.png",
+    "log": "Cartão fidelidade (8 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511953646618",
+    "nome": "Carlos",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Carlos%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%208%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\8pontos.png",
+    "log": "Cartão fidelidade (8 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511969143484",
+    "nome": "Sergio",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Sergio%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%208%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\8pontos.png",
+    "log": "Cartão fidelidade (8 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511997458679",
+    "nome": "Mariana",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Mariana%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%208%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\8pontos.png",
+    "log": "Cartão fidelidade (8 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511970654096",
+    "nome": "Andressa",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Andressa%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%208%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\8pontos.png",
+    "log": "Cartão fidelidade (8 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511984923194",
+    "nome": "Anni",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Anni%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%208%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\8pontos.png",
+    "log": "Cartão fidelidade (8 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511992401613",
+    "nome": "Marcos",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Marcos%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%208%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\8pontos.png",
+    "log": "Cartão fidelidade (8 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511985361008",
+    "nome": "Evellen",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Evellen%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
+    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511985689556",
+    "nome": "Amanda",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Amanda%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
+    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511992741132",
+    "nome": "Rodrigo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Rodrigo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
+    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511963502468",
+    "nome": "Rosemeire",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Rosemeire%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
+    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511961345231",
+    "nome": "Henrique",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Henrique%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
+    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511953905959",
+    "nome": "Hanna",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Hanna%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
+    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511950419894",
+    "nome": "Luca",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Luca%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
+    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511996932601",
+    "nome": "Vanessa",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Vanessa%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
+    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511957790508",
+    "nome": "Regina",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Regina%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
+    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511940357458",
+    "nome": "Rani",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Rani%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
+    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511983418939",
+    "nome": "Felipe",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Felipe%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
+    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511992373249",
+    "nome": "Cláudio",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Cl%C3%A1udio%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
+    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511975561745",
+    "nome": "Felipe",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Felipe%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
+    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511971529789",
+    "nome": "Rodrigo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Rodrigo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
+    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511958457702",
+    "nome": "André",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Andr%C3%A9%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
+    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511962026174",
+    "nome": "Angelica",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Angelica%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
+    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511949741160",
+    "nome": "Ronei",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Ronei%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
+    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511947204221",
+    "nome": "Dayane",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Dayane%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
+    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511984116726",
+    "nome": "André",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Andr%C3%A9%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
+    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511995710133",
+    "nome": "Marcos",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Marcos%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
+    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511981190011",
+    "nome": "Eric",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Eric%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
+    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511993933710",
+    "nome": "Kelly",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Kelly%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
+    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511981672207",
+    "nome": "Evandro",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Evandro%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
+    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511975026862",
+    "nome": "Ana",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Ana%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
+    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511963594468",
+    "nome": "Valter",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Valter%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511984768433",
+    "nome": "Francisco",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Francisco%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511943951358",
+    "nome": "Mario",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Mario%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511988673116",
+    "nome": "Serafin",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Serafin%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511948328796",
+    "nome": "Amelia",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Amelia%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511996424770",
+    "nome": "Katia",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Katia%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511951364980",
+    "nome": "Fernando",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Fernando%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511998958453",
+    "nome": "Carlos",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Carlos%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511954909140",
+    "nome": "Paulo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Paulo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511948564387",
+    "nome": "Danilo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Danilo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511983713532",
+    "nome": "Athila",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Athila%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511946646275",
+    "nome": "Felipe",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Felipe%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511948038156",
+    "nome": "Maycon",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Maycon%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511991832182",
+    "nome": "Cristiana",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Cristiana%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511972009495",
+    "nome": "Luiz",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Luiz%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
+    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511941831077",
+    "nome": "Jose",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Jose%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
+    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511981220566",
+    "nome": "Joseane",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Joseane%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
+    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511967309333",
+    "nome": "Moania/fabio",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Moania/fabio%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
+    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511918251212",
+    "nome": "Isabely",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Isabely%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
+    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511981328270",
+    "nome": "Dayara",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Dayara%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
+    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511964564385",
+    "nome": "Bruno",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Bruno%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
+    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511991658989",
+    "nome": "Thiago",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Thiago%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
+    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511993122661",
+    "nome": "Marcelo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Marcelo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
+    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511947614494",
+    "nome": "Marcelo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Marcelo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
+    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511992044657",
+    "nome": "Bryan",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Bryan%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
+    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511980326673",
+    "nome": "Kamila",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Kamila%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
+    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511964909208",
+    "nome": "Pascoal",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Pascoal%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
+    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511991136868",
+    "nome": "Regina",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Regina%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
+    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511976463571",
+    "nome": "Gustavo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Gustavo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
+    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511910009862",
+    "nome": "Carol",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Carol%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
+    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511976668636",
+    "nome": "Helber",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Helber%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
+    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511985170702",
+    "nome": "Vanderley",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Vanderley%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
+    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511975533532",
+    "nome": "Regina",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Regina%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
+    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511974430284",
+    "nome": "Lucio",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Lucio%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
+    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511999635361",
+    "nome": "Bianca",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Bianca%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
+    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511972317779",
+    "nome": "Alexandre",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Alexandre%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
+    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511972166260",
+    "nome": "Matheus",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Matheus%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
+    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511991054539",
+    "nome": "Tica",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Tica%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
+    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511947871587",
+    "nome": "Elaine",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Elaine%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
+    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511916997680",
+    "nome": "Edson",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Edson%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
+    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511988906322",
+    "nome": "José",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Jos%C3%A9%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511951414565",
+    "nome": "Edu",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Edu%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511965117695",
+    "nome": "Bárbara",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20B%C3%A1rbara%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511978446678",
+    "nome": "Lucas",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Lucas%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511995093102",
+    "nome": "Maria",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Maria%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5551993480425",
+    "nome": "Alexandre",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Alexandre%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511981165697",
+    "nome": "Marcia",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Marcia%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511976571362",
+    "nome": "Marcela",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Marcela%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511940262616",
+    "nome": "Vanessa",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Vanessa%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511991946057",
+    "nome": "Osmir",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Osmir%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511977862304",
+    "nome": "David",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20David%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511985547475",
+    "nome": "Bruna",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Bruna%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511999420874",
+    "nome": "Tarcisio",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Tarcisio%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5517981598714",
+    "nome": "Leila",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Leila%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511910442434",
+    "nome": "Karol",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Karol%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511969830064",
+    "nome": "Fábio",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20F%C3%A1bio%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511960118332",
+    "nome": "Alessandro",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Alessandro%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511985659110",
+    "nome": "Amanda",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Amanda%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511980386007",
+    "nome": "Marcia",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Marcia%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511984359467",
+    "nome": "Cicero",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Cicero%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511912538749",
+    "nome": "Joao",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Joao%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5562998535188",
+    "nome": "Rodrigo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Rodrigo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511984482824",
+    "nome": "Geovana",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Geovana%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511991721096",
+    "nome": "Silvana",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Silvana%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511991490869",
+    "nome": "Nataly",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Nataly%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511967347930",
+    "nome": "Francinaldo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Francinaldo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511972407202",
+    "nome": "Gustavo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Gustavo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511947533383",
+    "nome": "Givison",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Givison%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511985958551",
+    "nome": "Suzana",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Suzana%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511963640090",
+    "nome": "Carlos",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Carlos%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
+    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511963132917",
+    "nome": "Gabriel",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Gabriel%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511998426211",
+    "nome": "Carlos",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Carlos%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511987960058",
+    "nome": "Vinicius",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Vinicius%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511996900208",
+    "nome": "Barbara",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Barbara%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511977110934",
+    "nome": "Marcio",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Marcio%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511983005899",
+    "nome": "Tel",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Tel%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511973301099",
+    "nome": "Jean",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Jean%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511930305410",
+    "nome": "Leonardo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Leonardo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511983315927",
+    "nome": "Jefferson",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Jefferson%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511993170139",
+    "nome": "Francisco",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Francisco%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511983130937",
+    "nome": "Aline",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Aline%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511982899765",
+    "nome": "Andreza",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Andreza%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511956247844",
+    "nome": "Samuel",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Samuel%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511963850821",
+    "nome": "Beatriz",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Beatriz%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511958383071",
+    "nome": "Guilherme",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Guilherme%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511913254222",
+    "nome": "Julian",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Julian%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511958878318",
+    "nome": "Daniel",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Daniel%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511969070797",
+    "nome": "Vitor",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Vitor%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511987160159",
+    "nome": "Luiza",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Luiza%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511999597772",
+    "nome": "Luana",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Luana%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511961524520",
+    "nome": "Elder",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Elder%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511943656880",
+    "nome": "Roger",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Roger%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511915153704",
+    "nome": "Gabriel",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Gabriel%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511951981066",
+    "nome": "Margarida",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Margarida%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511998106674",
+    "nome": "Renato",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Renato%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511940083868",
+    "nome": "Jair",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Jair%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511927863541",
+    "nome": "Itor",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Itor%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5535984119622",
+    "nome": "Venica",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Venica%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511957241901",
+    "nome": "Solange",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Solange%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511962950392",
+    "nome": "Fatima",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Fatima%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511982529410",
+    "nome": "Celiane",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Celiane%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511982066516",
+    "nome": "Priscila",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Priscila%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511969972853",
+    "nome": "Ana",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Ana%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511958114279",
+    "nome": "Jose",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Jose%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511940761422",
+    "nome": "Robson",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Robson%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511992866320",
+    "nome": "Jaime",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Jaime%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511981397897",
+    "nome": "Anahyas",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Anahyas%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511999115330",
+    "nome": "Walkyria",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Walkyria%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511984754232",
+    "nome": "Julio",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Julio%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511930025642",
+    "nome": "Edgar",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Edgar%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511959864766",
+    "nome": "Isaura",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Isaura%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511982967746",
+    "nome": "Sara",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Sara%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511988925547",
+    "nome": "Janilson",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Janilson%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511964672192",
+    "nome": "Eric",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Eric%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511954740522",
+    "nome": "Lucas",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Lucas%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511988491197",
+    "nome": "Sheron",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Sheron%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511947959581",
+    "nome": "Bruno",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Bruno%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511990271162",
+    "nome": "Heitor",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Heitor%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511961419368",
+    "nome": "Laurice",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Laurice%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511980663880",
+    "nome": "Nilda",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Nilda%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511964177566",
+    "nome": "Rony",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Rony%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511963082611",
+    "nome": "Cristiane",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Cristiane%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511982390382",
+    "nome": "Arlindo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Arlindo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
+    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511960966632",
+    "nome": "Josemira",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Josemira%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
+    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511937711389",
+    "nome": "Fatima",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Fatima%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
+    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511976255085",
+    "nome": "Jocimara",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Jocimara%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
+    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511958457706",
+    "nome": "Andre",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Andre%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
+    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511997268874",
+    "nome": "André",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Andr%C3%A9%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
+    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511910021775",
+    "nome": "Roberto",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Roberto%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
+    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511978158228",
+    "nome": "Tarcilio",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Tarcilio%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
+    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5541999901684",
+    "nome": "Anderson",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Anderson%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
+    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511937391043",
+    "nome": "Hadja",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Hadja%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
+    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511991157578",
+    "nome": "Samantha",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Samantha%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
+    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511972045559",
+    "nome": "Luiza",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Luiza%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
+    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511987009808",
+    "nome": "Theo",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Theo%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
+    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+  },
+  {
+    "numero": "5511974394311",
+    "nome": "Julio",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Julio%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
+    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+  }
+]

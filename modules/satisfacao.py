@@ -2,22 +2,22 @@
 from datetime import datetime
 from core.database import executar_consulta
 from utils.formatters import formatar_nome, validar_numero
-from utils.sent_satisfacao import ja_enviado, marcar_como_enviado
+from utils.sent_satisfacao import ja_enviado, marcar_como_enviado, registrar_log
 from utils.message_queue import adicionar_na_fila
 import urllib.parse
 
 ultima_execucao = datetime.min
 
-# Executa todos os dias às 11:50
+# Executa todos os dias às 10:22
 intervalo_execucao = 60  # em minutos
 
-#def should_run():
-#    agora = datetime.now()
-#    return agora.hour == 11 and agora.minute == 50
+def should_run():
+    agora = datetime.now()
+    return agora.hour == 10 and agora.minute == 22
 
 # Para testes: descomente para ignorar horário
-def should_run():
-    return True
+# def should_run():
+#    return True
 
 def run(driver):
     sql = """
@@ -40,7 +40,7 @@ def run(driver):
         GROUP BY 
             c.NOME, c.FONEPRINCIPAL 
         HAVING 
-            MAX(p.DATAABERTURA) > CURRENT_DATE - 3
+            MAX(p.DATAABERTURA) > CURRENT_DATE - 1
         ORDER BY 
             ultimo_pedido DESC;
     """
@@ -63,6 +63,7 @@ def run(driver):
             "nome": nome,
             "mensagem": mensagem,
             "caminho_video": None,
-            "log": "Mensagem de satisfação enviada"
+            "log": "Pesquisa de satisfação enviada"
         })
         marcar_como_enviado(numero)
+        registrar_log(numero, nome, "Pesquisa de satisfação enviada")

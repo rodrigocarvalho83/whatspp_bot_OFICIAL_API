@@ -7,8 +7,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 def abrir_conversa(driver, telefone, mensagem):
-    #link = f"https://web.whatsapp.com/send?phone={telefone}&text={mensagem}"
-    link = f"https://web.whatsapp.com/send?phone=+5511984896954&text={mensagem}"
+    link = f"https://web.whatsapp.com/send?phone={telefone}&text={mensagem}"
+    #link = f"https://web.whatsapp.com/send?phone=5511984896954&text={mensagem}"
     driver.get(link)
 
     # Espera até a interface carregar
@@ -39,26 +39,25 @@ def enviar_texto(driver):
 
 def enviar_midia(driver, caminho_arquivo):
     try:
-        # Botão de clipe (ícone de anexar) -> '//*[@id="main"]/footer/div[1]/div/span/div/div[1]/div/button'
-        print("⏳ Procurando botão de clipe (Anexar)...")
-        WebDriverWait(driver, 3).until(
-            EC.presence_of_element_located((By.XPATH, '//*[@id="main"]/footer/div[1]/div/span/div/div[1]/div/button'))
-        ).click()
-        print("✅ Botão de Anexar clicado.")
-
-        # Input de upload de vídeo/imagem (após abrir clipe) -> '//*[@id="app"]/div/span[6]/div/ul/div/div/div[2]/li/div/input'
-        WebDriverWait(driver, 7).until(
-            EC.presence_of_element_located((By.XPATH, '//*[@id="app"]/div/span[6]/div/ul/div/div/div[2]/li/div/input'))
+         # Input de upload de vídeo/imagem (após abrir clipe) -> '//*[@id="app"]/div/span[6]/div/ul/div/div/div[2]/li/div/input'
+        WebDriverWait(driver, 50).until(
+            EC.presence_of_element_located((By.XPATH,  '//input[@type="file"]'))
         ).send_keys(caminho_arquivo)
         print("✅ Mídia carregada.")
 
         # Botão de enviar mídia (ícone de avião) -> '//*[@id="app"]/div/div[3]/div/div[2]/div[2]/span/div/div/div/div[2]/div/div[2]/div[2]/div/div/span'
-        WebDriverWait(driver, 7).until(
-            EC.element_to_be_clickable((By.XPATH, '//*[@id="app"]/div/div[3]/div/div[2]/div[2]/span/div/div/div/div[2]/div/div[2]/div[2]/div/div/span'))
+        WebDriverWait(driver, 60).until(
+            EC.element_to_be_clickable((By.XPATH, '//div[@aria-label="Enviar"]'))
         ).click()
-        print("✅ Botão de Enviar clicado.")
+        print("✅ Botão de Enviar Anexo clicado.")
 
-        time.sleep(5)
+        # Botão de enviar Texto (ícone de avião) -> '//*[@id="app"]/div/div[3]/div/div[2]/div[2]/span/div/div/div/div[2]/div/div[2]/div[2]/div/div/span'
+        WebDriverWait(driver, 80).until(
+            EC.element_to_be_clickable((By.XPATH, '//button[@aria-label="Enviar"]'))
+        ).click()
+        print("✅ Botão de Enviar Texto clicado.")
+
+        time.sleep(6)
         return True
 
     except Exception as e:

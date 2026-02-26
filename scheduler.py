@@ -1,6 +1,5 @@
 ### scheduler.py
 import time
-from core.driver import iniciar_driver
 import importlib
 import os
 
@@ -13,7 +12,6 @@ def carregar_modulos():
     return modulos
 
 def loop_agendador():
-    driver = iniciar_driver()
     modulos = carregar_modulos()
 
     while True:
@@ -21,7 +19,7 @@ def loop_agendador():
             try:
                 if modulo.should_run():
                     print(f"Executando módulo: {modulo.__name__}")
-                    modulo.run(driver)
+                    modulo.run(None)
             except Exception as e:
                 print(f"Erro no módulo {modulo.__name__}: {e}")
         time.sleep(60)

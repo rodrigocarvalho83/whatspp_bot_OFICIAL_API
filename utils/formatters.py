@@ -6,6 +6,9 @@ def limpar_numero(telefone):
 
 def validar_numero(telefone):
     numero = limpar_numero(telefone)
+    # 🚫 Regra de exclusão: números 0800 não devem ser processados
+    if numero.startswith('0800'):
+        return None
     if len(numero) < 9:
         return None
     if len(numero) == 9:
