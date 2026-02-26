@@ -8,8 +8,8 @@ import urllib.parse
 import os
 import json
 
-TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", "hello_world")
-#TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", "cartao_fidelidade_update")
+#TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", "hello_world")
+TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", "cartao_fidelidade_update")
 ultima_execucao = datetime.min
 intervalo_execucao = timedelta(seconds=60)
 
@@ -195,6 +195,7 @@ Equipe Mr. Teddy
             "nome": nome,
             "mensagem": mensagem_url,
             "caminho_video": caminho_imagem,
+            "force_text_with_media": True,
             "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
             "fallback_template_params": [nome, str(saldoatual)],
             "log": f"Cartão fidelidade ({saldoatual} pontos) adicionado à fila"

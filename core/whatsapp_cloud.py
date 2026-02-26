@@ -84,7 +84,7 @@ class WhatsAppCloudAPI:
                 raise RuntimeError("Upload de mídia sem id retornado pela Cloud API")
             return media_id
 
-    def enviar_midia(self, numero, caminho_arquivo):
+    def enviar_midia(self, numero, caminho_arquivo, legenda_codificada=None):
         media_id = self._upload_midia(caminho_arquivo)
         ext = os.path.splitext(caminho_arquivo)[1].lower()
 
@@ -101,6 +101,9 @@ class WhatsAppCloudAPI:
             "type": tipo,
             tipo: {"id": media_id},
         }
+
+        if legenda_codificada and tipo in {"image", "video", "document"}:
+            payload[tipo]["caption"] = unquote(legenda_codificada)
 
         resp = requests.post(
             f"{self._base_url}/messages",

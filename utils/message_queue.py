@@ -15,6 +15,32 @@ os.makedirs("config", exist_ok=True)
 fila = []
 cloud_api = WhatsAppCloudAPI()
 
+
+def _extrair_template_do_item(item):
+    """
+    Aceita aliases para facilitar integração com payloads externos.
+    Prioridade:
+    - template_name (padrão interno)
+    - template (dict ou string)
+    - nome_template
+    """
+    template_name = item.get("template_name")
+    template_params = item.get("template_params") or []
+    template_lang = item.get("template_lang") or item.get("template_language") or "pt_BR"
+
+    template_legacy = item.get("template")
+    if not template_name and isinstance(template_legacy, str):
+        template_name = template_legacy
+    elif not template_name and isinstance(template_legacy, dict):
+        template_name = template_legacy.get("name")
+        template_params = template_legacy.get("params") or template_params
+        template_lang = template_legacy.get("language") or template_lang
+
+    if not template_name:
+        template_name = item.get("nome_template")
+
+    return template_name, template_params, template_lang
+
 def carregar_blacklist():
     if not os.path.exists(BLACKLIST_PATH):
         return []
@@ -100,13 +126,14 @@ def processar_fila(driver=None):
             nome = item["nome"]
             mensagem = item["mensagem"]
             caminho_video = item.get("caminho_video")
-            template_name = item.get("template_name")
-            template_params = item.get("template_params") or []
+            template_name, template_params, template_lang = _extrair_template_do_item(item)
 
             if template_name:
-                resposta = cloud_api.enviar_template(numero, template_name, template_params)
+                resposta = cloud_api.enviar_template(numero, template_name, template_params, template_lang)
             elif caminho_video and os.path.exists(caminho_video):
-                resposta = cloud_api.enviar_midia(numero, caminho_video)
+                resposta = cloud_api.enviar_midia(numero, caminho_video, mensagem)
+                if mensagem and item.get("force_text_with_media"):
+                    cloud_api.enviar_texto(numero, mensagem)
             else:
                 resposta = cloud_api.enviar_texto(numero, mensagem)
 
@@ -126,52 +153,33 @@ def processar_fila(driver=None):
                 )
         except requests.HTTPError as e:
             detalhe = ""
+            erro_code = None
             if e.response is not None:
                 detalhe = f" | resposta={e.response.text}"
                 try:
                     erro_json = e.response.json()
                     erro_code = (erro_json.get("error") or {}).get("code")
                 except Exception:
-                    erro_code = None
+                    pass
 
-                if erro_code == 131047 and not template_name:
-                    fallback_template = item.get("fallback_template_name")
-                    fallback_params = item.get("fallback_template_params") or []
-                    if fallback_template:
-                        try:
-                            resposta = cloud_api.enviar_template(numero, fallback_template, fallback_params)
-                            wa_id = ((resposta or {}).get("contacts") or [{}])[0].get("wa_id", "desconhecido")
-                            message_id = ((resposta or {}).get("messages") or [{}])[0].get("id", "sem-id")
-                            registrar_entrega_aceita(numero, nome, resposta)
-                            registrar_log(
-                                numero,
-                                nome,
-                                f"Template de reengajamento enviado (message_id={message_id}, wa_id={wa_id}, template={fallback_template}).",
-                            )
-                            continue
-                        except Exception as template_error:
-                            print(f"❌ Falha ao enviar template de reengajamento: {template_error}")
+            if erro_code == 131047 and not template_name:
+                fallback_template = item.get("fallback_template_name")
+                fallback_params = item.get("fallback_template_params") or []
+                if fallback_template:
+                    try:
+                        resposta = cloud_api.enviar_template(numero, fallback_template, fallback_params)
+                        wa_id = ((resposta or {}).get("contacts") or [{}])[0].get("wa_id", "desconhecido")
+                        message_id = ((resposta or {}).get("messages") or [{}])[0].get("id", "sem-id")
+                        registrar_entrega_aceita(numero, nome, resposta)
+                        registrar_log(
+                            numero,
+                            nome,
+                            f"Template de reengajamento enviado (message_id={message_id}, wa_id={wa_id}, template={fallback_template}).",
+                        )
+                        continue
+                    except Exception as template_error:
+                        print(f"❌ Falha ao enviar template de reengajamento: {template_error}")
 
-            #print(f"❌ Erro HTTP ao processar item da fila: {e}{detalhe}")
-            #nova_fila.append(item)        
-
-            if caminho_video and os.path.exists(caminho_video):
-                resposta = cloud_api.enviar_midia(numero, caminho_video)
-                print(numero, nome, caminho_video, "Mensagem enviada com sucesso via Cloud API")
-            else:
-                resposta = cloud_api.enviar_texto(numero, mensagem)
-            message_id = ((resposta or {}).get("messages") or [{}])[0].get("id", "sem-id")
-            registrar_log(
-                numero,
-                nome,
-                f"Mensagem aceita pela Cloud API (message_id={message_id}). "
-                "Entrega final depende do status no webhook da Meta",
-            )
-        
-        except requests.HTTPError as e:
-            detalhe = ""
-            if e.response is not None:
-                detalhe = f" | resposta={e.response.text}"
             print(f"❌ Erro HTTP ao processar item da fila: {e}{detalhe}")
             nova_fila.append(item)
 
