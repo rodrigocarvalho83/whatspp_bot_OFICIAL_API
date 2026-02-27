@@ -127,7 +127,7 @@ def processar_fila(driver=None):
             mensagem = item["mensagem"]
             caminho_video = item.get("caminho_video")
             template_name, template_params, template_lang = _extrair_template_do_item(item)
-
+            
             if template_name:
                 resposta = cloud_api.enviar_template(numero, template_name, template_params, template_lang)
             elif caminho_video and os.path.exists(caminho_video):

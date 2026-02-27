@@ -120,9 +120,21 @@ class WhatsAppCloudAPI:
     def enviar_template(self, numero, nome_template, parametros=None, idioma="pt_BR"):
         componentes = []
         if parametros:
+            if isinstance(parametros, dict):
+                body_params = [
+                    {
+                        "type": "text",
+                        "parameter_name": str(chave),
+                        "text": str(valor),
+                    }
+                    for chave, valor in parametros.items()
+                ]
+            else:
+                body_params = [{"type": "text", "text": str(valor)} for valor in parametros]
+
             componentes.append({
                 "type": "body",
-                "parameters": [{"type": "text", "text": str(valor)} for valor in parametros],
+                "parameters": body_params,
             })
 
         payload = {

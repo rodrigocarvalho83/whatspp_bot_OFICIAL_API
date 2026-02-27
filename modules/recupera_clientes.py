@@ -51,15 +51,15 @@ def run(driver):
 		ORDER BY valor_gasto desc, ultimo_pedido desc;
     """
     mensagens_promocao_48 = [
-        "{nome}, aqui é o Teddy.\nSumido hein? Tá achando que *pizza de R$48* com mais de *20 sabores* cai do céu?\n\nVolta logo antes que eu vá te buscar! 👊🍕\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
+        "{nome}, aqui é o Teddy.\nSumido hein? Tá achando que *pizza de R$48* com mais de *15 sabores* cai do céu?\n\nVolta logo antes que eu vá te buscar! 👊🍕\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
 
-        "{nome}, eu tava tranquilo… até lembrar que você sumiu!\nMais de *20 sabores por R$48* e você aí de dieta?\n\nNão me provoque.\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
+        "{nome}, eu tava tranquilo… até lembrar que você sumiu!\nMais de *15 sabores por R$48* e você aí de dieta?\n\nNão me provoque.\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
 
         "Tô cansado de ser bonzinho, {nome}.\n*Promoção R$48, terça a quinta.*\n\nSe ignorar isso, vamos ter um problema. 😤\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
 
-        "{nome}, mais de 40 dias sem dar as caras?\nVocê não vai resistir: *20 pizzas por R$48*.\n\nVolta antes que eu vá aí te buscar. 🧸🚫\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
+        "{nome}, mais de 40 dias sem dar as caras?\nVocê não vai resistir: *15 pizzas por R$48*.\n\nVolta antes que eu vá aí te buscar. 🧸🚫\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
 
-        "Sumido igual fantasma, né {nome}? 👻\nMas vou te assombrar com essa promo: *20 sabores por R$48*.\n\nDe terça a quinta. Vem antes que eu vá aí te buscar.\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
+        "Sumido igual fantasma, né {nome}? 👻\nMas vou te assombrar com essa promo: *15 sabores por R$48*.\n\nDe terça a quinta. Vem antes que eu vá aí te buscar.\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
 
         "{nome}, lembra da gente?\nVocê, eu, e aquela pizza delicinha…\n\nVolta logo, R$48 tá barato demais pra você perder!\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*"
     ]
