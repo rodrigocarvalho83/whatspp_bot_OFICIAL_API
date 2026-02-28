@@ -26,6 +26,13 @@ TEMPLATES_STATUS = {
 }
 TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATES_STATUS["P"])
 
+MEDIA_URLS_STATUS = {
+    "P": "https://mrteddypizza.com.br/midia/status_pedidos/em_preparacao.mp4",
+    "A": "https://mrteddypizza.com.br/midia/status_pedidos/pronto_retirada.mp4",
+    "S": "https://mrteddypizza.com.br/midia/status_pedidos/saiu_entrega.mp4",
+    "F": "https://mrteddypizza.com.br/midia/status_pedidos/satisfacao.png",
+}
+
 VIDEOS = {
     'P': "videos/status_pedidos/em_preparacao.mp4",
     'A': "videos/status_pedidos/pronto_retirada.mp4",
@@ -65,7 +72,7 @@ def run(driver):
             if not numero or not dentro_do_horario():
                 continue
 
-            if status not in MENSAGENS or status not in VIDEOS or status not in TEMPLATES_STATUS:
+            if status not in MENSAGENS or status not in VIDEOS or status not in TEMPLATES_STATUS or status not in MEDIA_URLS_STATUS:
                 print(f"⚠️ Status '{status}' não reconhecido. Ignorando pedido {codigo}.")
                 continue
 
@@ -79,6 +86,8 @@ def run(driver):
             mensagem = urllib.parse.quote(MENSAGENS[status].format(nome=nome))
             caminho_video = os.path.abspath(VIDEOS[status])
 
+            tipo_midia_template = "image" if status == "F" else "video"
+            
             adicionar_na_fila({
                 "numero": numero,
                 "nome": nome,
@@ -86,6 +95,7 @@ def run(driver):
                 "caminho_video": caminho_video,
                 "template_name": TEMPLATES_STATUS[status],
                 "template_params": {"nome": nome},
+                "template_header_media": {"type": tipo_midia_template, "link": MEDIA_URLS_STATUS[status]},
                 "template_lang": "pt_BR",
                 "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
                 "fallback_template_params": {"nome": nome},

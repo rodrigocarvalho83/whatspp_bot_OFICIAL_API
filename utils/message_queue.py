@@ -66,7 +66,8 @@ def _extrair_template_do_item(item):
             template_params = _normalizar_parametros_template(template_name, template_params, item, usar_chaves_fallback=True)
 
     template_params = _normalizar_parametros_template(template_name, template_params, item)
-    return template_name, template_params, template_lang
+    template_header_media = item.get("template_header_media")
+    return template_name, template_params, template_lang, template_header_media
 
 def carregar_blacklist():
     if not os.path.exists(BLACKLIST_PATH):
@@ -147,16 +148,26 @@ def processar_fila(driver=None):
     print("📤 Processando fila de mensagens...")
     nova_fila = []
 
-    for item in fila:
+    total_itens = len(fila)
+    for indice, item in enumerate(fila, start=1):
+        template_name = None
         try:
             numero = item["numero"]
             nome = item["nome"]
             mensagem = item["mensagem"]
             caminho_video = item.get("caminho_video")
-            template_name, template_params, template_lang = _extrair_template_do_item(item)
+            template_name, template_params, template_lang, template_header_media = _extrair_template_do_item(item)
+
+            print(f"➡️ Enviando item {indice}/{total_itens} para {numero} ({nome})...")
             
             if template_name:
-                resposta = cloud_api.enviar_template(numero, template_name, template_params, template_lang)
+                resposta = cloud_api.enviar_template(
+                    numero,
+                    template_name,
+                    template_params,
+                    template_lang,
+                    template_header_media,
+                )
             elif caminho_video and os.path.exists(caminho_video):
                 resposta = cloud_api.enviar_midia(numero, caminho_video, mensagem)
                 if mensagem and item.get("force_text_with_media"):
@@ -178,21 +189,34 @@ def processar_fila(driver=None):
                     f"⚠️ Número normalizado pela Meta: enviado={numero}, wa_id={wa_id}. "
                     "Verifique formatação no banco (DDI+DDD+número)."
                 )
+        except requests.Timeout as e:
+            print(f"⏱️ Timeout ao enviar item {indice}/{total_itens} ({item.get('numero', 'sem-numero')}): {e}")
+            registrar_log(
+                item.get("numero", "desconhecido"),
+                item.get("nome", ""),
+                f"Timeout ao enviar mensagem para Cloud API: {e}",
+            )
+            nova_fila.append(item)        
         except requests.HTTPError as e:
-            detalhe = ""
             erro_code = None
+            erro_detalhe = ""
             if e.response is not None:
-                detalhe = f" | resposta={e.response.text}"
                 try:
                     erro_json = e.response.json()
                     erro_code = (erro_json.get("error") or {}).get("code")
+                    erro_detalhe = erro_json
                 except Exception:
-                    pass
+                    erro_detalhe = e.response.text
 
             if erro_code == 131047 and not template_name:
                 fallback_template = item.get("fallback_template_name")
                 fallback_params = item.get("fallback_template_params") or []
-                fallback_params = _normalizar_parametros_template(fallback_template, fallback_params, item, usar_chaves_fallback=True)
+                fallback_params = _normalizar_parametros_template(
+                    fallback_template,
+                    fallback_params,
+                    item,
+                    usar_chaves_fallback=True,
+                )
                 if fallback_template:
                     try:
                         resposta = cloud_api.enviar_template(numero, fallback_template, fallback_params)
@@ -207,12 +231,26 @@ def processar_fila(driver=None):
                         continue
                     except Exception as template_error:
                         print(f"❌ Falha ao enviar template de reengajamento: {template_error}")
+                        nova_fila.append(item)
+                else:
+                    nova_fila.append(item)
+            else:
+                print(
+                    f"❌ Erro HTTP no item {indice}/{total_itens} "
+                    f"({item.get('numero', 'sem-numero')}): {e} | Detalhe: {erro_detalhe}"
+                )
+                registrar_log(
+                    item.get("numero", "desconhecido"),
+                    item.get("nome", ""),
+                    f"Erro HTTP ao enviar mensagem: {erro_detalhe or e}",
+                )
+                nova_fila.append(item)
 
         except Exception as e:
             print(f"❌ Erro ao processar item da fila: {e}")
             nova_fila.append(item)
 
-        time.sleep(5)  # Pequeno intervalo entre mensagens
+        time.sleep(2)  # Pequeno intervalo entre mensagens
 
     fila = nova_fila
     salvar_fila()

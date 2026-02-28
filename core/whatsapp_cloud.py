@@ -15,7 +15,9 @@ class WhatsAppCloudAPI:
         self.token = os.getenv("WHATSAPP_ACCESS_TOKEN", "").strip()
         self.phone_number_id = os.getenv("WHATSAPP_PHONE_NUMBER_ID", "").strip()
         self.version = os.getenv("WHATSAPP_API_VERSION", "v21.0").strip() or "v21.0"
-        self.timeout = int(os.getenv("WHATSAPP_TIMEOUT", "30"))
+        self.timeout = float(os.getenv("WHATSAPP_TIMEOUT", "20"))
+        self.connect_timeout = float(os.getenv("WHATSAPP_CONNECT_TIMEOUT", "5"))
+        self.read_timeout = float(os.getenv("WHATSAPP_READ_TIMEOUT", str(self.timeout)))
 
     def esta_configurado(self):
         self.refresh_config()
@@ -40,6 +42,10 @@ class WhatsAppCloudAPI:
     def _base_url(self):
         return f"https://graph.facebook.com/{self.version}/{self.phone_number_id}"
 
+    @property
+    def _timeout(self):
+        return (self.connect_timeout, self.read_timeout)
+    
     def enviar_texto(self, numero, mensagem_codificada):
         mensagem = unquote(mensagem_codificada)
         payload = {
@@ -52,7 +58,7 @@ class WhatsAppCloudAPI:
             f"{self._base_url}/messages",
             headers=self._headers,
             json=payload,
-            timeout=self.timeout,
+            timeout=self._timeout,
         )
         resp.raise_for_status()
         body = resp.json()
@@ -76,7 +82,7 @@ class WhatsAppCloudAPI:
                 headers=headers,
                 files=files,
                 data=data,
-                timeout=self.timeout,
+                timeout=self._timeout,
             )
             resp.raise_for_status()
             media_id = resp.json().get("id")
@@ -110,7 +116,7 @@ class WhatsAppCloudAPI:
             f"{self._base_url}/messages",
             headers=self._headers,
             json=payload,
-            timeout=self.timeout,
+            timeout=self._timeout,
         )
         resp.raise_for_status()
         body = resp.json()
@@ -118,8 +124,23 @@ class WhatsAppCloudAPI:
             raise RuntimeError(f"Resposta inesperada da Cloud API: {body}")
         return body
 
-    def enviar_template(self, numero, nome_template, parametros=None, idioma="pt_BR"):
+    def enviar_template(self, numero, nome_template, parametros=None, idioma="pt_BR", header_media=None):
         componentes = []
+
+        if header_media:
+            tipo = (header_media.get("type") or "").strip().lower()
+            link = (header_media.get("link") or "").strip()
+            if tipo in {"image", "video", "document"} and link:
+                componentes.append({
+                    "type": "header",
+                    "parameters": [
+                        {
+                            "type": tipo,
+                            tipo: {"link": link},
+                        }
+                    ],
+                })
+                
         if parametros:
             if isinstance(parametros, dict):
                 body_params = [
@@ -154,7 +175,7 @@ class WhatsAppCloudAPI:
             f"{self._base_url}/messages",
             headers=self._headers,
             json=payload,
-            timeout=self.timeout,
+            timeout=self._timeout,
         )
         resp.raise_for_status()
         body = resp.json()
