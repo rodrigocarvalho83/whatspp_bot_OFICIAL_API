@@ -15,6 +15,23 @@ os.makedirs("config", exist_ok=True)
 fila = []
 cloud_api = WhatsAppCloudAPI()
 
+def _normalizar_parametros_template(template_name, template_params, item, usar_chaves_fallback=False):
+    if isinstance(template_params, dict):
+        return template_params
+
+    if not isinstance(template_params, (list, tuple)):
+        return template_params
+
+    nomes = item.get("fallback_template_param_names") if usar_chaves_fallback else item.get("template_param_names")
+    if isinstance(nomes, list) and len(nomes) == len(template_params):
+        return {str(chave): valor for chave, valor in zip(nomes, template_params)}
+
+    # Compatibilidade específica do template de fidelidade (NAMED: nome/saldoatual)
+    if template_name and "fidelidade" in str(template_name).lower() and len(template_params) >= 2:
+        return {"nome": template_params[0], "saldoatual": template_params[1]}
+
+    return template_params
+
 
 def _extrair_template_do_item(item):
     """
@@ -39,6 +56,16 @@ def _extrair_template_do_item(item):
     if not template_name:
         template_name = item.get("nome_template")
 
+    # Compatibilidade com itens antigos da fila:
+    # se não vier template explícito, mas vier fallback_template_name,
+    # tratamos o fallback como template principal para evitar erro 131047.
+    if not template_name:
+        template_name = item.get("fallback_template_name")
+        if template_name and not template_params:
+            template_params = item.get("fallback_template_params") or []
+            template_params = _normalizar_parametros_template(template_name, template_params, item, usar_chaves_fallback=True)
+
+    template_params = _normalizar_parametros_template(template_name, template_params, item)
     return template_name, template_params, template_lang
 
 def carregar_blacklist():
@@ -165,6 +192,7 @@ def processar_fila(driver=None):
             if erro_code == 131047 and not template_name:
                 fallback_template = item.get("fallback_template_name")
                 fallback_params = item.get("fallback_template_params") or []
+                fallback_params = _normalizar_parametros_template(fallback_template, fallback_params, item, usar_chaves_fallback=True)
                 if fallback_template:
                     try:
                         resposta = cloud_api.enviar_template(numero, fallback_template, fallback_params)
@@ -179,9 +207,6 @@ def processar_fila(driver=None):
                         continue
                     except Exception as template_error:
                         print(f"❌ Falha ao enviar template de reengajamento: {template_error}")
-
-            print(f"❌ Erro HTTP ao processar item da fila: {e}{detalhe}")
-            nova_fila.append(item)
 
         except Exception as e:
             print(f"❌ Erro ao processar item da fila: {e}")

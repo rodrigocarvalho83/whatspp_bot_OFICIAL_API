@@ -8,8 +8,9 @@ import urllib.parse
 import os
 import json
 
-#TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", "hello_world")
-TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", "cartao_fidelidade_update")
+TEMPLATE_FIDELIDADE = os.getenv("WHATSAPP_TEMPLATE_FIDELIDADE", "cartao_fidelidade_update")
+TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATE_FIDELIDADE)
+
 ultima_execucao = datetime.min
 intervalo_execucao = timedelta(seconds=60)
 
@@ -185,7 +186,6 @@ Ao acumular 12 pontos, você pode trocá-los por uma pizza *Tradicional GRÁTIS*
 Aproveite a promoção.
 Equipe Mr. Teddy
 """
-
         imagem = IMAGENS.get(saldoatual, IMAGENS["default"])
         mensagem_url = urllib.parse.quote(mensagem.strip())
         caminho_imagem = os.path.abspath(imagem)
@@ -196,8 +196,11 @@ Equipe Mr. Teddy
             "mensagem": mensagem_url,
             "caminho_video": caminho_imagem,
             "force_text_with_media": True,
+            "template_name": TEMPLATE_FIDELIDADE,
+            "template_params": {"nome": nome, "saldoatual": str(saldoatual)},
+            "template_lang": "pt_BR",
             "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
-            "fallback_template_params": [nome, str(saldoatual)],
+            "fallback_template_params": {"nome": nome, "saldoatual": str(saldoatual)},
             "log": f"Cartão fidelidade ({saldoatual} pontos) adicionado à fila"
         })
 

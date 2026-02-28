@@ -105,6 +105,7 @@ class WhatsAppCloudAPI:
         if legenda_codificada and tipo in {"image", "video", "document"}:
             payload[tipo]["caption"] = unquote(legenda_codificada)
 
+
         resp = requests.post(
             f"{self._base_url}/messages",
             headers=self._headers,
