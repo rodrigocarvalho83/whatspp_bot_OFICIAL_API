@@ -1,1107 +1,466 @@
 [
   {
-    "numero": "5511972500009",
-    "nome": "Julianna",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Julianna%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2050%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2050%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Julianna",
-      "50"
-    ],
-    "log": "Cartão fidelidade (50 pontos) adicionado à fila"
+    "numero": "5511984768433",
+    "nome": "G.t.e.",
+    "mensagem": "Ol%C3%A1%20G.t.e.%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "G.t.e."
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "G.t.e."
+    },
+    "log": "Status 'F' adicionado à fila de envio"
   },
   {
-    "numero": "5511996733001",
-    "nome": "Bianca",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Bianca%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2040%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2040%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Bianca",
-      "40"
-    ],
-    "log": "Cartão fidelidade (40 pontos) adicionado à fila"
+    "numero": "5511965117695",
+    "nome": "Bárbara",
+    "mensagem": "Ol%C3%A1%20B%C3%A1rbara%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Bárbara"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Bárbara"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
   },
   {
-    "numero": "5511947638946",
-    "nome": "Nayanne",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Nayanne%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2022%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2022%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Nayanne",
-      "22"
-    ],
-    "log": "Cartão fidelidade (22 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511989770703",
-    "nome": "Jonas",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Jonas%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2016%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2016%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Jonas",
-      "16"
-    ],
-    "log": "Cartão fidelidade (16 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511985038777",
-    "nome": "Diego",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Diego%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2016%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2016%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Diego",
-      "16"
-    ],
-    "log": "Cartão fidelidade (16 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511953897755",
-    "nome": "Olivia",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Olivia%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2013%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2013%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Olivia",
-      "13"
-    ],
-    "log": "Cartão fidelidade (13 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511986030719",
-    "nome": "Bruna",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Bruna%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2012%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2012%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Bruna",
-      "12"
-    ],
-    "log": "Cartão fidelidade (12 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511972647767",
-    "nome": "Alexandre",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Alexandre%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2012%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2012%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Alexandre",
-      "12"
-    ],
-    "log": "Cartão fidelidade (12 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511981810275",
-    "nome": "Fernando",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Fernando%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Fernando",
-      "11"
-    ],
-    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511977122791",
-    "nome": "Simone",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Simone%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Simone",
-      "11"
-    ],
-    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511996255180",
-    "nome": "Ana",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Ana%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Ana",
-      "11"
-    ],
-    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511999664103",
-    "nome": "Alex",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Alex%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Alex",
-      "11"
-    ],
-    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511971312702",
-    "nome": "Priscila",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Priscila%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Priscila",
-      "11"
-    ],
-    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511998307693",
-    "nome": "Deny",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Deny%21%0AVoc%C3%AA%20est%C3%A1%20quase%20l%C3%A1%21%21%21%0AS%C3%B3%20mais%20uma%20pizza%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2011%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\11pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Deny",
-      "11"
-    ],
-    "log": "Cartão fidelidade (11 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511981709029",
-    "nome": "Americo",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Americo%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Americo",
-      "10"
-    ],
-    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511953646618",
-    "nome": "Carlos",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Carlos%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Carlos",
-      "10"
-    ],
-    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511911220675",
-    "nome": "Freddy",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Freddy%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Freddy",
-      "10"
-    ],
-    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511982374284",
-    "nome": "Aline",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Aline%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Aline",
-      "10"
-    ],
-    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511958877752",
-    "nome": "Joao",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Joao%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Joao",
-      "10"
-    ],
-    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511974052609",
-    "nome": "Larissa",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Larissa%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Larissa",
-      "10"
-    ],
-    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511952975217",
-    "nome": "Caroline",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Caroline%21%0AAgora%20falta%20pouco%21%21%21%0AS%C3%B3%20mais%20duas%20pizzas%20e%20voc%C3%AA%20poder%C3%A1%20trocar%20seus%20pontos%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2010%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\10pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Caroline",
-      "10"
-    ],
-    "log": "Cartão fidelidade (10 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511999848999",
-    "nome": "Renata",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Renata%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%209%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\9pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Renata",
-      "9"
-    ],
-    "log": "Cartão fidelidade (9 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511997458679",
-    "nome": "Mariana",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Mariana%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%209%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\9pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Mariana",
-      "9"
-    ],
-    "log": "Cartão fidelidade (9 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511984923194",
-    "nome": "Anni",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Anni%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%209%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\9pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Anni",
-      "9"
-    ],
-    "log": "Cartão fidelidade (9 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511957790508",
-    "nome": "Regina",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Regina%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%209%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\9pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Regina",
-      "9"
-    ],
-    "log": "Cartão fidelidade (9 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511941441414",
-    "nome": "Lourdes",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Lourdes%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%209%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\9pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Lourdes",
-      "9"
-    ],
-    "log": "Cartão fidelidade (9 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511942015507",
-    "nome": "Sueli",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Sueli%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%208%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\8pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Sueli",
-      "8"
-    ],
-    "log": "Cartão fidelidade (8 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511910692938",
-    "nome": "Ricardo",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Ricardo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%208%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\8pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Ricardo",
-      "8"
-    ],
-    "log": "Cartão fidelidade (8 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511958457702",
-    "nome": "André",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Andr%C3%A9%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "André",
-      "7"
-    ],
-    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511943951358",
-    "nome": "Mario",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Mario%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Mario",
-      "7"
-    ],
-    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511993239453",
-    "nome": "Vladmir",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Vladmir%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Vladmir",
-      "7"
-    ],
-    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511981190011",
-    "nome": "Eric",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Eric%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Eric",
-      "7"
-    ],
-    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511993742999",
-    "nome": "Felipe",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Felipe%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%207%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\7pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Felipe",
-      "7"
-    ],
-    "log": "Cartão fidelidade (7 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511972587459",
-    "nome": "Mirian",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Mirian%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Mirian",
-      "6"
-    ],
-    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511948747066",
-    "nome": "Alice",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Alice%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%206%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\6pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Alice",
-      "6"
-    ],
-    "log": "Cartão fidelidade (6 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511954904476",
-    "nome": "Sulan",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Sulan%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Sulan",
-      "5"
-    ],
-    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511970887771",
-    "nome": "Larissa",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Larissa%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Larissa",
-      "5"
-    ],
-    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511991658989",
-    "nome": "Thiago",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Thiago%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Thiago",
-      "5"
-    ],
-    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511982841543",
-    "nome": "Nilson",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Nilson%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%205%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\5pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Nilson",
-      "5"
-    ],
-    "log": "Cartão fidelidade (5 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511989223369",
-    "nome": "Luis",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Luis%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Luis",
-      "4"
-    ],
-    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511976668636",
-    "nome": "Helber",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Helber%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Helber",
-      "4"
-    ],
-    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511961955351",
-    "nome": "Michelle",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Michelle%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Michelle",
-      "4"
-    ],
-    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
+    "numero": "5511980326673",
+    "nome": "Kamila",
+    "mensagem": "Ol%C3%A1%20Kamila%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Kamila"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Kamila"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
   },
   {
     "numero": "5511974724864",
     "nome": "Roberto",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Roberto%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Roberto",
-      "4"
-    ],
-    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511973371979",
-    "nome": "Andre",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Andre%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Andre",
-      "4"
-    ],
-    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511947871587",
-    "nome": "Elaine",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Elaine%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%204%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\4pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Elaine",
-      "4"
-    ],
-    "log": "Cartão fidelidade (4 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511995430281",
-    "nome": "Felipe",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Felipe%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Felipe",
-      "3"
-    ],
-    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511986062895",
-    "nome": "Henice",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Henice%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Henice",
-      "3"
-    ],
-    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511976273592",
-    "nome": "Caua",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Caua%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Caua",
-      "3"
-    ],
-    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511958473851",
-    "nome": "Cecilia",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Cecilia%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Cecilia",
-      "3"
-    ],
-    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511959321238",
-    "nome": "Luciano",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Luciano%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Luciano",
-      "3"
-    ],
-    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+    "mensagem": "Ol%C3%A1%20Roberto%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Roberto"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Roberto"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
   },
   {
     "numero": "5511976904241",
     "nome": "Celia",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Celia%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Celia",
-      "3"
-    ],
-    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+    "mensagem": "Ol%C3%A1%20Celia%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Celia"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Celia"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
   },
   {
-    "numero": "5511944013420",
-    "nome": "Rogerio",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Rogerio%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%203%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\3pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Rogerio",
-      "3"
-    ],
-    "log": "Cartão fidelidade (3 pontos) adicionado à fila"
+    "numero": "5511943951358",
+    "nome": "Mario",
+    "mensagem": "Ol%C3%A1%20Mario%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Mario"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Mario"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
   },
   {
-    "numero": "5511996424770",
-    "nome": "Katia",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Katia%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Katia",
-      "2"
-    ],
-    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511970660833",
-    "nome": "David",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20David%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "David",
-      "2"
-    ],
-    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511985572972",
-    "nome": "Eliane",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Eliane%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Eliane",
-      "2"
-    ],
-    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511952251999",
-    "nome": "Raissa",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Raissa%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Raissa",
-      "2"
-    ],
-    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511962752501",
-    "nome": "Malone",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Malone%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Malone",
-      "2"
-    ],
-    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511985489703",
-    "nome": "Fernanda",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Fernanda%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Fernanda",
-      "2"
-    ],
-    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511987549846",
-    "nome": "Leticia",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Leticia%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Leticia",
-      "2"
-    ],
-    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511987160159",
-    "nome": "Luiza",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Luiza%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Luiza",
-      "2"
-    ],
-    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511982853156",
-    "nome": "Viviane",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Viviane%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Viviane",
-      "2"
-    ],
-    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511930923967",
-    "nome": "Manuel",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Manuel%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Manuel",
-      "2"
-    ],
-    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511974980022",
-    "nome": "Lara",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Lara%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Lara",
-      "2"
-    ],
-    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511972966602",
-    "nome": "Bruno",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Bruno%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%202%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\2pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Bruno",
-      "2"
-    ],
-    "log": "Cartão fidelidade (2 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511983075817",
-    "nome": "Luciana",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Luciana%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Luciana",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511948432466",
+    "numero": "5511941309202",
     "nome": "Vinicius",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Vinicius%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Vinicius",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+    "mensagem": "Ol%C3%A1%20Vinicius%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Vinicius"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Vinicius"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
   },
   {
-    "numero": "5511963531821",
-    "nome": "Luana",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Luana%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Luana",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511962935940",
-    "nome": "Antonio",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Antonio%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Antonio",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511983105225",
-    "nome": "Danilo",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Danilo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Danilo",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511948013358",
-    "nome": "Wiliam",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Wiliam%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Wiliam",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511962952258",
-    "nome": "Cleiton",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Cleiton%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Cleiton",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511940308494",
-    "nome": "Wedja",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Wedja%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Wedja",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511976338133",
-    "nome": "Kaique",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Kaique%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Kaique",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511914875279",
-    "nome": "Angelica",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Angelica%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Angelica",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511942667525",
-    "nome": "Rafa",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Rafa%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Rafa",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511996323831",
-    "nome": "Alex",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Alex%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Alex",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511965039418",
-    "nome": "Beatriz",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Beatriz%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Beatriz",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
-  },
-  {
-    "numero": "5511981825716",
-    "nome": "Leandro",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Leandro%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Leandro",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+    "numero": "5511947985908",
+    "nome": "Theo",
+    "mensagem": "Ol%C3%A1%20Theo%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Theo"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Theo"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
   },
   {
     "numero": "5511984843298",
     "nome": "Roberta",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Roberta%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Roberta",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+    "mensagem": "Ol%C3%A1%20Roberta%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Roberta"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Roberta"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5521964547320",
+    "nome": "Ayranna",
+    "mensagem": "Ol%C3%A1%20Ayranna%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Ayranna"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Ayranna"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511997458679",
+    "nome": "Mariana",
+    "mensagem": "Ol%C3%A1%20Mariana%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Mariana"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Mariana"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511986030719",
+    "nome": "Bruna",
+    "mensagem": "Ol%C3%A1%20Bruna%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Bruna"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Bruna"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511993742999",
+    "nome": "Felipe",
+    "mensagem": "Ol%C3%A1%20Felipe%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Felipe"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Felipe"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511940264888",
+    "nome": "Fabiola",
+    "mensagem": "Ol%C3%A1%20Fabiola%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Fabiola"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Fabiola"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
   },
   {
     "numero": "5511984050806",
     "nome": "Marcelo",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Marcelo%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Marcelo",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+    "mensagem": "Ol%C3%A1%20Marcelo%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Marcelo"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Marcelo"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511947204221",
+    "nome": "Dayane",
+    "mensagem": "Ol%C3%A1%20Dayane%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Dayane"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Dayane"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5524988171187",
+    "nome": "Davi",
+    "mensagem": "Ol%C3%A1%20Davi%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Davi"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Davi"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
   },
   {
     "numero": "5511950733241",
     "nome": "Fabricio",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Fabricio%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Fabricio",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+    "mensagem": "Ol%C3%A1%20Fabricio%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Fabricio"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Fabricio"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511974052609",
+    "nome": "Larissa",
+    "mensagem": "Ol%C3%A1%20Larissa%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Larissa"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Larissa"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
   },
   {
     "numero": "5511954927997",
     "nome": "Caio",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Caio%21%0A%0AVoc%C3%AA%20acaba%20de%20acumular%20mais%20ponto%28s%29%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%201%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\1pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Caio",
-      "1"
-    ],
-    "log": "Cartão fidelidade (1 pontos) adicionado à fila"
+    "mensagem": "Ol%C3%A1%20Caio%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Caio"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Caio"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
   },
   {
-    "numero": "5511967170191",
-    "nome": "Josué",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Josu%C3%A9%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Josué",
-      "0"
-    ],
-    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+    "numero": "5511998157224",
+    "nome": "Rafael",
+    "mensagem": "Ol%C3%A1%20Rafael%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Rafael"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Rafael"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
   },
   {
-    "numero": "5511967212494",
-    "nome": "Marli",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Marli%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Marli",
-      "0"
-    ],
-    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+    "numero": "5511984023849",
+    "nome": "Amanda",
+    "mensagem": "Ol%C3%A1%20Amanda%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Amanda"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Amanda"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
   },
   {
-    "numero": "5511998196433",
-    "nome": "Antonio",
-    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Antonio%21%0ASeja%20bem%20vindo%21%0A%0AAqui%20na%20Mr.%20Teddy%20cada%20pizza%20comprada%20gera%201%20ponto%20no%20seu%20cart%C3%A3o%20fidelidade.%0AAo%20acumular%2012%20pontos%2C%20voc%C3%AA%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%200%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
-    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\0pontos.png",
-    "force_text_with_media": true,
-    "fallback_template_name": "cartao_fidelidade_update",
-    "fallback_template_params": [
-      "Antonio",
-      "0"
-    ],
-    "log": "Cartão fidelidade (0 pontos) adicionado à fila"
+    "numero": "5511984923194",
+    "nome": "Anni",
+    "mensagem": "Ol%C3%A1%20Anni%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Anni"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Anni"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511982022319",
+    "nome": "Carlos",
+    "mensagem": "Ol%C3%A1%20Carlos%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Carlos"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Carlos"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511947638946",
+    "nome": "Nayanne",
+    "mensagem": "Ol%C3%A1%20Nayanne%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Nayanne"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Nayanne"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511972966602",
+    "nome": "Bruno",
+    "mensagem": "Ol%C3%A1%20Bruno%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Bruno"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Bruno"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511953530384",
+    "nome": "Tabatha",
+    "mensagem": "Ol%C3%A1%20Tabatha%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Tabatha"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Tabatha"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511972500009",
+    "nome": "Julianna",
+    "mensagem": "Ol%C3%A1%20Julianna%21%21%20%F0%9F%8D%95%0A%0AGostou%20da%20pizza%3F%20Nos%20ajude%20deixando%20uma%20avalia%C3%A7%C3%A3o%20no%20Google%2C%20chique%20que%20s%C3%B3%21%0A%0A%2A%2AClique%20aqui%20e%20deixe%20o%20seu%20coment%C3%A1rio%20%2A%2A%0A%0Ahttps%3A//g.page/r/CeJ6t3q6aA2UEAE/review%0A%0AValeu%20pela%20for%C3%A7a%0A%0AUrsosamente%2C%0ATeddy%20%F0%9F%90%BB",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\satisfacao.png",
+    "template_name": "status_finalizado",
+    "template_params": {
+      "nome": "Julianna"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Julianna"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511959446149",
+    "nome": "Weslley",
+    "mensagem": "Ol%C3%A1%20Weslley%21%20O%20Teddy%20j%C3%A1%20esta%20preparando%20a%20sua%20pizza%21%20Em%20breve%20vai%20sair%20do%20forno%21%20%F0%9F%98%8B",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\em_preparacao.mp4",
+    "template_name": "status_em_preparacao",
+    "template_params": {
+      "nome": "Weslley"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "status_em_preparacao",
+    "fallback_template_params": {
+      "nome": "Weslley"
+    },
+    "log": "Status 'P' adicionado à fila de envio"
   }
 ]

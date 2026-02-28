@@ -5,6 +5,10 @@ from utils.formatters import formatar_nome, validar_numero
 from utils.sent_satisfacao import ja_enviado, marcar_como_enviado, registrar_log
 from utils.message_queue import adicionar_na_fila
 import urllib.parse
+import os
+
+TEMPLATE_SATISFACAO = os.getenv("WHATSAPP_TEMPLATE_SATISFACAO", "pesquisa_satisfacao")
+TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATE_SATISFACAO)
 
 ultima_execucao = datetime.min
 
@@ -63,6 +67,11 @@ def run(driver):
             "nome": nome,
             "mensagem": mensagem,
             "caminho_video": None,
+            "template_name": TEMPLATE_SATISFACAO,
+            "template_params": {"nome": nome},
+            "template_lang": "pt_BR",
+            "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
+            "fallback_template_params": {"nome": nome},
             "log": "Pesquisa de satisfação enviada"
         })
         marcar_como_enviado(numero)

@@ -8,6 +8,9 @@ from utils.message_queue import adicionar_na_fila
 import urllib.parse
 import os
 
+TEMPLATE_PROMO_48 = os.getenv("WHATSAPP_TEMPLATE_PROMO_48", "promo_48_reais")
+TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATE_PROMO_48)
+
 
 # Teste execução a cada minuto
 # ultima_execucao = datetime.min
@@ -100,6 +103,11 @@ def run(driver):
             "nome": nome,
             "mensagem": mensagem,
             "caminho_video": caminho_video,
+            "template_name": TEMPLATE_PROMO_48,
+            "template_params": {"nome": nome},
+            "template_lang": "pt_BR",
+            "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
+            "fallback_template_params": {"nome": nome},
             "log": "Clientes 1 pedido com cupom - PROMO R$48"
         })
        

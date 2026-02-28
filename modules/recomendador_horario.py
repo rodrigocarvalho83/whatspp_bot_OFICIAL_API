@@ -9,6 +9,9 @@ from utils.formatters import validar_numero, formatar_nome
 from utils.sent_status import ja_enviado, marcar_como_enviado, registrar_log
 from utils.message_queue import adicionar_na_fila
 
+TEMPLATE_RECOMENDADOR_HORARIO = os.getenv("WHATSAPP_TEMPLATE_RECOMENDADOR_HORARIO", "recomendador_horario_personalizado")
+TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATE_RECOMENDADOR_HORARIO)
+
 # Carregar possíveis preços customizados
 def carregar_precos_customizados(caminho="config/precos_custom.json"):
     if os.path.exists(caminho):
@@ -201,6 +204,11 @@ def run(driver):
             "nome": nome,
             "mensagem": mensagem,
             "caminho_video": caminho_foto,
+            "template_name": TEMPLATE_RECOMENDADOR_HORARIO,
+            "template_params": {"nome": nome, "produto": nome_produto, "preco": f"{preco:.2f}"},
+            "template_lang": "pt_BR",
+            "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
+            "fallback_template_params": {"nome": nome},
             "log": f"ML - Mensagem personalizada enviada para cliente com padrão de horário"
         })
 

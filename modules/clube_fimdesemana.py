@@ -8,6 +8,10 @@ import os
 import json
 import urllib.parse
 
+TEMPLATE_VIP_AGRADECIMENTO = os.getenv("WHATSAPP_TEMPLATE_VIP_AGRADECIMENTO", "vip_fimdesemana_agradecimento")
+TEMPLATE_VIP_SEXTA = os.getenv("WHATSAPP_TEMPLATE_VIP_SEXTA", "vip_fimdesemana_sexta")
+TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATE_VIP_AGRADECIMENTO)
+
 CAMINHO_JSON = "contatos_enviados/vip_fds.json"
 IMAGEM_MIMO = "videos/promocoes/guarana1_5l.png"
 
@@ -94,6 +98,11 @@ Fica de olho… na próxima sexta tem mimo especial só pra quem volta!
                 "numero": numero,
                 "nome": nome,
                 "mensagem": urllib.parse.quote(mensagem1.strip()),
+                "template_name": TEMPLATE_VIP_AGRADECIMENTO,
+                "template_params": {"nome": nome},
+                "template_lang": "pt_BR",
+                "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
+                "fallback_template_params": {"nome": nome},
                 "log": "Mensagem 1 (agradecimento VIP) adicionada à fila"
             })
             novos_registros[numero] = {
@@ -119,6 +128,11 @@ Responda aqui e já garanta sua pizza e seu refri do final de semana🐻🍕
                         "nome": info['nome'],
                         "mensagem": urllib.parse.quote(mensagem2.strip()),
                         "caminho_video": os.path.abspath(IMAGEM_MIMO),
+                        "template_name": TEMPLATE_VIP_SEXTA,
+                        "template_params": {"nome": info["nome"]},
+                        "template_lang": "pt_BR",
+                        "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
+                        "fallback_template_params": {"nome": info["nome"]},
                         "log": "Mensagem 2 (sexta VIP) adicionada à fila"
                     })
                     marcar_como_enviado(numero)

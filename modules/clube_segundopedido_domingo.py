@@ -7,6 +7,9 @@ from utils.message_queue import adicionar_na_fila
 import urllib.parse
 import os
 
+TEMPLATE_SEGUNDO_PEDIDO_LEMBRETE = os.getenv("WHATSAPP_TEMPLATE_SEGUNDO_PEDIDO_LEMBRETE", "clube_segundo_pedido_lembrete")
+TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATE_SEGUNDO_PEDIDO_LEMBRETE)
+
 
 # Teste execução a cada minuto
 #ultima_execucao = datetime.min
@@ -81,6 +84,11 @@ def run(driver):
             "nome": nome,
             "mensagem": mensagem,
             "caminho_video": caminho_video,
+            "template_name": TEMPLATE_SEGUNDO_PEDIDO_LEMBRETE,
+            "template_params": {"nome": nome},
+            "template_lang": "pt_BR",
+            "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
+            "fallback_template_params": {"nome": nome},
             "log": "Reenvio no domingo cupom de segundo pedido enviado para cliente novo"
         })
        

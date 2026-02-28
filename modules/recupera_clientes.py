@@ -8,6 +8,10 @@ from utils.message_queue import adicionar_na_fila
 import urllib.parse
 import os
 
+TEMPLATE_RECUPERA_PROMO_48 = os.getenv("WHATSAPP_TEMPLATE_RECUPERA_PROMO_48", "recupera_promocao_48")
+TEMPLATE_RECUPERA_CUPOM = os.getenv("WHATSAPP_TEMPLATE_RECUPERA_CUPOM", "recupera_oi_sumido")
+TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATE_RECUPERA_PROMO_48)
+
 
 # Teste execução a cada minuto
 # ultima_execucao = datetime.min
@@ -98,10 +102,12 @@ def run(driver):
         if dia_semana in [1, 2, 3]:  # terça, quarta, quinta
             mensagem_texto = random.choice(mensagens_promocao_48).format(nome=nome)
             caminho_video = os.path.abspath("videos/promo/48reais.png")
+            template_name = TEMPLATE_RECUPERA_PROMO_48
             log_mensagem = "Recupera clientes mais de 90d - promoção R$48 enviada"
         elif dia_semana in [4, 5, 6]:  # sexta, sábado, domingo
             mensagem_texto = random.choice(mensagens_cupom_20).format(nome=nome)
             caminho_video = os.path.abspath("vvideos/clube_fimdesemana/teddy_ultimato.mp4")
+            template_name = TEMPLATE_RECUPERA_CUPOM
             log_mensagem = "Recupera clientes mais de 90d - OISUMIDO enviada"
         else:
             continue
@@ -113,6 +119,11 @@ def run(driver):
             "nome": nome,
             "mensagem": mensagem,
             "caminho_video": caminho_video,
+            "template_name": template_name,
+            "template_params": {"nome": nome},
+            "template_lang": "pt_BR",
+            "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
+            "fallback_template_params": {"nome": nome},
             "log": log_mensagem
         })
        

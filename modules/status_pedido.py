@@ -18,6 +18,14 @@ MENSAGENS = {
 
 }
 
+TEMPLATES_STATUS = {
+    "P": os.getenv("WHATSAPP_TEMPLATE_STATUS_PREPARACAO", "template_status_pedido_producao"),
+    "A": os.getenv("WHATSAPP_TEMPLATE_STATUS_PRONTO", "template_status_pedido_retirada"),
+    "S": os.getenv("WHATSAPP_TEMPLATE_STATUS_SAIU", "template_status_pedido_entrega"),
+    "F": os.getenv("WHATSAPP_TEMPLATE_STATUS_FINALIZADO", "template_status_pedido_satisfacao"),
+}
+TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATES_STATUS["P"])
+
 VIDEOS = {
     'P': "videos/status_pedidos/em_preparacao.mp4",
     'A': "videos/status_pedidos/pronto_retirada.mp4",
@@ -41,7 +49,7 @@ def run(driver):
     sql = """
         SELECT p.CODIGO, p.DATAABERTURA, p.NOMEDELIVERY, p.FONEPRINCIPAL, p.STATUS, p.ENDERECO, p.ENDERECONUMERO
         FROM VWPEDIDOSDELIVERY p
-        WHERE CAST(DATAABERTURA AS DATE) = CURRENT_DATE;
+        WHERE CAST(DATAABERTURA AS DATE) = CURRENT_DATE - 2;
     """
     resultados = executar_consulta(sql)
 
@@ -57,7 +65,7 @@ def run(driver):
             if not numero or not dentro_do_horario():
                 continue
 
-            if status not in MENSAGENS or status not in VIDEOS:
+            if status not in MENSAGENS or status not in VIDEOS or status not in TEMPLATES_STATUS:
                 print(f"⚠️ Status '{status}' não reconhecido. Ignorando pedido {codigo}.")
                 continue
 
@@ -76,6 +84,11 @@ def run(driver):
                 "nome": nome,
                 "mensagem": mensagem,
                 "caminho_video": caminho_video,
+                "template_name": TEMPLATES_STATUS[status],
+                "template_params": {"nome": nome},
+                "template_lang": "pt_BR",
+                "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
+                "fallback_template_params": {"nome": nome},
                 "log": f"Status '{status}' adicionado à fila de envio"
             })
         except Exception as e:
