@@ -56,7 +56,7 @@ def run(driver):
     sql = """
         SELECT p.CODIGO, p.DATAABERTURA, p.NOMEDELIVERY, p.FONEPRINCIPAL, p.STATUS, p.ENDERECO, p.ENDERECONUMERO
         FROM VWPEDIDOSDELIVERY p
-        WHERE CAST(DATAABERTURA AS DATE) = CURRENT_DATE - 2;
+        WHERE CAST(DATAABERTURA AS DATE) = CURRENT_DATE - 1;
     """
     resultados = executar_consulta(sql)
 
@@ -86,7 +86,7 @@ def run(driver):
             mensagem = urllib.parse.quote(MENSAGENS[status].format(nome=nome))
             caminho_video = os.path.abspath(VIDEOS[status])
 
-            tipo_midia_template = "image" if status == "F" else "video"
+            tipo_midia_template = "text" if status == "F" else "video"
             
             adicionar_na_fila({
                 "numero": numero,

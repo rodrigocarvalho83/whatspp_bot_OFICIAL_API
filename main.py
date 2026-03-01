@@ -23,7 +23,7 @@ import modules.recomendador_horario as recomendador_horario
 # Adicione seus módulos na ordem desejada aqui
 modulos = [
     ("status_pedido", status_pedido),
-    ("satisfacao", satisfacao),
+    #("satisfacao", satisfacao),
     ("cartao_fidelidade", cartao_fidelidade),
     ("clube_segundopedido", clube_segundopedido),
     ("clube_segundopedido_domingo", clube_segundopedido_domingo),

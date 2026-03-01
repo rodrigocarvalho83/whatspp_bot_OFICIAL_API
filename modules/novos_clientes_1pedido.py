@@ -1,4 +1,4 @@
-# Envia mensagens para pessoas que fizeram só 1 pedido nos ultimos 120 dias sem cupom
+# Envia mensagens para pessoas que fizeram só 1 pedido - mesmo dia do mes há mais de 40 dias.
 from datetime import datetime, timedelta
 import random
 from core.database import executar_consulta
@@ -35,7 +35,7 @@ def dentro_do_horario():
 
 def run(driver):
     sql = """
-        SELECT FIRST 21* FROM (
+       SELECT * FROM (
             select 
                 c.NOME, 
                 c.FONEPRINCIPAL,
@@ -54,7 +54,7 @@ def run(driver):
         WHERE quantidade_pedidos = 1 
             AND valor_gasto > 0 
             AND valor_gasto IS NOT NULL
-            AND ultimo_pedido BETWEEN current_date -127 AND current_date -7
+            AND ultimo_pedido < current_date -20
             AND DIA = EXTRACT(DAY FROM CURRENT_DATE)
         ORDER BY valor_gasto desc;
     """

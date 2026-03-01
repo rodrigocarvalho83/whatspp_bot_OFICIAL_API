@@ -1,4 +1,4 @@
-# Envia mensagens para pessoas que fizeram mais de 2 pedido e já não pedem a mais de 40 dias
+# Envia mensagens para pessoas que fizeram 2 ou mais pedidos e já não pedem a mais de 40 dias
 from datetime import datetime, timedelta
 import random
 from core.database import executar_consulta
@@ -35,7 +35,7 @@ def dentro_do_horario():
 
 def run(driver):
     sql = """
-		SELECT FIRST 24 * FROM
+		SELECT * FROM
 		(select
             c.NOME, 
             c.FONEPRINCIPAL,
@@ -51,7 +51,7 @@ def run(driver):
             WHERE (FONEPRINCIPAL IS NOT NULL AND  FONEPRINCIPAL != '00000-0000' AND FONEPRINCIPAL != '') AND c.nome NOT LIKE '%*Excluído * %'
             GROUP BY c.NOME, c.FONEPRINCIPAL 
             ORDER BY valor_gasto DESC)
-		WHERE dia = EXTRACT(DAY FROM CURRENT_DATE) AND ULTIMO_PEDIDO < CURRENT_DATE - 40 and QUANTIDADE_PEDIDOS > 2
+		WHERE dia = EXTRACT(DAY FROM CURRENT_DATE) AND ULTIMO_PEDIDO < CURRENT_DATE - 40 and QUANTIDADE_PEDIDOS >= 2
 		ORDER BY valor_gasto desc, ultimo_pedido desc;
     """
     mensagens_promocao_48 = [
