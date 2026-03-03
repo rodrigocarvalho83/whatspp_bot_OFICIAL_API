@@ -8,9 +8,30 @@ from utils.message_queue import adicionar_na_fila
 import urllib.parse
 import os
 
-TEMPLATE_RECUPERA_PROMO_48 = os.getenv("WHATSAPP_TEMPLATE_RECUPERA_PROMO_48", "recupera_promocao_48")
-TEMPLATE_RECUPERA_CUPOM = os.getenv("WHATSAPP_TEMPLATE_RECUPERA_CUPOM", "recupera_oi_sumido")
-TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATE_RECUPERA_PROMO_48)
+TEMPLATES_RECUPERA_PROMO_48 = [
+    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_PROMO_1", "template_recupera_cliente_promo_1"),
+    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_PROMO_2", "template_recupera_cliente_promo_2"),
+    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_PROMO_3", "template_recupera_cliente_promo_3"),
+    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_PROMO_4", "template_recupera_cliente_promo_4"),
+]
+
+TEMPLATES_RECUPERA_CUPOM_20 = [
+    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_CUPOM_1", "template_recupera_cliente_cupom_1"),
+    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_CUPOM_2", "template_recupera_cliente_cupom_2"),
+    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_CUPOM_3", "template_recupera_cliente_cupom_3"),
+    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_CUPOM_4", "template_recupera_cliente_cupom_4"),
+]
+
+TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATES_RECUPERA_PROMO_48[0])
+
+TEMPLATE_HEADER_VIDEO_PROMO_48 = os.getenv(
+    "WHATSAPP_TEMPLATE_RECUPERA_PROMO_VIDEO_URL",
+    "https://mrteddypizza.com.br/midia/clube_fimdesemana/teddy_ultimato.mp4",
+)
+TEMPLATE_HEADER_VIDEO_CUPOM_20 = os.getenv(
+    "WHATSAPP_TEMPLATE_RECUPERA_CUPOM_VIDEO_URL",
+    "https://mrteddypizza.com.br/midia/clube_fimdesemana/teddy_ultimato.mp4",
+)
 
 
 # Teste execução a cada minuto
@@ -101,14 +122,16 @@ def run(driver):
 
         if dia_semana in [1, 2, 3]:  # terça, quarta, quinta
             mensagem_texto = random.choice(mensagens_promocao_48).format(nome=nome)
-            caminho_video = os.path.abspath("videos/promo/48reais.png")
-            template_name = TEMPLATE_RECUPERA_PROMO_48
-            log_mensagem = "Recupera clientes mais de 90d - promoção R$48 enviada"
+            caminho_video = os.path.abspath("videos/clube_fimdesemana/teddy_ultimato.mp4")
+            template_name = random.choice(TEMPLATES_RECUPERA_PROMO_48)
+            template_header_media = {"type": "video", "link": TEMPLATE_HEADER_VIDEO_PROMO_48}
+            log_mensagem = f"Recupera clientes mais de 90d - promoção R$48 enviada (template={template_name})"
         elif dia_semana in [4, 5, 6]:  # sexta, sábado, domingo
             mensagem_texto = random.choice(mensagens_cupom_20).format(nome=nome)
-            caminho_video = os.path.abspath("vvideos/clube_fimdesemana/teddy_ultimato.mp4")
-            template_name = TEMPLATE_RECUPERA_CUPOM
-            log_mensagem = "Recupera clientes mais de 90d - OISUMIDO enviada"
+            caminho_video = os.path.abspath("videos/clube_fimdesemana/teddy_ultimato.mp4")
+            template_name = random.choice(TEMPLATES_RECUPERA_CUPOM_20)
+            template_header_media = {"type": "video", "link": TEMPLATE_HEADER_VIDEO_CUPOM_20}
+            log_mensagem = f"Recupera clientes mais de 90d - OISUMIDO enviada (template={template_name})"
         else:
             continue
 
@@ -122,6 +145,7 @@ def run(driver):
             "template_name": template_name,
             "template_params": {"nome": nome},
             "template_lang": "pt_BR",
+            "template_header_media": template_header_media,
             "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
             "fallback_template_params": {"nome": nome},
             "log": log_mensagem

@@ -1,1 +1,127 @@
-[]
+[
+  {
+    "numero": "5511984896954",
+    "nome": "Weslley",
+    "mensagem": "Ol%C3%A1%20Weslley%21%20O%20Teddy%20j%C3%A1%20esta%20preparando%20a%20sua%20pizza%21%20Em%20breve%20vai%20sair%20do%20forno%21%20%F0%9F%98%8B",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\em_preparacao.mp4",
+    "template_name": "template_status_pedido_producao",
+    "template_params": {
+      "nome": "Weslley"
+    },
+    "template_header_media": {
+      "type": "video",
+      "link": "https://mrteddypizza.com.br/midia/status_pedidos/em_preparacao.mp4"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "template_status_pedido_producao",
+    "fallback_template_params": {
+      "nome": "Weslley"
+    },
+    "log": "Status 'P' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511984896954",
+    "nome": "Weslley",
+    "mensagem": "Ol%C3%A1%20Weslley%21%20O%20Teddy%20j%C3%A1%20esta%20preparando%20a%20sua%20pizza%21%20Em%20breve%20vai%20sair%20do%20forno%21%20%F0%9F%98%8B",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\em_preparacao.mp4",
+    "template_name": "template_status_pedido_retirada",
+    "template_params": {
+      "nome": "Weslley"
+    },
+    "template_header_media": {
+      "type": "video",
+      "link": "https://mrteddypizza.com.br/midia/status_pedidos/pronto_retirada.mp4"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "template_status_pedido_retirada",
+    "fallback_template_params": {
+      "nome": "Weslley"
+    },
+    "log": "Status 'A' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511984896954",
+    "nome": "Weslley",
+    "mensagem": "Ol%C3%A1%20Weslley%21%20O%20Teddy%20j%C3%A1%20esta%20preparando%20a%20sua%20pizza%21%20Em%20breve%20vai%20sair%20do%20forno%21%20%F0%9F%98%8B",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\em_preparacao.mp4",
+    "template_name": "template_status_pedido_entrega",
+    "template_params": {
+      "nome": "Weslley"
+    },
+    "template_header_media": {
+      "type": "video",
+      "link": "https://mrteddypizza.com.br/midia/status_pedidos/saiu_entrega.mp4"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "template_status_pedido_entrega",
+    "fallback_template_params": {
+      "nome": "Weslley"
+    },
+    "log": "Status 'S' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511984896954",
+    "nome": "Weslley",
+    "mensagem": "Ol%C3%A1%20Weslley%21%20O%20Teddy%20j%C3%A1%20esta%20preparando%20a%20sua%20pizza%21%20Em%20breve%20vai%20sair%20do%20forno%21%20%F0%9F%98%8B",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\status_pedidos\\em_preparacao.mp4",
+    "template_name": "template_status_pedido_satisfacao",
+    "template_params": {
+      "nome": "Weslley"
+    },
+    "template_header_media": {
+      "type": "text",
+      "link": "https://mrteddypizza.com.br/midia/status_pedidos/satisfacao.png"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "template_status_pedido_satisfacao",
+    "fallback_template_params": {
+      "nome": "Weslley"
+    },
+    "log": "Status 'F' adicionado à fila de envio"
+  },
+  {
+    "numero": "5511947985908",
+    "nome": "Theo",
+    "mensagem": "Teddy%20aqui.%2040%20dias%20sem%20sinal%20de%20vida%2C%20Theo%3F%0AA%C3%AD%20vai%20um%20presente%20de%20reconcilia%C3%A7%C3%A3o%3A%20%2A20%25%20OFF%2A%20no%20fim%20de%20semana%20com%20o%20%2Acupom%20OISUMIDO%2A.%0A%0ASe%20n%C3%A3o%20aceitar%2C%20vou%20chorar%20no%20forno.%0A%0Ahttps%3A//vilamaria.mrteddypizza.com.br%0A%0A%2AAbertura%20da%20pizzaria%3A%2018%3A00hrs%2A",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\vvideos\\clube_fimdesemana\\teddy_ultimato.mp4",
+    "template_name": "recupera_oi_sumido",
+    "template_params": {
+      "nome": "Theo"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "recupera_promocao_48",
+    "fallback_template_params": {
+      "nome": "Theo"
+    },
+    "log": "Recupera clientes mais de 90d - OISUMIDO enviada"
+  },
+  {
+    "numero": "5511985262976",
+    "nome": "Roberto",
+    "mensagem": "Roberto%2C%20aqui%20%C3%A9%20o%20Teddy.%0AVoc%C3%AA%20sumiu%20por%202%20meses%E2%80%A6%20mas%20eu%20perdoo.%0ASe%20usar%20o%20%2Acupom%20OISUMIDO%2A%20no%20fim%20de%20semana.%20%F0%9F%98%8F%0A%0Ahttps%3A//vilamaria.mrteddypizza.com.br%0A%0A%2AAbertura%20da%20pizzaria%3A%2018%3A00hrs%2A",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\vvideos\\clube_fimdesemana\\teddy_ultimato.mp4",
+    "template_name": "recupera_oi_sumido",
+    "template_params": {
+      "nome": "Roberto"
+    },
+    "template_lang": "pt_BR",
+    "fallback_template_name": "recupera_promocao_48",
+    "fallback_template_params": {
+      "nome": "Roberto"
+    },
+    "log": "Recupera clientes mais de 90d - OISUMIDO enviada"
+  },
+  {
+    "numero": "5511996733001",
+    "nome": "Julianna",
+    "mensagem": "%2ACART%C3%83O%20FIDELIDADE%20MR.%20TEDDY%2A%0AOl%C3%A1%2C%20Julianna%21%0A%0A%2APARAB%C3%89NS%21%21%21%2A%0AVoc%C3%AA%20acumulou%2050%20pontos%20e%20pode%20troc%C3%A1-los%20por%20uma%20pizza%20%2ATradicional%20GR%C3%81TIS%2A%21%21%0A%0A%2ASALDO%20DE%20PONTOS%3A%2A%2050%0AAproveite%20a%20promo%C3%A7%C3%A3o.%0AEquipe%20Mr.%20Teddy",
+    "caminho_video": "C:\\Users\\rodri\\iCloudDrive\\Development\\whatsapp-bot_API\\whatsapp-bot_API\\videos\\cartao\\12pontos.png",
+    "force_text_with_media": true,
+    "fallback_template_name": "cartao_fidelidade_update",
+    "fallback_template_params": [
+      "Julianna",
+      "50"
+    ],
+    "log": "Cartão fidelidade (50 pontos) adicionado à fila"
+  }
+]
