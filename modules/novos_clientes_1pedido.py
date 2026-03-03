@@ -8,9 +8,26 @@ from utils.message_queue import adicionar_na_fila
 import urllib.parse
 import os
 
-TEMPLATE_NOVO_CLIENTE_PROMO_48 = os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_PROMO_48", "novo_cliente_promocao_48")
-TEMPLATE_NOVO_CLIENTE_SEGUNDO_PEDIDO = os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_SEGUNDO_PEDIDO", "novo_cliente_segundo_pedido")
-TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATE_NOVO_CLIENTE_PROMO_48)
+TEMPLATES_NOVO_CLIENTE_PROMO_48 = [
+    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_PROMO_1", "template_novos_clientes_1pedido_promo_1_48"),
+    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_PROMO_2", "template_novos_clientes_1pedido_promo_1_48"),
+    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_PROMO_3", "template_novos_clientes_1pedido_promo_1_48"),
+]
+TEMPLATES_NOVO_CLIENTE_CUPOM_20 = [
+    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_CUPOM_1", "template_novos_clientes_1pedido_cupom_1_48"),
+    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_CUPOM_2", "template_novos_clientes_1pedido_cupom_2_48"),
+    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_CUPOM_3", "template_novos_clientes_1pedido_cupom_1_48"),
+]
+TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATES_NOVO_CLIENTE_PROMO_48[0])
+
+TEMPLATE_HEADER_IMAGE_PROMO_48 = os.getenv(
+    "WHATSAPP_TEMPLATE_NOVO_CLIENTE_PROMO_IMAGE_URL",
+    "https://mrteddypizza.com.br/midia/promo/48reais.png",
+)
+TEMPLATE_HEADER_IMAGE_CUPOM_20 = os.getenv(
+    "WHATSAPP_TEMPLATE_NOVO_CLIENTE_CUPOM_IMAGE_URL",
+    "https://mrteddypizza.com.br/midia/promo/48reais.png",
+)
 
 
 # Teste execução a cada minuto
@@ -27,7 +44,7 @@ TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMP
 
 def should_run():
     agora = datetime.now()
-    return agora.strftime('%H:%M') == '17:48' and agora.weekday() != 0  # Não roda na segunda-feira
+    return agora.strftime('%H:%M') == '19:00' and agora.weekday() != 0  # Não roda na segunda-feira
 
 def dentro_do_horario():
     hora = datetime.now().time()
@@ -92,13 +109,15 @@ def run(driver):
         if dia_semana in [1, 2, 3]:  # terça, quarta, quinta
             mensagem_texto = random.choice(mensagens_promocao_48).format(nome=nome)
             caminho_video = os.path.abspath("videos/promo/48reais.png")
-            template_name = TEMPLATE_NOVO_CLIENTE_PROMO_48
-            log_mensagem = "Mensagem para cliente novo - promoção R$48 enviada"
+            template_name = random.choice(TEMPLATES_NOVO_CLIENTE_PROMO_48)
+            template_header_media = {"type": "image", "link": TEMPLATE_HEADER_IMAGE_PROMO_48}
+            log_mensagem = f"Mensagem para cliente novo - promoção R$48 enviada (template={template_name})"
         elif dia_semana in [4, 5, 6]:  # sexta, sábado, domingo
             mensagem_texto = random.choice(mensagens_cupom_20).format(nome=nome)
-            caminho_video = os.path.abspath("videos/clube_fimdesemana/teddy_ultimato.mp4")
-            template_name = TEMPLATE_NOVO_CLIENTE_SEGUNDO_PEDIDO
-            log_mensagem = "Cliente novo 1 pedido 120 dias sem cupom- SEGUNDOPEDIDO enviada"
+            caminho_video = os.path.abspath("videos/promo/teddy_bravo.jpeg")
+            template_name = random.choice(TEMPLATES_NOVO_CLIENTE_CUPOM_20)
+            template_header_media = {"type": "image", "link": TEMPLATE_HEADER_IMAGE_CUPOM_20}
+            log_mensagem = f"Cliente novo 1 pedido 120 dias sem cupom- SEGUNDOPEDIDO enviada (template={template_name})"
         else:
             continue
 
@@ -112,6 +131,7 @@ def run(driver):
             "template_name": template_name,
             "template_params": {"nome": nome},
             "template_lang": "pt_BR",
+            "template_header_media": template_header_media,
             "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
             "fallback_template_params": {"nome": nome},
             "log": log_mensagem
