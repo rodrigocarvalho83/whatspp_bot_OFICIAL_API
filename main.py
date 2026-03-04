@@ -1,5 +1,6 @@
 # main.py
 import time
+from modules import disparo_sob_demanda
 from utils.message_queue import processar_fila
 from core.whatsapp_cloud import WhatsAppCloudAPI
 import os
@@ -29,14 +30,12 @@ modulos = [
     #("promo_48", promo_48),
     #("clube_fimdesemana", clube_fimdesemana),
     #("recomendador_horario", recomendador_horario),
-
+    #("disparo_sob_demanda", disparo_sob_demanda), -> PRECISO CORRIGIR A QUERY
 
 #Módulos já funcionais com WhatsApp API
     ("status_pedido", status_pedido),
-    ("recupera_clientes", recupera_clientes)
-    ("novos_clientes_1pedido", novos_clientes_1pedido)
-    
-    
+    ("recupera_clientes", recupera_clientes),
+    ("novos_clientes_1pedido", novos_clientes_1pedido)   
 ]
 
 # Configuração da rotação do log

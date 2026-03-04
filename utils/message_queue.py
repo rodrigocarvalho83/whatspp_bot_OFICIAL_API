@@ -9,6 +9,7 @@ from core.whatsapp_cloud import WhatsAppCloudAPI
 FILA_PATH = "log/fila_mensagens.json"
 ENTREGAS_PATH = "log/entregas_cloud_api.json"
 BLACKLIST_PATH = "config/blacklist.json"
+ENTREGAS_MAX_BYTES = 5 * 1024 * 1024  # 5 MB
 os.makedirs("log", exist_ok=True)
 os.makedirs("config", exist_ok=True)
 
@@ -107,6 +108,36 @@ def salvar_fila():
     with open(FILA_PATH, "w", encoding="utf-8") as f:
         json.dump(fila, f, ensure_ascii=False, indent=2)
 
+def _limitar_tamanho_entregas(registros, limite_bytes=ENTREGAS_MAX_BYTES):
+    if not isinstance(registros, list):
+        return []
+
+    conteudo = json.dumps(registros, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    if len(conteudo) <= limite_bytes:
+        return registros
+
+    inicio_ideal = None
+    esquerda = 0
+    direita = len(registros) - 1
+
+    # Busca binaria para encontrar o menor recorte que cabe no limite.
+    while esquerda <= direita:
+        meio = (esquerda + direita) // 2
+        recorte = registros[meio:]
+        tamanho_recorte = len(
+            json.dumps(recorte, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+        )
+        if tamanho_recorte <= limite_bytes:
+            inicio_ideal = meio
+            direita = meio - 1
+        else:
+            esquerda = meio + 1
+
+    if inicio_ideal is None:
+        return registros[-1:] if registros else []
+
+    return registros[inicio_ideal:]
+
 def registrar_entrega_aceita(numero, nome, resposta):
     registros = []
     if os.path.exists(ENTREGAS_PATH):
@@ -127,6 +158,7 @@ def registrar_entrega_aceita(numero, nome, resposta):
         "status": "accepted_by_cloud_api",
         "timestamp": time.time(),
     })
+    registros = _limitar_tamanho_entregas(registros)
 
     with open(ENTREGAS_PATH, "w", encoding="utf-8") as f:
         json.dump(registros, f, ensure_ascii=False, indent=2)
