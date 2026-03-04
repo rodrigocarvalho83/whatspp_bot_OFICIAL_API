@@ -56,7 +56,8 @@ def run(driver):
     sql = """
         SELECT p.CODIGO, p.DATAABERTURA, p.NOMEDELIVERY, p.FONEPRINCIPAL, p.STATUS, p.ENDERECO, p.ENDERECONUMERO
         FROM VWPEDIDOSDELIVERY p
-        WHERE CAST(DATAABERTURA AS DATE) = CURRENT_DATE - 1;
+        WHERE CAST(DATAABERTURA AS DATE) = CURRENT_DATE;
+
     """
     resultados = executar_consulta(sql)
 

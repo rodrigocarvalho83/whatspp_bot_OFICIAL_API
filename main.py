@@ -22,16 +22,19 @@ import modules.recomendador_horario as recomendador_horario
 
 # Adicione seus módulos na ordem desejada aqui
 modulos = [
-    #("status_pedido", status_pedido),
     #("satisfacao", satisfacao),
     #("cartao_fidelidade", cartao_fidelidade),
     #("clube_segundopedido", clube_segundopedido),
     #("clube_segundopedido_domingo", clube_segundopedido_domingo),
     #("promo_48", promo_48),
-    ("novos_clientes_1pedido", novos_clientes_1pedido),
     #("clube_fimdesemana", clube_fimdesemana),
     #("recomendador_horario", recomendador_horario),
-    #("recupera_clientes", recupera_clientes)
+
+
+#Módulos já funcionais com WhatsApp API
+    ("status_pedido", status_pedido),
+    ("recupera_clientes", recupera_clientes)
+    ("novos_clientes_1pedido", novos_clientes_1pedido)
     
     
 ]
