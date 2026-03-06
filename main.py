@@ -13,29 +13,26 @@ from datetime import datetime
 import modules.status_pedido as status_pedido
 import modules.satisfacao as satisfacao
 import modules.cartao_fidelidade as cartao_fidelidade
-import modules.clube_fimdesemana as clube_fimdesemana
 import modules.clube_segundopedido as clube_segundopedido
 import modules.clube_segundopedido_domingo as clube_segundopedido_domingo
-import modules.promo_48 as promo_48
 import modules.novos_clientes_1pedido as novos_clientes_1pedido
 import modules.recupera_clientes as recupera_clientes
 import modules.recomendador_horario as recomendador_horario
+import modules.disparo_sob_demanda as disparo_sob_demanda
 
 # Adicione seus módulos na ordem desejada aqui
 modulos = [
     #("satisfacao", satisfacao),
-    #("cartao_fidelidade", cartao_fidelidade),
-    #("clube_segundopedido", clube_segundopedido),
-    #("clube_segundopedido_domingo", clube_segundopedido_domingo),
-    #("promo_48", promo_48),
-    #("clube_fimdesemana", clube_fimdesemana),
     #("recomendador_horario", recomendador_horario),
-    #("disparo_sob_demanda", disparo_sob_demanda), -> PRECISO CORRIGIR A QUERY
 
 #Módulos já funcionais com WhatsApp API
     ("status_pedido", status_pedido),
     ("recupera_clientes", recupera_clientes),
-    ("novos_clientes_1pedido", novos_clientes_1pedido)   
+    ("novos_clientes_1pedido", novos_clientes_1pedido),
+    ("disparo_sob_demanda", disparo_sob_demanda),
+    ("cartao_fidelidade", cartao_fidelidade),
+    ("clube_segundopedido", clube_segundopedido),
+    ("clube_segundopedido_domingo", clube_segundopedido_domingo),    
 ]
 
 # Configuração da rotação do log

@@ -44,7 +44,7 @@ TEMPLATE_HEADER_IMAGE_CUPOM_20 = os.getenv(
 
 def should_run():
     agora = datetime.now()
-    return agora.strftime('%H:%M') == '17:50:00' and agora.weekday() != 0  # Não roda na segunda-feira
+    return agora.strftime('%H:%M') == '18:04' and agora.weekday() != 0  # Não roda na segunda-feira
 
 def dentro_do_horario():
     hora = datetime.now().time()
@@ -117,7 +117,7 @@ def run(driver):
             caminho_video = os.path.abspath("videos/promo/teddy_bravo.jpeg")
             template_name = random.choice(TEMPLATES_NOVO_CLIENTE_CUPOM_20)
             template_header_media = {"type": "image", "link": TEMPLATE_HEADER_IMAGE_CUPOM_20}
-            log_mensagem = f"Cliente novo 1 pedido 120 dias sem cupom- SEGUNDOPEDIDO enviada (template={template_name})"
+            log_mensagem = f"Cliente novo 1 pedido a mais de 40 dias - SEGUNDOPEDIDO enviada (template={template_name})"
         else:
             continue
 

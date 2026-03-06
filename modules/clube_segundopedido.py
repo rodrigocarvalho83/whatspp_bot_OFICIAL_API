@@ -7,8 +7,12 @@ from utils.message_queue import adicionar_na_fila
 import urllib.parse
 import os
 
-TEMPLATE_SEGUNDO_PEDIDO = os.getenv("WHATSAPP_TEMPLATE_SEGUNDO_PEDIDO", "clube_segundo_pedido")
+TEMPLATE_SEGUNDO_PEDIDO = os.getenv("WHATSAPP_TEMPLATE_SEGUNDO_PEDIDO", "template_clube_segundopedido")
 TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATE_SEGUNDO_PEDIDO)
+TEMPLATE_HEADER_IMAGE_URL = os.getenv(
+    "WHATSAPP_TEMPLATE_SEGUNDO_PEDIDO_HEADER_IMAGE_URL",
+    "https://mrteddypizza.com.br/midia/clube_fimdesemana/teddy_convite.png",
+)
 
 
 # Teste execução a cada minuto
@@ -78,7 +82,7 @@ def run(driver):
         )
         
         mensagem = urllib.parse.quote(mensagem_texto)
-        caminho_video = os.path.abspath("videos/clube_fimdesemana/teddy_convite.mp4")
+        caminho_video = os.path.abspath("videos/clube_fimdesemana/teddy_convite.jpg")
                 
         adicionar_na_fila({
             "numero": numero,
@@ -88,6 +92,7 @@ def run(driver):
             "template_name": TEMPLATE_SEGUNDO_PEDIDO,
             "template_params": {"nome": nome},
             "template_lang": "pt_BR",
+            "template_header_media": {"type": "image", "link": TEMPLATE_HEADER_IMAGE_URL},
             "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
             "fallback_template_params": {"nome": nome},
             "log": "Cupom de segundo pedido enviado para cliente novo"

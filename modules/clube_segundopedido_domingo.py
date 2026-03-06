@@ -7,8 +7,12 @@ from utils.message_queue import adicionar_na_fila
 import urllib.parse
 import os
 
-TEMPLATE_SEGUNDO_PEDIDO_LEMBRETE = os.getenv("WHATSAPP_TEMPLATE_SEGUNDO_PEDIDO_LEMBRETE", "clube_segundo_pedido_lembrete")
+TEMPLATE_SEGUNDO_PEDIDO_LEMBRETE = os.getenv("WHATSAPP_TEMPLATE_SEGUNDO_PEDIDO_LEMBRETE", "template_clube_segundopedido_domingo")
 TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATE_SEGUNDO_PEDIDO_LEMBRETE)
+TEMPLATE_HEADER_VIDEO_URL = os.getenv(
+    "WHATSAPP_TEMPLATE_SEGUNDO_PEDIDO_DOMINGO_HEADER_VIDEO_URL",
+    "https://mrteddypizza.com.br/midia/clube_fimdesemana/teddy_ultimato.mp4",
+)
 
 
 # Teste execução a cada minuto
@@ -87,6 +91,7 @@ def run(driver):
             "template_name": TEMPLATE_SEGUNDO_PEDIDO_LEMBRETE,
             "template_params": {"nome": nome},
             "template_lang": "pt_BR",
+            "template_header_media": {"type": "video", "link": TEMPLATE_HEADER_VIDEO_URL},
             "fallback_template_name": TEMPLATE_REENGAJAMENTO_MARKETING,
             "fallback_template_params": {"nome": nome},
             "log": "Reenvio no domingo cupom de segundo pedido enviado para cliente novo"

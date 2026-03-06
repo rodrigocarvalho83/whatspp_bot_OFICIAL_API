@@ -48,7 +48,7 @@ TEMPLATE_HEADER_VIDEO_CUPOM_20 = os.getenv(
 
 def should_run():
     agora = datetime.now()
-    return agora.strftime('%H:%M') == '15:40' and agora.weekday() != 0  # Não roda na segunda-feira
+    return agora.strftime('%H:%M') == '18:09' and agora.weekday() != 0  # Não roda na segunda-feira
 
 def dentro_do_horario():
     hora = datetime.now().time()
