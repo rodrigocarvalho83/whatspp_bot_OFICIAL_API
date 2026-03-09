@@ -14,9 +14,9 @@ TEMPLATES_NOVO_CLIENTE_PROMO_48 = [
     os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_PROMO_3", "template_novos_clientes_1pedido_promo_1_48"),
 ]
 TEMPLATES_NOVO_CLIENTE_CUPOM_20 = [
-    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_CUPOM_1", "template_novos_clientes_1pedido_cupom_1_48"),
-    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_CUPOM_2", "template_novos_clientes_1pedido_cupom_2_48"),
-    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_CUPOM_3", "template_novos_clientes_1pedido_cupom_1_48"),
+    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_CUPOM_1", "template_novos_clientes_1pedido_cupom_1"),
+    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_CUPOM_2", "template_novos_clientes_1pedido_cupom_2"),
+    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_CUPOM_3", "template_novos_clientes_1pedido_cupom_3"),
 ]
 TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMPLATES_NOVO_CLIENTE_PROMO_48[0])
 
@@ -44,7 +44,7 @@ TEMPLATE_HEADER_IMAGE_CUPOM_20 = os.getenv(
 
 def should_run():
     agora = datetime.now()
-    return agora.strftime('%H:%M') == '18:04' and agora.weekday() != 0  # Não roda na segunda-feira
+    return agora.strftime('%H:%M') == '18:17' and agora.weekday() != 0  # Não roda na segunda-feira
 
 def dentro_do_horario():
     hora = datetime.now().time()

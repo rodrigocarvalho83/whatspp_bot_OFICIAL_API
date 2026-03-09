@@ -15,6 +15,8 @@ os.makedirs("config", exist_ok=True)
 
 fila = []
 cloud_api = WhatsAppCloudAPI()
+DRY_RUN_MODE = os.getenv("WHATSAPP_DRY_RUN", "0").strip().lower() in {"1", "true", "sim", "yes"}
+TEST_NUMBER = os.getenv("WHATSAPP_TEST_NUMBER", "").strip()
 
 def _normalizar_parametros_template(template_name, template_params, item, usar_chaves_fallback=False):
     if isinstance(template_params, dict):
@@ -82,6 +84,11 @@ def carregar_blacklist():
 def adicionar_na_fila(mensagem_dict):
     blacklist = carregar_blacklist()
     numero = mensagem_dict["numero"]
+
+    if TEST_NUMBER:
+        mensagem_dict["numero"] = TEST_NUMBER
+        numero = TEST_NUMBER
+        print(f"🧪 Modo teste ativo: redirecionando envio para {TEST_NUMBER}")
 
     if numero in blacklist:
         # Barrado pela blacklist
@@ -166,7 +173,7 @@ def registrar_entrega_aceita(numero, nome, resposta):
 
 def processar_fila(driver=None):
     global fila
-    if not cloud_api.esta_configurado():
+    if not cloud_api.esta_configurado() and not DRY_RUN_MODE:
         print("❌ Cloud API não configurada. Fila não processada.")
         return
     
@@ -191,21 +198,32 @@ def processar_fila(driver=None):
             template_name, template_params, template_lang, template_header_media = _extrair_template_do_item(item)
 
             print(f"➡️ Enviando item {indice}/{total_itens} para {numero} ({nome})...")
-            
-            if template_name:
-                resposta = cloud_api.enviar_template(
-                    numero,
-                    template_name,
-                    template_params,
-                    template_lang,
-                    template_header_media,
+
+            if DRY_RUN_MODE:
+                resposta = {
+                    "contacts": [{"wa_id": numero}],
+                    "messages": [{"id": f"dry-run-{int(time.time() * 1000)}"}],
+                }
+                print(
+                    "🧪 DRY RUN: envio simulado "
+                    f"(numero={numero}, template={template_name}, "
+                    f"tem_midia_local={bool(caminho_video)}, tem_header={bool(template_header_media)})"
                 )
-            elif caminho_video and os.path.exists(caminho_video):
-                resposta = cloud_api.enviar_midia(numero, caminho_video, mensagem)
-                if mensagem and item.get("force_text_with_media"):
-                    cloud_api.enviar_texto(numero, mensagem)
             else:
-                resposta = cloud_api.enviar_texto(numero, mensagem)
+                if template_name:
+                    resposta = cloud_api.enviar_template(
+                        numero,
+                        template_name,
+                        template_params,
+                        template_lang,
+                        template_header_media,
+                    )
+                elif caminho_video and os.path.exists(caminho_video):
+                    resposta = cloud_api.enviar_midia(numero, caminho_video, mensagem)
+                    if mensagem and item.get("force_text_with_media"):
+                        cloud_api.enviar_texto(numero, mensagem)
+                else:
+                    resposta = cloud_api.enviar_texto(numero, mensagem)
 
             wa_id = ((resposta or {}).get("contacts") or [{}])[0].get("wa_id", "desconhecido")
             message_id = ((resposta or {}).get("messages") or [{}])[0].get("id", "sem-id")

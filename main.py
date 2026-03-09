@@ -18,6 +18,7 @@ import modules.clube_segundopedido_domingo as clube_segundopedido_domingo
 import modules.novos_clientes_1pedido as novos_clientes_1pedido
 import modules.recupera_clientes as recupera_clientes
 import modules.recomendador_horario as recomendador_horario
+import modules.recomendador_habito_30d as recomendador_habito_30d
 import modules.disparo_sob_demanda as disparo_sob_demanda
 
 # Adicione seus módulos na ordem desejada aqui
@@ -32,7 +33,8 @@ modulos = [
     ("disparo_sob_demanda", disparo_sob_demanda),
     ("cartao_fidelidade", cartao_fidelidade),
     ("clube_segundopedido", clube_segundopedido),
-    ("clube_segundopedido_domingo", clube_segundopedido_domingo),    
+    ("clube_segundopedido_domingo", clube_segundopedido_domingo),
+    ("recomendador_habito_30d", recomendador_habito_30d),
 ]
 
 # Configuração da rotação do log
@@ -72,7 +74,9 @@ def main():
 
     print("🟢 Iniciando bot de WhatsApp...\n")
     cloud_api = WhatsAppCloudAPI()
-    if not cloud_api.esta_configurado():
+    dry_run_mode = os.getenv("WHATSAPP_DRY_RUN", "0").strip().lower() in {"1", "true", "sim", "yes"}
+
+    if not cloud_api.esta_configurado() and not dry_run_mode:
         faltando = ", ".join(cloud_api.campos_faltando())
         print("❌ Cloud API não configurada.")
         print(f"Defina as variáveis: {faltando}")
@@ -80,8 +84,13 @@ def main():
         print('$env:WHATSAPP_ACCESS_TOKEN="seu_token"')
         print('$env:WHATSAPP_PHONE_NUMBER_ID="seu_phone_number_id"')
         return
+    elif dry_run_mode and not cloud_api.esta_configurado():
+        print("🧪 WHATSAPP_DRY_RUN=1 ativo: execução permitida sem credenciais da Cloud API.")
 
-    print("☁️ Cloud API configurada. Execução 100% via API oficial.")
+    if dry_run_mode:
+        print("🧪 Modo DRY RUN ativo. Nenhuma mensagem será enviada para a API oficial.")
+    else:
+        print("☁️ Cloud API configurada. Execução 100% via API oficial.")
     try:
         while True:
             for nome, modulo in modulos:

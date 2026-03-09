@@ -6,3 +6,4 @@ pytest
 webdriver-manager
 requests
 python-dotenv
+pillow
