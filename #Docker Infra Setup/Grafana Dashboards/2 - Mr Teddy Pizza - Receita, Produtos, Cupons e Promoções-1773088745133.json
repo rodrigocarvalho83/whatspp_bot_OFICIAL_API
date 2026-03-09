@@ -1,0 +1,1436 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "currencyBRL"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"SELECT\\n  SUM(p.VALORTOTAL) AS FATURAMENTO_BRUTO\\nFROM PEDIDOS p\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Faturamento Bruto dos Pedidos",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "currencyBRL"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 3,
+        "x": 6,
+        "y": 0
+      },
+      "id": 5,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"SELECT\\n  SUM(COALESCE(ip.VALORTOTAL, CAST(ip.QUANTIDADE * ip.VALORUNITARIO AS DECIMAL(16,4)))) AS FATURAMENTO_PROMO\\nFROM ITENSPEDIDO ip\\nINNER JOIN PEDIDOS p ON p.CODIGO = ip.CODIGOPEDIDO\\nINNER JOIN ITEMPEDIDOPROMOCAO ipp ON ipp.CODIGOPROITEMPEDIDO = ip.CODIGO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND ip.DATADELETE IS NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Faturamento de Itens Promocionais",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 9,
+        "y": 0
+      },
+      "id": 6,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"SELECT\\n  SUM(ip.QUANTIDADE) AS ITENS_PROMO\\nFROM ITENSPEDIDO ip\\nINNER JOIN PEDIDOS p ON p.CODIGO = ip.CODIGOPEDIDO\\nINNER JOIN ITEMPEDIDOPROMOCAO ipp ON ipp.CODIGOPROITEMPEDIDO = ip.CODIGO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND ip.DATADELETE IS NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Itens Vendidos em Promoção",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "currencyBRL"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 3,
+        "x": 15,
+        "y": 0
+      },
+      "id": 3,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"SELECT\\n  SUM(p.VALORTOTAL) AS FATURAMENTO_COM_CUPOM\\nFROM PEDIDOS p\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCUPOM IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Faturamento com Cupom",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "currencyBRL"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 18,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"SELECT\\n  SUM(COALESCE(p.TOTALDESCONTO, 0)) AS DESCONTO_CUPOM\\nFROM PEDIDOS p\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCUPOM IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Desconto Total com Cupom",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 0,
+        "y": 4
+      },
+      "id": 2,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"SELECT\\n  SUM(ip.QUANTIDADE) AS ITENS_VENDIDOS\\nFROM ITENSPEDIDO ip\\nINNER JOIN PEDIDOS p ON p.CODIGO = ip.CODIGOPEDIDO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND ip.DATADELETE IS NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Itens Vendidos",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 9,
+        "y": 4
+      },
+      "id": 8,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"SELECT\\n  COUNT(DISTINCT p.CODIGO) AS PEDIDOS_COM_PROMO\\nFROM PEDIDOS p\\nINNER JOIN ITENSPEDIDO ip ON ip.CODIGOPEDIDO = p.CODIGO\\nINNER JOIN ITEMPEDIDOPROMOCAO ipp ON ipp.CODIGOPROITEMPEDIDO = ip.CODIGO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND ip.DATADELETE IS NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Pedidos com Promoção",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 18,
+        "y": 4
+      },
+      "id": 7,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"SELECT\\n  COUNT(*) AS PEDIDOS_COM_CUPOM\\nFROM PEDIDOS p\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCUPOM IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Pedidos com Cupom",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "QTD_ITENS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 8
+      },
+      "id": 9,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"SELECT FIRST 20\\n  COALESCE(pr.NOME, ip.NOMEPRODUTO, 'SEM NOME') AS PRODUTO,\\n  SUM(ip.QUANTIDADE) AS QTD_ITENS,\\n  SUM(COALESCE(ip.VALORTOTAL, CAST(ip.QUANTIDADE * ip.VALORUNITARIO AS DECIMAL(16,4)))) AS RECEITA\\nFROM ITENSPEDIDO ip\\nINNER JOIN PEDIDOS p ON p.CODIGO = ip.CODIGOPEDIDO\\nLEFT JOIN PRODUTOS pr ON pr.CODIGO = ip.CODIGOPRODUTO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND ip.DATADELETE IS NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\n\\n  AND COALESCE(pr.NOME, ip.NOMEPRODUTO, 'SEM NOME') NOT IN (\\n    'PIZZA GRANDE - 2 Sabores',\\n    'PIZZA GRANDE',\\n    'PIZZA BROTO',\\n    'PIZZA BROTO - 2Sabores'\\n  )\\n\\nGROUP BY COALESCE(pr.NOME, ip.NOMEPRODUTO, 'SEM NOME')\\nORDER BY RECEITA DESC, QTD_ITENS DESC\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Top 20 Produtos por Faturamento",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "QTD_ITENS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 8
+      },
+      "id": 10,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"SELECT FIRST 20\\n  COALESCE(pr.NOME, ip.NOMEPRODUTO, 'SEM NOME') AS PRODUTO,\\n  SUM(ip.QUANTIDADE) AS QTD_ITENS,\\n  SUM(COALESCE(ip.VALORTOTAL, CAST(ip.QUANTIDADE * ip.VALORUNITARIO AS DECIMAL(16,4)))) AS RECEITA\\nFROM ITENSPEDIDO ip\\nINNER JOIN PEDIDOS p ON p.CODIGO = ip.CODIGOPEDIDO\\nLEFT JOIN PRODUTOS pr ON pr.CODIGO = ip.CODIGOPRODUTO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND ip.DATADELETE IS NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\n\\n  AND COALESCE(pr.NOME, ip.NOMEPRODUTO, 'SEM NOME') NOT IN (\\n    'PIZZA GRANDE - 2 Sabores',\\n    'PIZZA GRANDE',\\n    'PIZZA BROTO',\\n    'PIZZA BROTO - 2Sabores'\\n  )\\n\\nGROUP BY COALESCE(pr.NOME, ip.NOMEPRODUTO, 'SEM NOME')\\nORDER BY QTD_ITENS DESC, RECEITA DESC\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Top 20 Produtos por Quantidade",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FATURAMENTO_BRUTO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_PIZZARIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 16
+      },
+      "id": 11,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"SELECT\\n  COALESCE(po.DESCRICAO, 'SEM ORIGEM') AS ORIGEM,\\n  COUNT(*) AS PEDIDOS,\\n  SUM(p.VALORTOTAL) AS FATURAMENTO_BRUTO,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) AS RECEITA_PIZZARIA\\nFROM PEDIDOS p\\nLEFT JOIN PEDIDOORIGEM po ON po.CODIGO = p.CODIGOPEDIDOORIGEM\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\nGROUP BY COALESCE(po.DESCRICAO, 'SEM ORIGEM')\\nORDER BY FATURAMENTO_BRUTO DESC\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Faturamento por Origem do Pedido",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "DESCONTO_TOTAL"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FATURAMENTO_BRUTO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "TICKET_MEDIO_SEM_FRETE"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS_COM_CUPOM"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 16
+      },
+      "id": 12,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"SELECT\\n  COALESCE(cu.NOME, 'SEM CUPOM') AS CUPOM,\\n  COUNT(*) AS PEDIDOS_COM_CUPOM,\\n  SUM(COALESCE(p.TOTALDESCONTO, 0)) AS DESCONTO_TOTAL,\\n  SUM(p.VALORTOTAL) AS FATURAMENTO_BRUTO,\\n  AVG(p.VALORTOTAL - p.VALORENTREGA) AS TICKET_MEDIO_SEM_FRETE\\nFROM PEDIDOS p\\nLEFT JOIN CUPOM cu ON cu.CODIGO = p.CODIGOCUPOM\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCUPOM IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\nGROUP BY COALESCE(cu.NOME, 'SEM CUPOM')\\nORDER BY PEDIDOS_COM_CUPOM DESC, FATURAMENTO_BRUTO DESC\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Cupons",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FATURAMENTO_PROMO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "ITENS_PROMOCIONAIS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS_COM_PROMO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 24
+      },
+      "id": 13,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"SELECT\\n  COALESCE(prm.NOME, 'SEM PROMOÇÃO') AS PROMOCAO,\\n  SUM(ip.QUANTIDADE) AS ITENS_PROMOCIONAIS,\\n  COUNT(DISTINCT p.CODIGO) AS PEDIDOS_COM_PROMO,\\n  SUM(COALESCE(ip.VALORTOTAL, CAST(ip.QUANTIDADE * ip.VALORUNITARIO AS DECIMAL(16,4)))) AS FATURAMENTO_PROMO\\nFROM ITEMPEDIDOPROMOCAO ipp\\nINNER JOIN PROMOCAO prm ON prm.CODIGO = ipp.CODIGOPROMOCAO\\nINNER JOIN ITENSPEDIDO ip ON ip.CODIGO = ipp.CODIGOPROITEMPEDIDO\\nINNER JOIN PEDIDOS p ON p.CODIGO = ip.CODIGOPEDIDO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND ip.DATADELETE IS NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\nGROUP BY COALESCE(prm.NOME, 'SEM PROMOÇÃO')\\nORDER BY FATURAMENTO_PROMO DESC, ITENS_PROMOCIONAIS DESC\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Promoções",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FATURAMENTO_BRUTO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_PIZZARIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 24
+      },
+      "id": 14,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"SELECT\\n  TIPO_INCENTIVO,\\n  COUNT(*) AS PEDIDOS,\\n  SUM(VALORTOTAL) AS FATURAMENTO_BRUTO,\\n  SUM(VALORTOTAL - VALORENTREGA) AS RECEITA_PIZZARIA\\nFROM (\\n  SELECT\\n    p.CODIGO,\\n    p.VALORTOTAL,\\n    p.VALORENTREGA,\\n    CASE\\n      WHEN p.CODIGOCUPOM IS NOT NULL AND EXISTS (\\n        SELECT 1\\n        FROM ITENSPEDIDO ip2\\n        INNER JOIN ITEMPEDIDOPROMOCAO ipp2 ON ipp2.CODIGOPROITEMPEDIDO = ip2.CODIGO\\n        WHERE ip2.CODIGOPEDIDO = p.CODIGO\\n          AND ip2.DATADELETE IS NULL\\n      ) THEN 'CUPOM + PROMOÇÃO'\\n      WHEN p.CODIGOCUPOM IS NOT NULL THEN 'SOMENTE CUPOM'\\n      WHEN EXISTS (\\n        SELECT 1\\n        FROM ITENSPEDIDO ip3\\n        INNER JOIN ITEMPEDIDOPROMOCAO ipp3 ON ipp3.CODIGOPROITEMPEDIDO = ip3.CODIGO\\n        WHERE ip3.CODIGOPEDIDO = p.CODIGO\\n          AND ip3.DATADELETE IS NULL\\n      ) THEN 'SOMENTE PROMOÇÃO'\\n      ELSE 'SEM INCENTIVO'\\n    END AS TIPO_INCENTIVO\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.DATAFECHAMENTO >= ?\\n    AND p.DATAFECHAMENTO < ?\\n) BASE\\nGROUP BY TIPO_INCENTIVO\\nORDER BY FATURAMENTO_BRUTO DESC\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Cupom x Promoção",
+      "type": "table"
+    }
+  ],
+  "preload": false,
+  "schemaVersion": 42,
+  "tags": [
+    "mr-teddy",
+    "receita",
+    "produtos",
+    "promocoes",
+    "cupons"
+  ],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-30d",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "2 - Mr Teddy Pizza - Receita, Produtos, Cupons e Promoções",
+  "uid": "mr-teddy-receita-mix-v5",
+  "version": 3,
+  "weekStart": ""
+}

@@ -1,0 +1,101 @@
+-- observability.bot_events definição
+
+-- Drop table
+
+-- DROP TABLE observability.bot_events;
+
+CREATE TABLE observability.bot_events (
+	id bigserial NOT NULL,
+	received_at timestamptz DEFAULT now() NOT NULL,
+	event_timestamp timestamptz NULL,
+	service text NOT NULL,
+	environment text NOT NULL,
+	"event" text NOT NULL,
+	message text NOT NULL,
+	extra jsonb DEFAULT '{}'::jsonb NOT NULL,
+	headers jsonb DEFAULT '{}'::jsonb NOT NULL,
+	query_params jsonb DEFAULT '{}'::jsonb NOT NULL,
+	route_params jsonb DEFAULT '{}'::jsonb NOT NULL,
+	raw_body jsonb DEFAULT '{}'::jsonb NOT NULL,
+	webhook_url text NULL,
+	execution_mode text NULL,
+	source_ip text NULL,
+	CONSTRAINT bot_events_pkey PRIMARY KEY (id)
+);
+CREATE INDEX idx_bot_events_event ON observability.bot_events USING btree (event);
+CREATE INDEX idx_bot_events_event_ts ON observability.bot_events USING btree (event_timestamp DESC);
+CREATE INDEX idx_bot_events_extra_gin ON observability.bot_events USING gin (extra);
+CREATE INDEX idx_bot_events_received_at ON observability.bot_events USING btree (received_at DESC);
+CREATE INDEX idx_bot_events_service_env ON observability.bot_events USING btree (service, environment);
+
+
+-- public.whatsapp_inbound_log definição
+
+-- Drop table
+
+-- DROP TABLE public.whatsapp_inbound_log;
+
+CREATE TABLE public.whatsapp_inbound_log (
+	id bigserial NOT NULL,
+	received_at timestamptz DEFAULT now() NULL,
+	event_type text NULL,
+	wa_id text NULL,
+	from_number text NULL,
+	contact_name text NULL,
+	message_id text NULL,
+	message_type text NULL,
+	text_body text NULL,
+	status text NULL,
+	recipient_id text NULL,
+	timestamp_meta text NULL,
+	error_code text NULL,
+	error_title text NULL,
+	error_message text NULL,
+	raw_payload jsonb NULL,
+	phone_number_id text NULL,
+	messaging_product text NULL,
+	field text NULL,
+	display_phone_number text NULL,
+	status_message_id text NULL,
+	status_value text NULL,
+	status_timestamp text NULL,
+	status_recipient_id text NULL,
+	pricing_billable bool NULL,
+	pricing_model text NULL,
+	pricing_category text NULL,
+	pricing_type text NULL,
+	call_id text NULL,
+	call_event text NULL,
+	call_timestamp text NULL,
+	call_from_number text NULL,
+	call_direction text NULL,
+	call_duration text NULL,
+	call_reason text NULL,
+	button_reply_id text NULL,
+	button_reply_title text NULL,
+	"id"";""received_at"";""event_type"";""wa_id"";""from_number"";""contact_n" varchar(2048) NULL,
+	CONSTRAINT whatsapp_inbound_log_pkey PRIMARY KEY (id)
+);
+CREATE INDEX idx_event_type ON public.whatsapp_inbound_log USING btree (event_type);
+CREATE INDEX idx_msg_id ON public.whatsapp_inbound_log USING btree (message_id);
+CREATE INDEX idx_received_at ON public.whatsapp_inbound_log USING btree (received_at);
+CREATE INDEX idx_wh_log_event ON public.whatsapp_inbound_log USING btree (event_type);
+CREATE INDEX idx_wh_log_from ON public.whatsapp_inbound_log USING btree (from_number);
+CREATE INDEX idx_wh_log_received ON public.whatsapp_inbound_log USING btree (received_at);
+
+
+
+-- public.firebird_orders definição
+
+-- Drop table
+
+-- DROP TABLE public.firebird_orders;
+
+CREATE TABLE public.firebird_orders (
+	order_id text NOT NULL,
+	phone_e164 text NOT NULL,
+	closed_at timestamptz NOT NULL,
+	total numeric NULL,
+	CONSTRAINT firebird_orders_pkey PRIMARY KEY (order_id)
+);
+CREATE INDEX idx_firebird_orders_phone_time ON public.firebird_orders USING btree (phone_e164, closed_at);

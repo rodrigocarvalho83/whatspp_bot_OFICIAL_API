@@ -1,0 +1,1611 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "currencyBRL"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT SUM(p.VALORTOTAL - p.VALORENTREGA) AS FATURAMENTO\\nFROM PEDIDOS p\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Faturamento Total (Sem Frete)",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 6,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT COUNT(*) AS PEDIDOS\\nFROM PEDIDOS p\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Pedidos Totais",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "currencyBRL"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 12,
+        "y": 0
+      },
+      "id": 3,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT AVG(p.VALORTOTAL - p.VALORENTREGA) AS TICKET_MEDIO\\nFROM PEDIDOS p\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Ticket Médio (Sem Frete)",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "short"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 18,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT COUNT(*) AS CLIENTES_UNICOS\\nFROM (\\n  SELECT DISTINCT p.CODIGOCONTATOCLIENTE\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n    AND p.DATAFECHAMENTO >= ?\\n    AND p.DATAFECHAMENTO < ?\\n) X\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Clientes Únicos",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FATURAMENTO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "semi-dark-yellow",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 4
+      },
+      "id": 5,
+      "options": {
+        "barRadius": 0.25,
+        "barWidth": 0.97,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "orientation": "auto",
+        "showValue": "auto",
+        "stacking": "none",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 100
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  CAST(p.DATAFECHAMENTO AS DATE) AS DIA,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) AS FATURAMENTO\\nFROM PEDIDOS p\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\nGROUP BY CAST(p.DATAFECHAMENTO AS DATE)\\nORDER BY DIA DESC\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Faturamento Diário (Sem Frete)",
+      "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "field": "DIA"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "fieldMinMax": false,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "light-blue",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS"
+            },
+            "properties": []
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 4
+      },
+      "id": 6,
+      "options": {
+        "barRadius": 0.25,
+        "barWidth": 0.97,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "orientation": "auto",
+        "showValue": "auto",
+        "stacking": "none",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 100
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  CAST(p.DATAFECHAMENTO AS DATE) AS DIA,\\n  COUNT(*) AS PEDIDOS\\nFROM PEDIDOS p\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\nGROUP BY CAST(p.DATAFECHAMENTO AS DATE)\\nORDER BY DIA DESC\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Pedidos por Dia",
+      "transformations": [
+        {
+          "id": "sortBy",
+          "options": {
+            "fields": {},
+            "sort": [
+              {
+                "desc": false,
+                "field": "DIA"
+              }
+            ]
+          }
+        }
+      ],
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FATURAMENTO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 10,
+        "x": 0,
+        "y": 12
+      },
+      "id": 7,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  po.DESCRICAO AS ORIGEM,\\n  COUNT(*) AS PEDIDOS,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) AS FATURAMENTO\\nFROM PEDIDOS p\\nLEFT JOIN PEDIDOORIGEM po ON po.CODIGO = p.CODIGOPEDIDOORIGEM\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\nGROUP BY po.DESCRICAO\\nORDER BY FATURAMENTO DESC\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Faturamento por Origem do Pedido",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "GASTO_MOTOBOY"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 14,
+        "x": 10,
+        "y": 12
+      },
+      "id": 8,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  CAST(p.DATAFECHAMENTO AS DATE) AS DIA,\\n  c.NOME AS MOTOBOY,\\n  SUM(COALESCE(d.FRETE, 0)) AS GASTO_MOTOBOY\\nFROM PEDIDOS p\\nINNER JOIN DELIVERY d ON d.CODIGOPEDIDO = p.CODIGO\\nINNER JOIN CONTATOS c ON c.CODIGO = p.CODIGOCOLABORADOR\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n  AND COALESCE(d.FRETE, 0) > 0\\nGROUP BY CAST(p.DATAFECHAMENTO AS DATE), c.NOME\\nORDER BY DIA DESC, GASTO_MOTOBOY DESC\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Gastos com Motoboys por Dia",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Cliente Novo  "
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Cliente Antigo"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-orange",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 19
+      },
+      "id": 9,
+      "options": {
+        "barRadius": 0.2,
+        "barWidth": 0.97,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "right",
+          "showLegend": true
+        },
+        "orientation": "auto",
+        "showValue": "auto",
+        "stacking": "none",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 0
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH PRIMEIRO_PEDIDO AS (\\n    SELECT CODIGOCONTATOCLIENTE, MIN(DATAFECHAMENTO) AS PRIMEIRO_PEDIDO\\n    FROM PEDIDOS\\n    WHERE DATADELETE IS NULL\\n      AND DATAFECHAMENTO IS NOT NULL\\n      AND CODIGOCONTATOCLIENTE IS NOT NULL\\n    GROUP BY CODIGOCONTATOCLIENTE\\n)\\nSELECT\\n    EXTRACT(YEAR FROM p.DATAFECHAMENTO) || '-' || RIGHT('00' || EXTRACT(MONTH FROM p.DATAFECHAMENTO), 2) AS MES,\\n    CASE\\n        WHEN EXTRACT(YEAR FROM pp.PRIMEIRO_PEDIDO) = EXTRACT(YEAR FROM p.DATAFECHAMENTO)\\n         AND EXTRACT(MONTH FROM pp.PRIMEIRO_PEDIDO) = EXTRACT(MONTH FROM p.DATAFECHAMENTO)\\n        THEN 'Cliente Novo'\\n        ELSE 'Cliente Antigo'\\n    END AS TIPO_CLIENTE,\\n    COUNT(DISTINCT p.CODIGOCONTATOCLIENTE) AS CLIENTES\\nFROM PEDIDOS p\\nJOIN PRIMEIRO_PEDIDO pp ON pp.CODIGOCONTATOCLIENTE = p.CODIGOCONTATOCLIENTE\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\nGROUP BY 1, 2\\nORDER BY MES, TIPO_CLIENTE\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Clientes Únicos por Mês - Novo x Antigo",
+      "transformations": [
+        {
+          "id": "groupingToMatrix",
+          "options": {
+            "columnField": "TIPO_CLIENTE",
+            "rowField": "MES",
+            "valueField": "CLIENTES"
+          }
+        }
+      ],
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "axisBorderShow": true,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Cliente Antigo"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-orange",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Cliente Novo  "
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              },
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 19
+      },
+      "id": 10,
+      "options": {
+        "barRadius": 0.2,
+        "barWidth": 0.97,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true
+        },
+        "orientation": "auto",
+        "showValue": "always",
+        "stacking": "none",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xField": "MES\\TIPO_CLIENTE",
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 0
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH PRIMEIRO_PEDIDO AS (\\n    SELECT CODIGOCONTATOCLIENTE, MIN(DATAFECHAMENTO) AS PRIMEIRO_PEDIDO\\n    FROM PEDIDOS\\n    WHERE DATADELETE IS NULL\\n      AND DATAFECHAMENTO IS NOT NULL\\n      AND CODIGOCONTATOCLIENTE IS NOT NULL\\n    GROUP BY CODIGOCONTATOCLIENTE\\n)\\nSELECT\\n    EXTRACT(YEAR FROM p.DATAFECHAMENTO) || '-' || RIGHT('00' || EXTRACT(MONTH FROM p.DATAFECHAMENTO), 2) AS MES,\\n    CASE\\n        WHEN EXTRACT(YEAR FROM pp.PRIMEIRO_PEDIDO) = EXTRACT(YEAR FROM p.DATAFECHAMENTO)\\n         AND EXTRACT(MONTH FROM pp.PRIMEIRO_PEDIDO) = EXTRACT(MONTH FROM p.DATAFECHAMENTO)\\n        THEN 'Cliente Novo'\\n        ELSE 'Cliente Antigo'\\n    END AS TIPO_CLIENTE,\\n    SUM(p.VALORTOTAL - p.VALORENTREGA) AS FATURAMENTO\\nFROM PEDIDOS p\\nJOIN PRIMEIRO_PEDIDO pp ON pp.CODIGOCONTATOCLIENTE = p.CODIGOCONTATOCLIENTE\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\nGROUP BY 1, 2\\nORDER BY MES, TIPO_CLIENTE\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Faturamento por Tipo de Cliente - Novo x Antigo",
+      "transformations": [
+        {
+          "id": "groupingToMatrix",
+          "options": {
+            "columnField": "TIPO_CLIENTE",
+            "rowField": "MES",
+            "valueField": "FATURAMENTO"
+          }
+        }
+      ],
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "fieldMinMax": false,
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Antigo     "
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-red",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Médio Prazo"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "dark-orange",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Médio Prazo"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "semi-dark-blue",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Novo       "
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "mode": "palette-classic"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 27
+      },
+      "id": 11,
+      "options": {
+        "barRadius": 0.1,
+        "barWidth": 0.93,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "right",
+          "showLegend": true
+        },
+        "orientation": "auto",
+        "showValue": "always",
+        "stacking": "normal",
+        "text": {},
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 100
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH PRIMEIRO_PEDIDO AS (\\n  SELECT CODIGOCONTATOCLIENTE, MIN(DATAFECHAMENTO) PRIMEIRO_PEDIDO\\n  FROM PEDIDOS\\n  WHERE DATADELETE IS NULL\\n    AND DATAFECHAMENTO IS NOT NULL\\n    AND CODIGOCONTATOCLIENTE IS NOT NULL\\n  GROUP BY CODIGOCONTATOCLIENTE\\n)\\nSELECT\\n  EXTRACT(YEAR FROM p.DATAFECHAMENTO) || '-' || RIGHT('00' || EXTRACT(MONTH FROM p.DATAFECHAMENTO), 2) AS MES,\\n  CASE\\n    WHEN DATEDIFF(MONTH FROM pp.PRIMEIRO_PEDIDO TO p.DATAFECHAMENTO) < 2 THEN 'Novo'\\n    WHEN DATEDIFF(MONTH FROM pp.PRIMEIRO_PEDIDO TO p.DATAFECHAMENTO) < 6 THEN 'Curto Prazo'\\n    WHEN DATEDIFF(MONTH FROM pp.PRIMEIRO_PEDIDO TO p.DATAFECHAMENTO) < 12 THEN 'Médio Prazo'\\n    ELSE 'Antigo'\\n  END AS SEGMENTO,\\n  COUNT(DISTINCT p.CODIGOCONTATOCLIENTE) AS CLIENTES\\nFROM PEDIDOS p\\nJOIN PRIMEIRO_PEDIDO pp ON pp.CODIGOCONTATOCLIENTE = p.CODIGOCONTATOCLIENTE\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\nGROUP BY 1, 2\\nORDER BY MES, SEGMENTO\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Clientes por Maturidade da Base",
+      "transformations": [
+        {
+          "id": "groupingToMatrix",
+          "options": {
+            "columnField": "SEGMENTO",
+            "rowField": "MES",
+            "valueField": "CLIENTES"
+          }
+        }
+      ],
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "CLIENTES_REATIVADOS"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "semi-dark-purple",
+                  "mode": "fixed"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 27
+      },
+      "id": 12,
+      "options": {
+        "barRadius": 0.2,
+        "barWidth": 0.97,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true
+        },
+        "orientation": "auto",
+        "showValue": "auto",
+        "stacking": "none",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 100
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH PEDIDOS_CLIENTE AS (\\n  SELECT\\n    CODIGOCONTATOCLIENTE,\\n    DATAFECHAMENTO,\\n    LAG(DATAFECHAMENTO) OVER (PARTITION BY CODIGOCONTATOCLIENTE ORDER BY DATAFECHAMENTO) AS PEDIDO_ANTERIOR\\n  FROM PEDIDOS\\n  WHERE DATADELETE IS NULL\\n    AND DATAFECHAMENTO IS NOT NULL\\n    AND CODIGOCONTATOCLIENTE IS NOT NULL\\n)\\nSELECT\\n  EXTRACT(YEAR FROM DATAFECHAMENTO) || '-' || RIGHT('00' || EXTRACT(MONTH FROM DATAFECHAMENTO), 2) AS MES,\\n  COUNT(*) AS CLIENTES_REATIVADOS\\nFROM PEDIDOS_CLIENTE\\nWHERE PEDIDO_ANTERIOR IS NOT NULL\\n  AND DATEDIFF(DAY FROM PEDIDO_ANTERIOR TO DATAFECHAMENTO) >= 90\\n  AND DATAFECHAMENTO >= ?\\n  AND DATAFECHAMENTO < ?\\nGROUP BY 1\\nORDER BY MES\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Clientes Reativados por Mês",
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_TOTAL"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "CLIENTES"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "LTV_MEDIO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 35
+      },
+      "id": 13,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH PRIMEIRO_PEDIDO AS (\\n  SELECT CODIGOCONTATOCLIENTE, MIN(DATAFECHAMENTO) AS PRIMEIRO_PEDIDO\\n  FROM PEDIDOS\\n  WHERE DATADELETE IS NULL\\n    AND DATAFECHAMENTO IS NOT NULL\\n    AND CODIGOCONTATOCLIENTE IS NOT NULL\\n  GROUP BY CODIGOCONTATOCLIENTE\\n)\\nSELECT\\n  EXTRACT(YEAR FROM pp.PRIMEIRO_PEDIDO) || '-' || RIGHT('00' || EXTRACT(MONTH FROM pp.PRIMEIRO_PEDIDO), 2) AS COORTE,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) AS RECEITA_TOTAL,\\n  COUNT(DISTINCT p.CODIGOCONTATOCLIENTE) AS CLIENTES,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) / NULLIF(COUNT(DISTINCT p.CODIGOCONTATOCLIENTE),0) AS LTV_MEDIO\\nFROM PEDIDOS p\\nJOIN PRIMEIRO_PEDIDO pp ON pp.CODIGOCONTATOCLIENTE = p.CODIGOCONTATOCLIENTE\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\nGROUP BY 1\\nORDER BY COORTE\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "LTV Simplificado por Coorte",
+      "type": "table"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 43
+      },
+      "id": 14,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "Para os painéis **Clientes Únicos por Mês - Novo x Antigo**, **Faturamento por Tipo de Cliente - Novo x Antigo** e **Clientes por Maturidade da Base**:\n\n1. Troque a visualização para **Bar chart**.\n2. Se precisar, use **Group to matrix / Grouping to matrix**:\n   - Row field = `MES`\n   - Column field = `TIPO_CLIENTE` ou `SEGMENTO`\n   - Cell value = `CLIENTES` ou `FATURAMENTO`\n3. Em **Stacking**, selecione **Normal**.\n4. Em **Color scheme**, use **Classic palette**.\n5. Se quiser, crie overrides por campo para manter cores fixas por categoria.",
+        "mode": "markdown"
+      },
+      "pluginVersion": "12.4.0",
+      "title": "Como transformar os 3 gráficos de clientes em colunas empilhadas",
+      "type": "text"
+    }
+  ],
+  "preload": false,
+  "schemaVersion": 42,
+  "tags": [
+    "mr-teddy",
+    "executivo",
+    "clientes"
+  ],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-365d",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "1 - Mr Teddy Pizza - Dashboard Executivo",
+  "uid": "mr-teddy-executivo-v8-clientes",
+  "version": 16,
+  "weekStart": ""
+}

@@ -1,0 +1,1237 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "CLIENTES_CLASSIFICADOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH BASE AS (\\n  SELECT\\n    p.CODIGOCONTATOCLIENTE AS CODIGOCLIENTE,\\n    MAX(p.DATAFECHAMENTO) AS ULTIMA_COMPRA,\\n    COUNT(*) AS FREQUENCIA,\\n    SUM(p.VALORTOTAL - p.VALORENTREGA) AS VALOR_TOTAL\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n    AND p.DATAFECHAMENTO < ?\\n  GROUP BY p.CODIGOCONTATOCLIENTE\\n),\\nRFV AS (\\n  SELECT\\n    b.CODIGOCLIENTE,\\n    b.ULTIMA_COMPRA,\\n    DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) AS RECENCIA_DIAS,\\n    b.FREQUENCIA,\\n    b.VALOR_TOTAL,\\n    NTILE(5) OVER (ORDER BY DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) DESC) AS R_SCORE,\\n    NTILE(5) OVER (ORDER BY b.FREQUENCIA ASC) AS F_SCORE,\\n    NTILE(5) OVER (ORDER BY b.VALOR_TOTAL ASC) AS V_SCORE\\n  FROM BASE b\\n)\\nSELECT COUNT(*) AS CLIENTES_CLASSIFICADOS FROM RFV\", \"params\": [\"${__to:date:iso}\", \"${__to:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Clientes RFV Classificados",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_TOTAL_BASE"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 6,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH BASE AS (\\n  SELECT\\n    p.CODIGOCONTATOCLIENTE AS CODIGOCLIENTE,\\n    MAX(p.DATAFECHAMENTO) AS ULTIMA_COMPRA,\\n    COUNT(*) AS FREQUENCIA,\\n    SUM(p.VALORTOTAL - p.VALORENTREGA) AS VALOR_TOTAL\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n    AND p.DATAFECHAMENTO < ?\\n  GROUP BY p.CODIGOCONTATOCLIENTE\\n),\\nRFV AS (\\n  SELECT\\n    b.CODIGOCLIENTE,\\n    b.ULTIMA_COMPRA,\\n    DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) AS RECENCIA_DIAS,\\n    b.FREQUENCIA,\\n    b.VALOR_TOTAL,\\n    NTILE(5) OVER (ORDER BY DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) DESC) AS R_SCORE,\\n    NTILE(5) OVER (ORDER BY b.FREQUENCIA ASC) AS F_SCORE,\\n    NTILE(5) OVER (ORDER BY b.VALOR_TOTAL ASC) AS V_SCORE\\n  FROM BASE b\\n)\\nSELECT SUM(VALOR_TOTAL) AS RECEITA_TOTAL_BASE FROM RFV\", \"params\": [\"${__to:date:iso}\", \"${__to:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Receita Total da Base RFV",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECENCIA_MEDIA_DIAS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 12,
+        "y": 0
+      },
+      "id": 3,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH BASE AS (\\n  SELECT\\n    p.CODIGOCONTATOCLIENTE AS CODIGOCLIENTE,\\n    MAX(p.DATAFECHAMENTO) AS ULTIMA_COMPRA,\\n    COUNT(*) AS FREQUENCIA,\\n    SUM(p.VALORTOTAL - p.VALORENTREGA) AS VALOR_TOTAL\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n    AND p.DATAFECHAMENTO < ?\\n  GROUP BY p.CODIGOCONTATOCLIENTE\\n),\\nRFV AS (\\n  SELECT\\n    b.CODIGOCLIENTE,\\n    b.ULTIMA_COMPRA,\\n    DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) AS RECENCIA_DIAS,\\n    b.FREQUENCIA,\\n    b.VALOR_TOTAL,\\n    NTILE(5) OVER (ORDER BY DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) DESC) AS R_SCORE,\\n    NTILE(5) OVER (ORDER BY b.FREQUENCIA ASC) AS F_SCORE,\\n    NTILE(5) OVER (ORDER BY b.VALOR_TOTAL ASC) AS V_SCORE\\n  FROM BASE b\\n)\\nSELECT AVG(RECENCIA_DIAS) AS RECENCIA_MEDIA_DIAS FROM RFV\", \"params\": [\"${__to:date:iso}\", \"${__to:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Recência Média (dias)",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FREQUENCIA_MEDIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 18,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH BASE AS (\\n  SELECT\\n    p.CODIGOCONTATOCLIENTE AS CODIGOCLIENTE,\\n    MAX(p.DATAFECHAMENTO) AS ULTIMA_COMPRA,\\n    COUNT(*) AS FREQUENCIA,\\n    SUM(p.VALORTOTAL - p.VALORENTREGA) AS VALOR_TOTAL\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n    AND p.DATAFECHAMENTO < ?\\n  GROUP BY p.CODIGOCONTATOCLIENTE\\n),\\nRFV AS (\\n  SELECT\\n    b.CODIGOCLIENTE,\\n    b.ULTIMA_COMPRA,\\n    DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) AS RECENCIA_DIAS,\\n    b.FREQUENCIA,\\n    b.VALOR_TOTAL,\\n    NTILE(5) OVER (ORDER BY DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) DESC) AS R_SCORE,\\n    NTILE(5) OVER (ORDER BY b.FREQUENCIA ASC) AS F_SCORE,\\n    NTILE(5) OVER (ORDER BY b.VALOR_TOTAL ASC) AS V_SCORE\\n  FROM BASE b\\n)\\nSELECT AVG(FREQUENCIA) AS FREQUENCIA_MEDIA FROM RFV\", \"params\": [\"${__to:date:iso}\", \"${__to:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Frequência Média",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-BlYlRd"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "fillOpacity": 80,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineWidth": 1,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "CAMPEOES"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "LEAIS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PROMISSORES"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "EM_RISCO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PERDIDOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 24,
+        "x": 0,
+        "y": 4
+      },
+      "id": 5,
+      "options": {
+        "barRadius": 0,
+        "barWidth": 0.97,
+        "fullHighlight": false,
+        "groupWidth": 0.7,
+        "legend": {
+          "calcs": [],
+          "displayMode": "table",
+          "placement": "right",
+          "showLegend": true
+        },
+        "orientation": "auto",
+        "showValue": "auto",
+        "stacking": "normal",
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        },
+        "xField": "MES",
+        "xTickLabelRotation": 0,
+        "xTickLabelSpacing": 100
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH RECURSIVE MESES AS (\\n  SELECT DATEADD(-11 MONTH TO CURRENT_DATE) AS MES\\n  FROM RDB$DATABASE\\n  UNION ALL\\n  SELECT DATEADD(1 MONTH TO MES)\\n  FROM MESES\\n  WHERE MES < CURRENT_DATE\\n),\\nBASE AS (\\n  SELECT\\n    m.MES,\\n    p.CODIGOCONTATOCLIENTE AS CLIENTE,\\n    MAX(p.DATAFECHAMENTO) AS ULTIMA_COMPRA,\\n    COUNT(*) AS FREQUENCIA,\\n    SUM(p.VALORTOTAL - p.VALORENTREGA) AS VALOR_TOTAL\\n  FROM MESES m\\n  JOIN PEDIDOS p\\n    ON p.DATAFECHAMENTO < DATEADD(1 MONTH TO m.MES)\\n   AND p.DATADELETE IS NULL\\n   AND p.DATAFECHAMENTO IS NOT NULL\\n   AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n  GROUP BY m.MES, p.CODIGOCONTATOCLIENTE\\n),\\nRFV AS (\\n  SELECT\\n    MES,\\n    CLIENTE,\\n    NTILE(5) OVER (PARTITION BY MES ORDER BY DATEDIFF(DAY, ULTIMA_COMPRA, MES) DESC) AS R,\\n    NTILE(5) OVER (PARTITION BY MES ORDER BY FREQUENCIA ASC) AS F,\\n    NTILE(5) OVER (PARTITION BY MES ORDER BY VALOR_TOTAL ASC) AS V\\n  FROM BASE\\n)\\nSELECT\\n  MES,\\n  SUM(CASE WHEN R >= 4 AND F >= 4 AND V >= 4 THEN 1 ELSE 0 END) AS CAMPEOES,\\n  SUM(CASE WHEN R >= 4 AND F >= 3 THEN 1 ELSE 0 END) AS LEAIS,\\n  SUM(CASE WHEN R >= 4 AND F <= 2 THEN 1 ELSE 0 END) AS PROMISSORES,\\n  SUM(CASE WHEN R <= 2 AND F >= 3 THEN 1 ELSE 0 END) AS EM_RISCO,\\n  SUM(CASE WHEN R <= 2 AND F <= 2 THEN 1 ELSE 0 END) AS PERDIDOS\\nFROM RFV\\nGROUP BY MES\\nORDER BY MES\\n\", \"params\": []}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Evolução Mensal RFV (stacked-ready)",
+      "type": "barchart"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "CLIENTES"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECENCIA_MEDIA_DIAS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FREQUENCIA_MEDIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_TOTAL"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_MEDIA_CLIENTE"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 0,
+        "y": 14
+      },
+      "id": 6,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH BASE AS (\\n  SELECT\\n    p.CODIGOCONTATOCLIENTE AS CODIGOCLIENTE,\\n    MAX(p.DATAFECHAMENTO) AS ULTIMA_COMPRA,\\n    COUNT(*) AS FREQUENCIA,\\n    SUM(p.VALORTOTAL - p.VALORENTREGA) AS VALOR_TOTAL\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n    AND p.DATAFECHAMENTO < ?\\n  GROUP BY p.CODIGOCONTATOCLIENTE\\n),\\nRFV AS (\\n  SELECT\\n    b.CODIGOCLIENTE,\\n    b.ULTIMA_COMPRA,\\n    DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) AS RECENCIA_DIAS,\\n    b.FREQUENCIA,\\n    b.VALOR_TOTAL,\\n    NTILE(5) OVER (ORDER BY DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) DESC) AS R_SCORE,\\n    NTILE(5) OVER (ORDER BY b.FREQUENCIA ASC) AS F_SCORE,\\n    NTILE(5) OVER (ORDER BY b.VALOR_TOTAL ASC) AS V_SCORE\\n  FROM BASE b\\n)\\n\\nSELECT\\n  CASE\\n    WHEN R_SCORE >= 4 AND F_SCORE >= 4 AND V_SCORE >= 4 THEN 'Campeões'\\n    WHEN R_SCORE >= 4 AND F_SCORE >= 3 THEN 'Leais'\\n    WHEN R_SCORE >= 4 AND F_SCORE <= 2 AND V_SCORE <= 3 THEN 'Promissores'\\n    WHEN R_SCORE = 3 AND F_SCORE >= 3 THEN 'Precisam atenção'\\n    WHEN R_SCORE <= 2 AND F_SCORE >= 3 THEN 'Em risco'\\n    WHEN R_SCORE <= 2 AND F_SCORE <= 2 THEN 'Perdidos/Hibernando'\\n    ELSE 'Outros'\\n  END AS SEGMENTO,\\n  COUNT(*) AS CLIENTES,\\n  AVG(RECENCIA_DIAS) AS RECENCIA_MEDIA_DIAS,\\n  AVG(FREQUENCIA) AS FREQUENCIA_MEDIA,\\n  SUM(VALOR_TOTAL) AS RECEITA_TOTAL,\\n  AVG(VALOR_TOTAL) AS RECEITA_MEDIA_CLIENTE\\nFROM RFV\\nGROUP BY 1\\nORDER BY RECEITA_TOTAL DESC\\n\", \"params\": [\"${__to:date:iso}\", \"${__to:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Resumo por Segmento RFV",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "CLIENTES"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_TOTAL"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 12,
+        "y": 14
+      },
+      "id": 7,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH BASE AS (\\n  SELECT\\n    p.CODIGOCONTATOCLIENTE AS CODIGOCLIENTE,\\n    MAX(p.DATAFECHAMENTO) AS ULTIMA_COMPRA,\\n    COUNT(*) AS FREQUENCIA,\\n    SUM(p.VALORTOTAL - p.VALORENTREGA) AS VALOR_TOTAL\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n    AND p.DATAFECHAMENTO < ?\\n  GROUP BY p.CODIGOCONTATOCLIENTE\\n),\\nRFV AS (\\n  SELECT\\n    b.CODIGOCLIENTE,\\n    b.ULTIMA_COMPRA,\\n    DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) AS RECENCIA_DIAS,\\n    b.FREQUENCIA,\\n    b.VALOR_TOTAL,\\n    NTILE(5) OVER (ORDER BY DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) DESC) AS R_SCORE,\\n    NTILE(5) OVER (ORDER BY b.FREQUENCIA ASC) AS F_SCORE,\\n    NTILE(5) OVER (ORDER BY b.VALOR_TOTAL ASC) AS V_SCORE\\n  FROM BASE b\\n)\\n\\nSELECT\\n  R_SCORE,\\n  F_SCORE,\\n  COUNT(*) AS CLIENTES,\\n  SUM(VALOR_TOTAL) AS RECEITA_TOTAL\\nFROM RFV\\nGROUP BY R_SCORE, F_SCORE\\nORDER BY R_SCORE DESC, F_SCORE DESC\\n\", \"params\": [\"${__to:date:iso}\", \"${__to:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Matriz RFV (R x F)",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECENCIA_DIAS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FREQUENCIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "VALOR_TOTAL"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 24
+      },
+      "id": 8,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH BASE AS (\\n  SELECT\\n    p.CODIGOCONTATOCLIENTE AS CODIGOCLIENTE,\\n    MAX(p.DATAFECHAMENTO) AS ULTIMA_COMPRA,\\n    COUNT(*) AS FREQUENCIA,\\n    SUM(p.VALORTOTAL - p.VALORENTREGA) AS VALOR_TOTAL\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n    AND p.DATAFECHAMENTO < ?\\n  GROUP BY p.CODIGOCONTATOCLIENTE\\n),\\nRFV AS (\\n  SELECT\\n    b.CODIGOCLIENTE,\\n    b.ULTIMA_COMPRA,\\n    DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) AS RECENCIA_DIAS,\\n    b.FREQUENCIA,\\n    b.VALOR_TOTAL,\\n    NTILE(5) OVER (ORDER BY DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) DESC) AS R_SCORE,\\n    NTILE(5) OVER (ORDER BY b.FREQUENCIA ASC) AS F_SCORE,\\n    NTILE(5) OVER (ORDER BY b.VALOR_TOTAL ASC) AS V_SCORE\\n  FROM BASE b\\n)\\n\\nSELECT FIRST 100\\n  c.CODIGO,\\n  c.NOME,\\n  c.FONEPRINCIPAL,\\n  r.RECENCIA_DIAS,\\n  r.FREQUENCIA,\\n  r.VALOR_TOTAL,\\n  r.R_SCORE,\\n  r.F_SCORE,\\n  r.V_SCORE,\\n  CAST(r.R_SCORE AS VARCHAR(1)) || CAST(r.F_SCORE AS VARCHAR(1)) || CAST(r.V_SCORE AS VARCHAR(1)) AS SCORE_RFV,\\n  CASE\\n    WHEN R_SCORE >= 4 AND F_SCORE >= 4 AND V_SCORE >= 4 THEN 'Campeões'\\n    WHEN R_SCORE >= 4 AND F_SCORE >= 3 THEN 'Leais'\\n    WHEN R_SCORE >= 4 AND F_SCORE <= 2 AND V_SCORE <= 3 THEN 'Promissores'\\n    WHEN R_SCORE = 3 AND F_SCORE >= 3 THEN 'Precisam atenção'\\n    WHEN R_SCORE <= 2 AND F_SCORE >= 3 THEN 'Em risco'\\n    WHEN R_SCORE <= 2 AND F_SCORE <= 2 THEN 'Perdidos/Hibernando'\\n    ELSE 'Outros'\\n  END AS SEGMENTO\\nFROM RFV r\\nJOIN CONTATOS c ON c.CODIGO = r.CODIGOCLIENTE\\nORDER BY r.VALOR_TOTAL DESC\\n\", \"params\": [\"${__to:date:iso}\", \"${__to:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Top Clientes RFV",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECENCIA_DIAS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FREQUENCIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "VALOR_TOTAL"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 0,
+        "y": 36
+      },
+      "id": 9,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH BASE AS (\\n  SELECT\\n    p.CODIGOCONTATOCLIENTE AS CODIGOCLIENTE,\\n    MAX(p.DATAFECHAMENTO) AS ULTIMA_COMPRA,\\n    COUNT(*) AS FREQUENCIA,\\n    SUM(p.VALORTOTAL - p.VALORENTREGA) AS VALOR_TOTAL\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n    AND p.DATAFECHAMENTO < ?\\n  GROUP BY p.CODIGOCONTATOCLIENTE\\n),\\nRFV AS (\\n  SELECT\\n    b.CODIGOCLIENTE,\\n    b.ULTIMA_COMPRA,\\n    DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) AS RECENCIA_DIAS,\\n    b.FREQUENCIA,\\n    b.VALOR_TOTAL,\\n    NTILE(5) OVER (ORDER BY DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) DESC) AS R_SCORE,\\n    NTILE(5) OVER (ORDER BY b.FREQUENCIA ASC) AS F_SCORE,\\n    NTILE(5) OVER (ORDER BY b.VALOR_TOTAL ASC) AS V_SCORE\\n  FROM BASE b\\n)\\n\\nSELECT FIRST 50\\n  c.CODIGO,\\n  c.NOME,\\n  c.FONEPRINCIPAL,\\n  r.RECENCIA_DIAS,\\n  r.FREQUENCIA,\\n  r.VALOR_TOTAL\\nFROM RFV r\\nJOIN CONTATOS c ON c.CODIGO = r.CODIGOCLIENTE\\nWHERE r.R_SCORE >= 4 AND r.F_SCORE >= 4 AND r.V_SCORE >= 4\\nORDER BY r.VALOR_TOTAL DESC\\n\", \"params\": [\"${__to:date:iso}\", \"${__to:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Campeões",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECENCIA_DIAS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FREQUENCIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "VALOR_TOTAL"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 12,
+        "y": 36
+      },
+      "id": 10,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nWITH BASE AS (\\n  SELECT\\n    p.CODIGOCONTATOCLIENTE AS CODIGOCLIENTE,\\n    MAX(p.DATAFECHAMENTO) AS ULTIMA_COMPRA,\\n    COUNT(*) AS FREQUENCIA,\\n    SUM(p.VALORTOTAL - p.VALORENTREGA) AS VALOR_TOTAL\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n    AND p.DATAFECHAMENTO < ?\\n  GROUP BY p.CODIGOCONTATOCLIENTE\\n),\\nRFV AS (\\n  SELECT\\n    b.CODIGOCLIENTE,\\n    b.ULTIMA_COMPRA,\\n    DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) AS RECENCIA_DIAS,\\n    b.FREQUENCIA,\\n    b.VALOR_TOTAL,\\n    NTILE(5) OVER (ORDER BY DATEDIFF(DAY, b.ULTIMA_COMPRA, ?) DESC) AS R_SCORE,\\n    NTILE(5) OVER (ORDER BY b.FREQUENCIA ASC) AS F_SCORE,\\n    NTILE(5) OVER (ORDER BY b.VALOR_TOTAL ASC) AS V_SCORE\\n  FROM BASE b\\n)\\n\\nSELECT FIRST 50\\n  c.CODIGO,\\n  c.NOME,\\n  c.FONEPRINCIPAL,\\n  r.RECENCIA_DIAS,\\n  r.FREQUENCIA,\\n  r.VALOR_TOTAL\\nFROM RFV r\\nJOIN CONTATOS c ON c.CODIGO = r.CODIGOCLIENTE\\nWHERE r.R_SCORE <= 2 AND r.F_SCORE >= 3\\nORDER BY r.RECENCIA_DIAS DESC, r.VALOR_TOTAL DESC\\n\", \"params\": [\"${__to:date:iso}\", \"${__to:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Clientes em Risco",
+      "type": "table"
+    },
+    {
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 46
+      },
+      "id": 11,
+      "options": {
+        "content": "Use este painel como gráfico de colunas empilhadas no Grafana:\n1. Abra o painel \"Evolução Mensal RFV (stacked-ready)\".\n2. Troque a visualização para Bar chart.\n3. Em X Axis, selecione MES.\n4. Em Stacking, selecione Normal.\n5. O Grafana já usará as colunas CAMPEOES, LEAIS, PROMISSORES, EM_RISCO e PERDIDOS como séries.\nSem Pivot e sem Transpose.",
+        "mode": "markdown"
+      },
+      "pluginVersion": "12.4.0",
+      "title": "Como transformar em barras empilhadas",
+      "type": "text"
+    }
+  ],
+  "preload": false,
+  "schemaVersion": 42,
+  "tags": [
+    "clientes",
+    "recência",
+    "frequência",
+    "receita"
+  ],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-365d",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "6 - Mr Teddy Pizza - RFV",
+  "uid": "mr-teddy-rfv-v4-stacked-ready",
+  "version": 6,
+  "weekStart": ""
+}

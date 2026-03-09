@@ -1,0 +1,1310 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "BAIRROS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  COUNT(*) AS BAIRROS\\nFROM (\\n  SELECT\\n    COALESCE(d.BAIRRO, c.BAIRRO, 'SEM BAIRRO') AS BAIRRO\\n  FROM PEDIDOS p\\n  INNER JOIN CONTATOS c ON c.CODIGO = p.CODIGOCONTATOCLIENTE\\n  LEFT JOIN DELIVERY d ON d.CODIGOPEDIDO = p.CODIGO\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n    AND COALESCE(d.BAIRRO, c.BAIRRO) IS NOT NULL\\n    AND p.DATAFECHAMENTO >= ?\\n    AND p.DATAFECHAMENTO < ?\\n  GROUP BY COALESCE(d.BAIRRO, c.BAIRRO, 'SEM BAIRRO')\\n) X\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Bairros Atendidos",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RUAS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 6,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  COUNT(*) AS RUAS\\nFROM (\\n  SELECT\\n    COALESCE(d.ENDERECO, c.ENDERECO, 'SEM RUA') AS RUA\\n  FROM PEDIDOS p\\n  INNER JOIN CONTATOS c ON c.CODIGO = p.CODIGOCONTATOCLIENTE\\n  LEFT JOIN DELIVERY d ON d.CODIGOPEDIDO = p.CODIGO\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n    AND COALESCE(d.ENDERECO, c.ENDERECO) IS NOT NULL\\n    AND p.DATAFECHAMENTO >= ?\\n    AND p.DATAFECHAMENTO < ?\\n  GROUP BY COALESCE(d.ENDERECO, c.ENDERECO, 'SEM RUA')\\n) X\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Ruas Atendidas",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "TICKET_MEDIO_REGIAO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 12,
+        "y": 0
+      },
+      "id": 3,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  AVG(p.VALORTOTAL - p.VALORENTREGA) AS TICKET_MEDIO_REGIAO\\nFROM PEDIDOS p\\nLEFT JOIN DELIVERY d ON d.CODIGOPEDIDO = p.CODIGO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND COALESCE(d.BAIRRO, d.ENDERECO) IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Ticket Médio por Região",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FRETE_MEDIO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 6,
+        "x": 18,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  AVG(COALESCE(d.FRETE, 0)) AS FRETE_MEDIO\\nFROM PEDIDOS p\\nINNER JOIN DELIVERY d ON d.CODIGOPEDIDO = p.CODIGO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Frete Médio",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FATURAMENTO_BRUTO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_PIZZARIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "TICKET_MEDIO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FRETE_MEDIO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "CLIENTES"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 0,
+        "y": 4
+      },
+      "id": 5,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  COALESCE(d.BAIRRO, c.BAIRRO, 'SEM BAIRRO') AS BAIRRO,\\n  COUNT(p.CODIGO) AS PEDIDOS,\\n  COUNT(DISTINCT p.CODIGOCONTATOCLIENTE) AS CLIENTES,\\n  SUM(p.VALORTOTAL) AS FATURAMENTO_BRUTO,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) AS RECEITA_PIZZARIA,\\n  AVG(p.VALORTOTAL - p.VALORENTREGA) AS TICKET_MEDIO,\\n  AVG(COALESCE(d.FRETE, 0)) AS FRETE_MEDIO\\nFROM PEDIDOS p\\nINNER JOIN CONTATOS c ON c.CODIGO = p.CODIGOCONTATOCLIENTE\\nLEFT JOIN DELIVERY d ON d.CODIGOPEDIDO = p.CODIGO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\nGROUP BY COALESCE(d.BAIRRO, c.BAIRRO, 'SEM BAIRRO')\\nORDER BY RECEITA_PIZZARIA DESC\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Faturamento por Bairro",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_PIZZARIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "TICKET_MEDIO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "CLIENTES"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 12,
+        "y": 4
+      },
+      "id": 6,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT FIRST 100\\n  COALESCE(d.ENDERECO, c.ENDERECO, 'SEM RUA') AS RUA,\\n  COALESCE(d.BAIRRO, c.BAIRRO, 'SEM BAIRRO') AS BAIRRO,\\n  COUNT(p.CODIGO) AS PEDIDOS,\\n  COUNT(DISTINCT p.CODIGOCONTATOCLIENTE) AS CLIENTES,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) AS RECEITA_PIZZARIA,\\n  AVG(p.VALORTOTAL - p.VALORENTREGA) AS TICKET_MEDIO\\nFROM PEDIDOS p\\nINNER JOIN CONTATOS c ON c.CODIGO = p.CODIGOCONTATOCLIENTE\\nLEFT JOIN DELIVERY d ON d.CODIGOPEDIDO = p.CODIGO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\nGROUP BY COALESCE(d.ENDERECO, c.ENDERECO, 'SEM RUA'), COALESCE(d.BAIRRO, c.BAIRRO, 'SEM BAIRRO')\\nORDER BY RECEITA_PIZZARIA DESC\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Faturamento por Rua",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_PIZZARIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 14
+      },
+      "id": 7,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT FIRST 100\\n  c.NOME,\\n  c.FONEPRINCIPAL,\\n  COALESCE(d.ENDERECO, c.ENDERECO, 'SEM ENDERECO') AS ENDERECO,\\n  COALESCE(d.NUMERO, c.NUMERO, '') AS NUMERO,\\n  COALESCE(d.BAIRRO, c.BAIRRO, 'SEM BAIRRO') AS BAIRRO,\\n  c.DATAINSERT AS DATA_CADASTRO,\\n  MAX(p.DATAFECHAMENTO) AS ULTIMA_COMPRA,\\n  COUNT(p.CODIGO) AS PEDIDOS,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) AS RECEITA_PIZZARIA\\nFROM PEDIDOS p\\nINNER JOIN CONTATOS c ON c.CODIGO = p.CODIGOCONTATOCLIENTE\\nLEFT JOIN DELIVERY d ON d.CODIGOPEDIDO = p.CODIGO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\nGROUP BY\\n  c.NOME,\\n  c.FONEPRINCIPAL,\\n  COALESCE(d.ENDERECO, c.ENDERECO, 'SEM ENDERECO'),\\n  COALESCE(d.NUMERO, c.NUMERO, ''),\\n  COALESCE(d.BAIRRO, c.BAIRRO, 'SEM BAIRRO'),\\n  c.DATAINSERT\\nORDER BY RECEITA_PIZZARIA DESC\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Top 100 Clientes por Endereço",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_PIZZARIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FRETE_MEDIO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 24,
+        "x": 0,
+        "y": 26
+      },
+      "id": 8,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  COALESCE(d.BAIRRO, c.BAIRRO, 'SEM BAIRRO') AS BAIRRO,\\n  COUNT(p.CODIGO) AS PEDIDOS,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) AS RECEITA_PIZZARIA,\\n  AVG(COALESCE(d.FRETE, 0)) AS FRETE_MEDIO\\nFROM PEDIDOS p\\nINNER JOIN CONTATOS c ON c.CODIGO = p.CODIGOCONTATOCLIENTE\\nLEFT JOIN DELIVERY d ON d.CODIGOPEDIDO = p.CODIGO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\nGROUP BY COALESCE(d.BAIRRO, c.BAIRRO, 'SEM BAIRRO')\\nORDER BY PEDIDOS DESC\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Distribuição por Bairro (base para heatmap/mapa)",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic-by-name"
+          },
+          "custom": {
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "LAT"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "none"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "LON"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "none"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "CLIENTES"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_PIZZARIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "TICKET_MEDIO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 24,
+        "x": 0,
+        "y": 36
+      },
+      "id": 9,
+      "options": {
+        "basemap": {
+          "config": {},
+          "name": "Layer 2",
+          "noRepeat": true,
+          "type": "default"
+        },
+        "controls": {
+          "mouseWheelZoom": true,
+          "showAttribution": true,
+          "showDebug": true,
+          "showMeasure": true,
+          "showScale": true,
+          "showZoom": true
+        },
+        "layers": [
+          {
+            "config": {
+              "blur": 17,
+              "radius": 7,
+              "weight": {
+                "fixed": 1,
+                "max": 1,
+                "min": 0
+              }
+            },
+            "layer-tooltip": true,
+            "location": {
+              "mode": "auto"
+            },
+            "name": "Layer 1",
+            "opacity": 1,
+            "tooltip": true,
+            "type": "heatmap"
+          }
+        ],
+        "tooltip": {
+          "mode": "details"
+        },
+        "view": {
+          "allLayers": true,
+          "id": "fit",
+          "lastOnly": false,
+          "lat": -23.5,
+          "layer": "Layer 1",
+          "lon": 46.6,
+          "noRepeat": true,
+          "padding": 1,
+          "shared": true,
+          "zoom": 17
+        }
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  COALESCE(e.LAT, c.LAT) AS LAT,\\n  COALESCE(e.LON, c.LON) AS LON,\\n  COALESCE(d.ENDERECO, e.LOGRADOURO, c.ENDERECO, 'SEM RUA') AS RUA,\\n  COALESCE(d.BAIRRO, e.BAIRRO, c.BAIRRO, 'SEM BAIRRO') AS BAIRRO,\\n  COUNT(p.CODIGO) AS PEDIDOS,\\n  COUNT(DISTINCT p.CODIGOCONTATOCLIENTE) AS CLIENTES,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) AS RECEITA_PIZZARIA,\\n  AVG(p.VALORTOTAL - p.VALORENTREGA) AS TICKET_MEDIO\\nFROM PEDIDOS p\\nINNER JOIN CONTATOS c ON c.CODIGO = p.CODIGOCONTATOCLIENTE\\nLEFT JOIN DELIVERY d ON d.CODIGOPEDIDO = p.CODIGO\\nLEFT JOIN ENDERECO e ON e.CODIGO = d.CODIGOENDERECO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n  AND COALESCE(e.LAT, c.LAT) IS NOT NULL\\n  AND COALESCE(e.LON, c.LON) IS NOT NULL\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\nGROUP BY\\n  COALESCE(e.LAT, c.LAT),\\n  COALESCE(e.LON, c.LON),\\n  COALESCE(d.ENDERECO, e.LOGRADOURO, c.ENDERECO, 'SEM RUA'),\\n  COALESCE(d.BAIRRO, e.BAIRRO, c.BAIRRO, 'SEM BAIRRO')\\nORDER BY PEDIDOS DESC\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Geomap por Rua (LAT/LON de ENDERECO/CONTATOS)",
+      "type": "geomap"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "CLIENTES"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_PIZZARIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "TICKET_MEDIO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FRETE_MEDIO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "SCORE_PRIORIDADE"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "none"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 12,
+        "w": 24,
+        "x": 0,
+        "y": 46
+      },
+      "id": 10,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true,
+        "sortBy": [
+          {
+            "desc": true,
+            "displayName": "PEDIDOS"
+          }
+        ]
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT FIRST 100\\n  COALESCE(d.ENDERECO, c.ENDERECO, 'SEM RUA') AS RUA,\\n  COALESCE(d.BAIRRO, c.BAIRRO, 'SEM BAIRRO') AS BAIRRO,\\n  COUNT(p.CODIGO) AS PEDIDOS,\\n  COUNT(DISTINCT p.CODIGOCONTATOCLIENTE) AS CLIENTES,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) AS RECEITA_PIZZARIA,\\n  AVG(p.VALORTOTAL - p.VALORENTREGA) AS TICKET_MEDIO,\\n  AVG(COALESCE(d.FRETE, 0)) AS FRETE_MEDIO,\\n  (\\n    COUNT(p.CODIGO) * 0.45 +\\n    COUNT(DISTINCT p.CODIGOCONTATOCLIENTE) * 0.25 +\\n    (SUM(p.VALORTOTAL - p.VALORENTREGA) / NULLIF(COUNT(p.CODIGO),0)) * 0.30\\n  ) AS SCORE_PRIORIDADE\\nFROM PEDIDOS p\\nINNER JOIN CONTATOS c ON c.CODIGO = p.CODIGOCONTATOCLIENTE\\nLEFT JOIN DELIVERY d ON d.CODIGOPEDIDO = p.CODIGO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\nGROUP BY\\n  COALESCE(d.ENDERECO, c.ENDERECO, 'SEM RUA'),\\n  COALESCE(d.BAIRRO, c.BAIRRO, 'SEM BAIRRO')\\nORDER BY SCORE_PRIORIDADE DESC, RECEITA_PIZZARIA DESC\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Ruas Prioritárias para Panfletagem",
+      "type": "table"
+    }
+  ],
+  "preload": false,
+  "schemaVersion": 42,
+  "tags": [
+    "clientes",
+    "geo",
+    "receita",
+    "panfletagem"
+  ],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-30d",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "7 - Mr Teddy Pizza - Geografia Comercial",
+  "uid": "mr-teddy-geografia-v4-geomap-fix",
+  "version": 4,
+  "weekStart": ""
+}

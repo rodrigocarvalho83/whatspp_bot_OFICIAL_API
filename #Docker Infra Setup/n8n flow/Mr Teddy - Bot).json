@@ -1,0 +1,2271 @@
+{
+  "name": "Mr Teddy - Bot",
+  "nodes": [
+    {
+      "parameters": {
+        "schema": {
+          "__rl": true,
+          "mode": "list",
+          "value": "public"
+        },
+        "table": {
+          "__rl": true,
+          "value": "whatsapp_inbound_log",
+          "mode": "list",
+          "cachedResultName": "whatsapp_inbound_log"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "pricing_billable": "={{ $json.pricing_billable }}",
+            "event_type": "={{ $json.event_type }}",
+            "wa_id": "={{ $json.wa_id }}",
+            "from_number": "={{ $json.from_number }}",
+            "contact_name": "={{ $json.contact_name }}",
+            "message_id": "={{ $json.message_id }}",
+            "message_type": "={{ $json.message_type }}",
+            "text_body": "={{ $json.text_body }}",
+            "status": "={{ $json.status_value }}",
+            "recipient_id": "={{ $json.status_recipient_id }}",
+            "timestamp_meta": "={{ $json.status_timestamp }}",
+            "error_code": "={{ $json.error_code }}",
+            "error_title": "={{ $json.error_title }}",
+            "error_message": "={{ $json.error_message }}",
+            "raw_payload": "={{ $json.raw_payload }}",
+            "phone_number_id": "={{ $json.phone_number_id }}",
+            "messaging_product": "={{ $json.messaging_product }}",
+            "display_phone_number": "={{ $json.display_phone_number }}",
+            "status_message_id": "={{ $json.status_message_id }}",
+            "field": "={{$json.field}}",
+            "status_value": "={{$json.status_value}}",
+            "status_timestamp": "={{$json.status_timestamp}}",
+            "status_recipient_id": "={{$json.status_recipient_id}}",
+            "pricing_model": "={{ $json.pricing_model }}",
+            "pricing_category": "={{ $json.pricing_category }}",
+            "pricing_type": "={{ $json.pricing_type }}",
+            "call_event": "={{$json.call_event}}",
+            "call_id": "={{$json.call_id}}",
+            "call_from_number": "={{$json.call_timestamp}}",
+            "call_direction": "={{$json.call_direction}}",
+            "call_duration": "={{$json.call_direction}}",
+            "call_reason": "={{$json.call_duration}}",
+            "call_timestamp": "={{ $json.call_timestamp }}",
+            "button_reply_id": "={{$json.button_reply_id}}",
+            "button_reply_title": "={{$json.button_reply_id}}"
+          },
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "received_at",
+              "displayName": "received_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "event_type",
+              "displayName": "event_type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "wa_id",
+              "displayName": "wa_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "from_number",
+              "displayName": "from_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "contact_name",
+              "displayName": "contact_name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "message_id",
+              "displayName": "message_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "message_type",
+              "displayName": "message_type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "text_body",
+              "displayName": "text_body",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "status",
+              "displayName": "status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "recipient_id",
+              "displayName": "recipient_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "timestamp_meta",
+              "displayName": "timestamp_meta",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "error_code",
+              "displayName": "error_code",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "error_title",
+              "displayName": "error_title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "error_message",
+              "displayName": "error_message",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "raw_payload",
+              "displayName": "raw_payload",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "object",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "phone_number_id",
+              "displayName": "phone_number_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "messaging_product",
+              "displayName": "messaging_product",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "field",
+              "displayName": "field",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "display_phone_number",
+              "displayName": "display_phone_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "status_message_id",
+              "displayName": "status_message_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "status_value",
+              "displayName": "status_value",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "status_timestamp",
+              "displayName": "status_timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "status_recipient_id",
+              "displayName": "status_recipient_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pricing_billable",
+              "displayName": "pricing_billable",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "boolean",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pricing_model",
+              "displayName": "pricing_model",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pricing_category",
+              "displayName": "pricing_category",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pricing_type",
+              "displayName": "pricing_type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "call_id",
+              "displayName": "call_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "call_event",
+              "displayName": "call_event",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "call_timestamp",
+              "displayName": "call_timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "call_from_number",
+              "displayName": "call_from_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "call_direction",
+              "displayName": "call_direction",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "call_duration",
+              "displayName": "call_duration",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "call_reason",
+              "displayName": "call_reason",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "button_reply_id",
+              "displayName": "button_reply_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "button_reply_title",
+              "displayName": "button_reply_title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        576,
+        688
+      ],
+      "id": "7a07e8cb-911e-4672-9c2c-0f96cc0d0264",
+      "name": "Insert rows in a table",
+      "credentials": {
+        "postgres": {
+          "id": "FZVbHX9eSxiRJ1vd",
+          "name": "Postgres - VPS"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const q = $input.first().json.query || {};\nconst mode = q[\"hub.mode\"];\nconst token = q[\"hub.verify_token\"];\nconst challenge = q[\"hub.challenge\"];\n\nconst VERIFY_TOKEN = \"SEU_TOKEN_AQUI\"; // você inventa e coloca igual na Meta\n\nif (mode === \"subscribe\" && token === VERIFY_TOKEN && challenge) {\n  return [{ status: 200, body: challenge }];\n}\n\nreturn [{ status: 403, body: \"Forbidden\" }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        880,
+        80
+      ],
+      "id": "8304c0d4-6400-4b23-9412-164f75718c72",
+      "name": "Code in JavaScript1"
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{$json.body}}",
+        "options": {
+          "responseCode": "={{$json.status}}"
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        1104,
+        80
+      ],
+      "id": "e4d0aa85-f596-4ed9-bc73-1e1dbd53980a",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "path": "whatsapp",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        656,
+        80
+      ],
+      "id": "d89ca434-9939-478d-a4a6-46f7b92054ed",
+      "name": "WA webhook GET",
+      "webhookId": "4cf1abed-e81b-410c-b330-c8c382c8e692"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "whatsapp",
+        "options": {
+          "responseCode": {
+            "values": {}
+          },
+          "responseData": "OK"
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        96,
+        688
+      ],
+      "id": "7fdf92d8-7747-489a-b6b8-bbfafb7ee137",
+      "name": "WA webhook POST",
+      "webhookId": "90d2c6dc-aedc-444f-8437-0f558bc8551c"
+    },
+    {
+      "parameters": {
+        "jsCode": "// n8n Webhook node wraps Meta payload inside $json.body\nconst envelope = $input.first().json;\nconst body = envelope.body ?? envelope;\n\n// Helpers\nconst first = (arr) => (Array.isArray(arr) && arr.length ? arr[0] : null);\nconst safe = (v, d = null) => (v === undefined ? d : v);\n\n// Estrutura principal do payload da Meta\nconst entry = first(body.entry) || null;\nconst change = first(entry?.changes) || null;\nconst value = change?.value || body;\n\n// Campos principais\nconst messaging_product = safe(value?.messaging_product);\nconst field = safe(change?.field || value?.field);\n\n// Metadata\nconst metadata = value?.metadata || {};\nconst phone_number_id = safe(metadata?.phone_number_id);\nconst display_phone_number = safe(metadata?.display_phone_number);\n\n// Arrays possíveis\nconst messages = Array.isArray(value?.messages) ? value.messages : [];\nconst statuses = Array.isArray(value?.statuses) ? value.statuses : [];\nconst calls = Array.isArray(value?.calls) ? value.calls : [];\n\n// Contact\nconst contact = first(value?.contacts) || null;\nconst contact_wa_id = safe(contact?.wa_id);\nconst contact_name = safe(contact?.profile?.name);\n\n// Output\nconst out = [];\n\n// =========================\n// MESSAGE EVENTS\n// =========================\nfor (const msg of messages) {\n  const buttonReplyId = safe(msg?.interactive?.button_reply?.id);\n  const buttonReplyTitle = safe(msg?.interactive?.button_reply?.title);\n\n  out.push({\n    received_at: new Date().toISOString(),\n    event_type: \"message\",\n\n    messaging_product,\n    field,\n    phone_number_id,\n    display_phone_number,\n\n    wa_id: contact_wa_id || safe(msg?.from),\n    from_number: safe(msg?.from),\n    contact_name,\n\n    message_id: safe(msg?.id),\n    message_type: safe(msg?.type),\n    text_body: safe(msg?.text?.body),\n\n    button_reply_id: buttonReplyId,\n    button_reply_title: buttonReplyTitle,\n\n    // Campos de status\n    status_message_id: null,\n    status_value: null,\n    status_timestamp: safe(msg?.timestamp),\n    status_recipient_id: null,\n\n    // Campos legados compatíveis\n    status: null,\n    recipient_id: null,\n    timestamp_meta: safe(msg?.timestamp),\n\n    // Pricing\n    pricing_billable: null,\n    pricing_model: null,\n    pricing_category: null,\n    pricing_type: null,\n\n    // Errors\n    error_code: null,\n    error_title: null,\n    error_message: null,\n\n    // Calls\n    call_id: null,\n    call_event: null,\n    call_timestamp: null,\n    call_from_number: null,\n    call_direction: null,\n    call_duration: null,\n    call_reason: null,\n\n    raw_payload: body,\n  });\n}\n\n// =========================\n// STATUS EVENTS\n// =========================\nfor (const st of statuses) {\n  const pricing = st?.pricing || null;\n  const err = Array.isArray(st?.errors) && st.errors.length ? st.errors[0] : null;\n\n  out.push({\n    received_at: new Date().toISOString(),\n    event_type: \"status\",\n\n    messaging_product,\n    field,\n    phone_number_id,\n    display_phone_number,\n\n    wa_id: null,\n    from_number: null,\n    contact_name: null,\n\n    message_id: null,\n    message_type: null,\n    text_body: null,\n\n    button_reply_id: null,\n    button_reply_title: null,\n\n    // Campos novos\n    status_message_id: safe(st?.id),\n    status_value: safe(st?.status),\n    status_timestamp: safe(st?.timestamp),\n    status_recipient_id: safe(st?.recipient_id),\n\n    // Campos legados\n    status: safe(st?.status),\n    recipient_id: safe(st?.recipient_id),\n    timestamp_meta: safe(st?.timestamp),\n\n    // Pricing\n    pricing_billable: safe(pricing?.billable),\n    pricing_model: safe(pricing?.pricing_model),\n    pricing_category: safe(pricing?.category),\n    pricing_type: safe(pricing?.type),\n\n    // Errors\n    error_code: safe(err?.code),\n    error_title: safe(err?.title),\n    error_message: safe(err?.message),\n\n    // Calls\n    call_id: null,\n    call_event: null,\n    call_timestamp: null,\n    call_from_number: null,\n    call_direction: null,\n    call_duration: null,\n    call_reason: null,\n\n    raw_payload: body,\n  });\n}\n\n// =========================\n// CALL EVENTS\n// =========================\nfor (const c of calls) {\n  const fromNum =\n    safe(c?.from) ??\n    safe(c?.caller) ??\n    safe(c?.phone_number) ??\n    safe(c?.source) ??\n    null;\n\n  const callEvent =\n    safe(c?.event) ??\n    safe(c?.status) ??\n    safe(c?.type) ??\n    null;\n\n  out.push({\n    received_at: new Date().toISOString(),\n    event_type: \"call\",\n\n    messaging_product,\n    field,\n    phone_number_id,\n    display_phone_number,\n\n    wa_id: contact_wa_id || fromNum,\n    from_number: fromNum,\n    contact_name,\n\n    message_id: null,\n    message_type: null,\n    text_body: null,\n\n    button_reply_id: null,\n    button_reply_title: null,\n\n    // Campos de status\n    status_message_id: null,\n    status_value: null,\n    status_timestamp: null,\n    status_recipient_id: null,\n\n    // Campos legados\n    status: null,\n    recipient_id: null,\n    timestamp_meta: null,\n\n    // Pricing\n    pricing_billable: null,\n    pricing_model: null,\n    pricing_category: null,\n    pricing_type: null,\n\n    // Errors\n    error_code: null,\n    error_title: null,\n    error_message: null,\n\n    // Calls\n    call_id: safe(c?.id),\n    call_event: callEvent,\n    call_timestamp: safe(c?.timestamp),\n    call_from_number: fromNum,\n    call_direction: safe(c?.direction),\n    call_duration: safe(c?.duration),\n    call_reason: safe(c?.reason),\n\n    raw_payload: body,\n  });\n}\n\n// =========================\n// FALLBACK\n// =========================\nif (out.length === 0) {\n  out.push({\n    received_at: new Date().toISOString(),\n    event_type: \"unknown\",\n\n    messaging_product,\n    field,\n    phone_number_id,\n    display_phone_number,\n\n    wa_id: contact_wa_id,\n    from_number: null,\n    contact_name,\n\n    message_id: null,\n    message_type: null,\n    text_body: null,\n\n    button_reply_id: null,\n    button_reply_title: null,\n\n    // Campos de status\n    status_message_id: null,\n    status_value: null,\n    status_timestamp: null,\n    status_recipient_id: null,\n\n    // Campos legados\n    status: null,\n    recipient_id: null,\n    timestamp_meta: null,\n\n    // Pricing\n    pricing_billable: null,\n    pricing_model: null,\n    pricing_category: null,\n    pricing_type: null,\n\n    // Errors\n    error_code: null,\n    error_title: null,\n    error_message: null,\n\n    // Calls\n    call_id: null,\n    call_event: null,\n    call_timestamp: null,\n    call_from_number: null,\n    call_direction: null,\n    call_duration: null,\n    call_reason: null,\n\n    raw_payload: body,\n  });\n}\n\nreturn out;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        320,
+        688
+      ],
+      "id": "ad6eb7bc-c36d-40f5-8d3b-1a89fcb1a794",
+      "name": "Parser"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v25.0/{{$json.phone_number_id}}/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer EAAbJHUbRmY8BQ2IYuoW721heZAZBwo2eJFRLqUfE08rGRTn6jRfKR7mcm7qRWqU2J0f2JPRL0XGyMyZAhnFwTP7E2adybf8boIZCauN127LRsddljcXXf4vKoiDi98fO0YnojgoqKZC80bZCjJSzf34ZCN7I4nO3MoodrZBnc5oVfBvOZAPz1PMpJAh1m97KNZCZCApNQZDZD"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"messaging_product\": \"whatsapp\",\n  \"to\": \"={{$json.from_number}}\",\n  \"type\": \"interactive\",\n  \"interactive\": {\n    \"type\": \"button\",\n    \"body\": {\n      \"text\": \"🐻🍕 Opa! Aqui é o *Teddy*.\\n\\n*Esse número não tem atendimento pelo Whatsapp*, mas vou ser legal com você...\\n\\nEscolhe uma opção aí embaixo, mas não deixe de fazer seu pedido!!! Acho que ninguem aqui quer ver um urso irritado😤👇\"\n    },\n    \"action\": {\n      \"buttons\": [\n        {\n          \"type\": \"reply\",\n          \"reply\": { \"id\": \"ver_cardapio\", \"title\": \"📋 Ver Cardápio\" }\n        },\n\t\t{\n          \"type\": \"reply\",\n          \"reply\": { \"id\": \"falar_whatsapp\", \"title\": \"💬 Falar no WhatsApp\" }\n        },\n        {\n          \"type\": \"reply\",\n          \"reply\": { \"id\": \"ligar_atendimento\", \"title\": \"☎️ Ligar na Loja\" }\n        }\n      ]\n    }\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1552,
+        784
+      ],
+      "id": "c33a023f-0f20-464b-b7f0-94b6e5a8863b",
+      "name": "HTTP Request - Send Btn"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v25.0/{{$json.phone_number_id}}/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer EAAbJHUbRmY8BQ2IYuoW721heZAZBwo2eJFRLqUfE08rGRTn6jRfKR7mcm7qRWqU2J0f2JPRL0XGyMyZAhnFwTP7E2adybf8boIZCauN127LRsddljcXXf4vKoiDi98fO0YnojgoqKZC80bZCjJSzf34ZCN7I4nO3MoodrZBnc5oVfBvOZAPz1PMpJAh1m97KNZCZCApNQZDZD"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"messaging_product\": \"whatsapp\",\n  \"to\": \"={{$json.from_number}}\",\n  \"type\": \"text\",\n  \"text\": {\n    \"preview_url\": true,\n    \"body\": \"📋🐻 Tá na mão! Cardápio digital do *Mr. Teddy*:\\nhttps://vilamaria.mrteddypizza.com.br\\n\\nSó selecionar sabor, tamanho e local de entrega, que eu já agilizo aqui. Sem demora, por favor… eu sou um urso ocupado 😄\"\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1552,
+        432
+      ],
+      "id": "c68d8b2e-1f1e-4fd4-9b32-753d3ced8e98",
+      "name": "HTTP Request - Send Menu lnk"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v25.0/{{$json.phone_number_id}}/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer EAAbJHUbRmY8BQ2IYuoW721heZAZBwo2eJFRLqUfE08rGRTn6jRfKR7mcm7qRWqU2J0f2JPRL0XGyMyZAhnFwTP7E2adybf8boIZCauN127LRsddljcXXf4vKoiDi98fO0YnojgoqKZC80bZCjJSzf34ZCN7I4nO3MoodrZBnc5oVfBvOZAPz1PMpJAh1m97KNZCZCApNQZDZD"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"messaging_product\": \"whatsapp\",\n  \"to\": \"={{$json.from_number}}\",\n  \"type\": \"text\",\n  \"text\": {\n    \"preview_url\": false,\n    \"body\": \"☎️🐻 Orefere bater papo por telefone? Liga aqui na loja:\\n*+55 11 3456-2251*\\n\\n(É ligação normal do seu telefone.)\"\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1552,
+        608
+      ],
+      "id": "24ccdc06-cc5d-4d1c-a680-adb63294ff7d",
+      "name": "HTTP Request - Snd Phone"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.event_type}}",
+                    "rightValue": "message",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "27926610-b1d1-4fa6-b0b4-5e58a22a636c"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Switch Message"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "787f7ad8-4a99-4f98-9b12-bb7310035eb7",
+                    "leftValue": "={{$json.event_type}}",
+                    "rightValue": "call",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Send Buttons"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "7179054c-7307-417c-9a10-3e191e1aba72",
+                    "leftValue": "={{$json.event_type}}",
+                    "rightValue": "status",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Status"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        624,
+        992
+      ],
+      "id": "e28e5dd4-b25e-4353-932b-db2aa9a42a94",
+      "name": "Switch1",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.button_reply_id}}",
+                    "rightValue": "ver_cardapio",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "ea83d5e8-193a-4250-8597-d2afa915d3c6"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Send Menu Link"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "1cc141fb-c0c0-409b-9509-42f7b194fe0f",
+                    "leftValue": "={{$json.button_reply_id}}",
+                    "rightValue": "ligar_atendimento",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Send Phone"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "3c89bba9-d235-4b27-a9eb-baabaefb8e4c",
+                    "leftValue": "={{$json.button_reply_id}}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "isEmpty",
+                      "name": "filter.operator.isEmpty"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Send Buttons"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "99387cf5-a363-4c17-91ac-9f3fde2f7e74",
+                    "leftValue": "={{$json.button_reply_id}}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "empty",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Enviar botoes"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "6a879f14-82c7-4b76-8a8b-2be094961b1e",
+                    "leftValue": "={{$json.button_reply_id}}",
+                    "rightValue": "=falar_whatsapp",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Snd Whatsapp"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        880,
+        640
+      ],
+      "id": "945bc49b-0540-42af-9b8e-2453200a873a",
+      "name": "Switch Message"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v25.0/{{$json.phone_number_id}}/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer EAAbJHUbRmY8BQ2IYuoW721heZAZBwo2eJFRLqUfE08rGRTn6jRfKR7mcm7qRWqU2J0f2JPRL0XGyMyZAhnFwTP7E2adybf8boIZCauN127LRsddljcXXf4vKoiDi98fO0YnojgoqKZC80bZCjJSzf34ZCN7I4nO3MoodrZBnc5oVfBvOZAPz1PMpJAh1m97KNZCZCApNQZDZD"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"messaging_product\": \"whatsapp\",\n  \"to\": \"={{$json.from_number}}\",\n  \"type\": \"text\",\n  \"text\": {\n    \"preview_url\": true,\n    \"body\": \"💬🐻 Partiu atendimento humano! Fala com a equipe no WhatsApp por aqui:\\nhttps://wa.me/5511933673021\\n\\nOu salva o número: *+55 11 93367-3021*\"\n  }\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1552,
+        960
+      ],
+      "id": "85712581-92ad-4a61-a0f7-98c2ebb285ac",
+      "name": "HTTP Request - Snd Whatsapp"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 7,
+              "triggerAtMinute": 7
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        128,
+        1504
+      ],
+      "id": "56cfb663-10f5-4837-800f-d2f34bebc737",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "url": "=https://vm-api.mrteddypizza.com.br/orders?start={{$json.start}}&end={{$json.end}}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBearerAuth",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        544,
+        1504
+      ],
+      "id": "f51d7b79-cecf-4e0b-a408-7ccb881d312f",
+      "name": "HTTP Request",
+      "credentials": {
+        "httpBearerAuth": {
+          "id": "kIabjfdGCkuHO7PZ",
+          "name": "VM-API Authentication"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "upsert",
+        "schema": {
+          "__rl": true,
+          "mode": "list",
+          "value": "public"
+        },
+        "table": {
+          "__rl": true,
+          "value": "firebird_orders",
+          "mode": "list",
+          "cachedResultName": "firebird_orders"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "total": "={{ $json.total }}",
+            "phone_e164": "={{$json.phone_e164}}",
+            "closed_at": "={{$json.closed_at}}",
+            "order_id": "={{ $json.order_id }}"
+          },
+          "matchingColumns": [
+            "order_id"
+          ],
+          "schema": [
+            {
+              "id": "order_id",
+              "displayName": "order_id",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "phone_e164",
+              "displayName": "phone_e164",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": false
+            },
+            {
+              "id": "closed_at",
+              "displayName": "closed_at",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "canBeUsedToMatch": false
+            },
+            {
+              "id": "total",
+              "displayName": "total",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        752,
+        1504
+      ],
+      "id": "537585b1-e21f-4694-a31d-caab63f58521",
+      "name": "Insert or update rows in a table",
+      "credentials": {
+        "postgres": {
+          "id": "FZVbHX9eSxiRJ1vd",
+          "name": "Postgres - VPS"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "# Relatório diário de WhatsApp MKT",
+        "height": 544,
+        "width": 1988
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -16,
+        1328
+      ],
+      "typeVersion": 1,
+      "id": "7f0dc606-7b63-4ef8-bd78-a3b6dbdbec44",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH status_base AS (\n  SELECT\n    COALESCE(w.pricing_category, 'unknown') AS category,\n    w.status_value,\n    CASE\n      WHEN regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g') LIKE '55%'\n        THEN regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g')\n      WHEN regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g') = ''\n        THEN NULL\n      ELSE '55' || regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g')\n    END AS phone_norm,\n    to_timestamp(w.status_timestamp::bigint) AT TIME ZONE 'America/Sao_Paulo' AS ts_sp\n  FROM whatsapp_inbound_log w\n  WHERE w.event_type = 'status'\n    AND w.status_timestamp IS NOT NULL\n)\nSELECT\n  category,\n  COUNT(*) FILTER (WHERE status_value = 'sent')      AS sent,\n  COUNT(*) FILTER (WHERE status_value = 'delivered') AS delivered,\n  COUNT(*) FILTER (WHERE status_value = 'read')      AS read,\n  COUNT(*) FILTER (WHERE status_value = 'failed')    AS failed,\n  COUNT(DISTINCT phone_norm) FILTER (WHERE phone_norm IS NOT NULL) AS unique_recipients\nFROM status_base\nWHERE ts_sp >= '{{ $(\"Window Daily\").item.json.start }}'\n  AND ts_sp <  '{{ $(\"Window Daily\").item.json.end }}'\nGROUP BY category\nORDER BY category;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        976,
+        1392
+      ],
+      "id": "1893c336-2f90-4296-9d02-c96d9db9cbee",
+      "name": "Query - Stats por Categoria (Yesterday)",
+      "credentials": {
+        "postgres": {
+          "id": "FZVbHX9eSxiRJ1vd",
+          "name": "Postgres - VPS"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH orders_base AS (\n    SELECT\n        o.order_id,\n        o.closed_at,\n        o.total,\n        CASE\n            WHEN regexp_replace(COALESCE(o.phone_e164, ''), '\\D', '', 'g') LIKE '55%'\n                THEN regexp_replace(COALESCE(o.phone_e164, ''), '\\D', '', 'g')\n            WHEN regexp_replace(COALESCE(o.phone_e164, ''), '\\D', '', 'g') = ''\n                THEN NULL\n            ELSE '55' || regexp_replace(COALESCE(o.phone_e164, ''), '\\D', '', 'g')\n        END AS phone_norm\n    FROM firebird_orders o\n),\norder_history AS (\n    SELECT\n        ob.*,\n        ROW_NUMBER() OVER (PARTITION BY ob.phone_norm ORDER BY ob.closed_at) AS rn_lifetime,\n        LAG(ob.closed_at) OVER (PARTITION BY ob.phone_norm ORDER BY ob.closed_at) AS prev_order_at\n    FROM orders_base ob\n),\nmarketing_delivered AS (\n    SELECT\n        CASE\n            WHEN regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g') LIKE '55%'\n                THEN regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g')\n            WHEN regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g') = ''\n                THEN NULL\n            ELSE '55' || regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g')\n        END AS phone_norm,\n        to_timestamp(w.status_timestamp::bigint) AT TIME ZONE 'America/Sao_Paulo' AS delivered_at\n    FROM whatsapp_inbound_log w\n    WHERE w.event_type = 'status'\n      AND w.status_value = 'delivered'\n      AND COALESCE(w.pricing_category, 'unknown') = 'marketing'\n      AND w.status_timestamp IS NOT NULL\n),\nattrib AS (\n    SELECT\n        o.order_id,\n        o.phone_norm,\n        o.closed_at,\n        o.total,\n        o.rn_lifetime,\n        o.prev_order_at,\n        a.delivered_at\n    FROM order_history o\n    LEFT JOIN LATERAL (\n        SELECT m.delivered_at\n        FROM marketing_delivered m\n        WHERE m.phone_norm = o.phone_norm\n          AND m.delivered_at <= o.closed_at\n          AND o.closed_at < m.delivered_at + interval '7 days'\n        ORDER BY m.delivered_at DESC\n        LIMIT 1\n    ) a ON TRUE\n    WHERE o.closed_at >= '{{ $(\"Window Daily\").item.json.start }}'\n      AND o.closed_at <  '{{ $(\"Window Daily\").item.json.end }}'\n)\nSELECT\n    COUNT(*) FILTER (WHERE delivered_at IS NOT NULL) AS pedidos_atribuidos,\n    COUNT(DISTINCT phone_norm) FILTER (WHERE delivered_at IS NOT NULL) AS clientes_convertidos,\n    COUNT(DISTINCT phone_norm) FILTER (\n        WHERE delivered_at IS NOT NULL\n          AND rn_lifetime = 1\n    ) AS clientes_novos,\n    COUNT(DISTINCT phone_norm) FILTER (\n        WHERE delivered_at IS NOT NULL\n          AND rn_lifetime > 1\n          AND prev_order_at IS NOT NULL\n          AND prev_order_at < closed_at - interval '90 days'\n    ) AS clientes_recuperados,\n    COALESCE(SUM(total) FILTER (WHERE delivered_at IS NOT NULL), 0) AS receita_atribuida\nFROM attrib;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        976,
+        1616
+      ],
+      "id": "7babc04d-4f91-4b8d-bf8f-711153285cd6",
+      "name": "Query - Conversão por Categoria (6h)",
+      "credentials": {
+        "postgres": {
+          "id": "FZVbHX9eSxiRJ1vd",
+          "name": "Postgres - VPS"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const statsRows = $input.all(0).map(i => i.json);\nconst convRows  = $input.all(1).map(i => i.json);\n\nconst d = new Date(Date.now() - 24 * 3600 * 1000);\nconst dayLabel = `${String(d.getDate()).padStart(2,\"0\")}/${String(d.getMonth()+1).padStart(2,\"0\")}/${d.getFullYear()}`;\n\nconst byCat = new Map();\n\nfor (const s of statsRows) {\n  const cat = String(s.category ?? \"unknown\");\n  byCat.set(cat, {\n    category: cat,\n    sent: Number(s.sent || 0),\n    delivered: Number(s.delivered || 0),\n    read: Number(s.read || 0),\n    failed: Number(s.failed || 0),\n    unique_recipients: Number(s.unique_recipients || 0),\n    unique_conversions: 0,\n    revenue: 0\n  });\n}\n\nfor (const c of convRows) {\n  const cat = String(c.category ?? \"unknown\");\n  const cur = byCat.get(cat) || {\n    category: cat,\n    sent: 0,\n    delivered: 0,\n    read: 0,\n    failed: 0,\n    unique_recipients: 0,\n    unique_conversions: 0,\n    revenue: 0\n  };\n\n  cur.unique_conversions = Number(c.unique_conversions || 0);\n  cur.revenue = Number(c.revenue || 0);\n\n  byCat.set(cat, cur);\n}\n\nconst cats = Array.from(byCat.keys()).sort((a, b) => a.localeCompare(b));\n\nconst pct = (x) => Number(x || 0).toFixed(1);\nconst brl = (v) => {\n  const n = Number(v || 0);\n  const s = n.toFixed(2);\n  const [i, dec] = s.split(\".\");\n  const withDots = i.replace(/\\B(?=(\\d{3})+(?!\\d))/g, \".\");\n  return `R$ ${withDots},${dec}`;\n};\n\nlet totalSent = 0;\nlet totalDelivered = 0;\nlet totalRead = 0;\nlet totalFailed = 0;\nlet totalUniqueRecipients = 0;\nlet totalConversions = 0;\nlet totalRevenue = 0;\n\nlet lines = [];\nlines.push(`📊 **Mr. Teddy | Relatório Diário WhatsApp**`);\nlines.push(`Período: **${dayLabel}**`);\nlines.push(`Regra de atribuição: último **DELIVERED** do mesmo telefone normalizado até **6h** antes do pedido`);\nlines.push(``);\n\nfor (const cat of cats) {\n  const r = byCat.get(cat);\n  const readRate = r.delivered > 0 ? (r.read / r.delivered) * 100 : 0;\n  const convRate = r.delivered > 0 ? (r.unique_conversions / r.delivered) * 100 : 0;\n\n  totalSent += r.sent;\n  totalDelivered += r.delivered;\n  totalRead += r.read;\n  totalFailed += r.failed;\n  totalUniqueRecipients += r.unique_recipients;\n  totalConversions += r.unique_conversions;\n  totalRevenue += r.revenue;\n\n  lines.push(`**${cat.toUpperCase()}**`);\n  lines.push(`• Sent: ${r.sent}`);\n  lines.push(`• Delivered: ${r.delivered}`);\n  lines.push(`• Read: ${r.read} (${pct(readRate)}%)`);\n  lines.push(`• Failed: ${r.failed}`);\n  lines.push(`• Clientes únicos impactados: ${r.unique_recipients}`);\n  lines.push(`• Clientes que compraram: ${r.unique_conversions} (${pct(convRate)}%)`);\n  lines.push(`• Receita atribuída: ${brl(r.revenue)}`);\n  lines.push(``);\n}\n\nconst totalReadRate = totalDelivered > 0 ? (totalRead / totalDelivered) * 100 : 0;\nconst totalConvRate = totalDelivered > 0 ? (totalConversions / totalDelivered) * 100 : 0;\n\nlines.push(`**TOTAL**`);\nlines.push(`• Sent: ${totalSent}`);\nlines.push(`• Delivered: ${totalDelivered}`);\nlines.push(`• Read: ${totalRead} (${pct(totalReadRate)}%)`);\nlines.push(`• Failed: ${totalFailed}`);\nlines.push(`• Clientes únicos impactados: ${totalUniqueRecipients}`);\nlines.push(`• Clientes que compraram: ${totalConversions} (${pct(totalConvRate)}%)`);\nlines.push(`• Receita atribuída: ${brl(totalRevenue)}`);\n\nreturn [{ text_to_send: lines.join('\\n') }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1456,
+        1504
+      ],
+      "id": "8cedfacd-ce9e-4271-a501-f845856916db",
+      "name": "Build Teddy Report Text"
+    },
+    {
+      "parameters": {
+        "content": "# Registro de eventos e mensagens de Whatsapp enviados via API",
+        "height": 896,
+        "width": 1988,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -16,
+        368
+      ],
+      "typeVersion": 1,
+      "id": "3e7a8e72-2387-49cb-bf74-9771fb7660ff",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        1232,
+        1504
+      ],
+      "id": "e800bbbf-92f0-457a-afb4-fc3dffa06ab5",
+      "name": "Merge Stats + Conversion"
+    },
+    {
+      "parameters": {
+        "content": "# Relatório semanal de WhatsApp MKT",
+        "height": 512,
+        "width": 1988
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -16,
+        1952
+      ],
+      "typeVersion": 1,
+      "id": "a5abe1b0-60d5-4013-9f7a-f6517b82b29f",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks",
+              "triggerAtDay": [
+                1
+              ],
+              "triggerAtHour": 10
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        112,
+        2144
+      ],
+      "id": "f74729ed-67d8-45a1-896e-12be5d975097",
+      "name": "Schedule Trigger1"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH status_base AS (\n  SELECT\n    COALESCE(w.pricing_category, 'unknown') AS category,\n    w.status_value,\n    CASE\n      WHEN regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g') LIKE '55%'\n        THEN regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g')\n      WHEN regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g') = ''\n        THEN NULL\n      ELSE '55' || regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g')\n    END AS phone_norm,\n    to_timestamp(w.status_timestamp::bigint) AT TIME ZONE 'America/Sao_Paulo' AS ts_sp\n  FROM whatsapp_inbound_log w\n  WHERE w.event_type = 'status'\n    AND w.status_timestamp IS NOT NULL\n)\nSELECT\n  category,\n  COUNT(*) FILTER (WHERE status_value = 'sent')      AS sent,\n  COUNT(*) FILTER (WHERE status_value = 'delivered') AS delivered,\n  COUNT(*) FILTER (WHERE status_value = 'read')      AS read,\n  COUNT(*) FILTER (WHERE status_value = 'failed')    AS failed,\n  COUNT(DISTINCT phone_norm) FILTER (WHERE phone_norm IS NOT NULL) AS unique_recipients\nFROM status_base\nWHERE ts_sp >= '{{ $(\"Window Weekly\").item.json.start }}'\n  AND ts_sp <  '{{ $(\"Window Weekly\").item.json.end }}'\nGROUP BY category\nORDER BY category;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        672,
+        2032
+      ],
+      "id": "66784594-5d8b-4cee-bc76-f2dfa488f105",
+      "name": "Stats 30d por categoria",
+      "credentials": {
+        "postgres": {
+          "id": "FZVbHX9eSxiRJ1vd",
+          "name": "Postgres - VPS"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH orders_base AS (\n    SELECT\n        o.order_id,\n        o.closed_at,\n        o.total,\n        CASE\n            WHEN regexp_replace(COALESCE(o.phone_e164, ''), '\\D', '', 'g') LIKE '55%'\n                THEN regexp_replace(COALESCE(o.phone_e164, ''), '\\D', '', 'g')\n            WHEN regexp_replace(COALESCE(o.phone_e164, ''), '\\D', '', 'g') = ''\n                THEN NULL\n            ELSE '55' || regexp_replace(COALESCE(o.phone_e164, ''), '\\D', '', 'g')\n        END AS phone_norm\n    FROM firebird_orders o\n),\norder_history AS (\n    SELECT\n        ob.*,\n        ROW_NUMBER() OVER (PARTITION BY ob.phone_norm ORDER BY ob.closed_at) AS rn_lifetime,\n        LAG(ob.closed_at) OVER (PARTITION BY ob.phone_norm ORDER BY ob.closed_at) AS prev_order_at\n    FROM orders_base ob\n),\nmarketing_delivered AS (\n    SELECT\n        CASE\n            WHEN regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g') LIKE '55%'\n                THEN regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g')\n            WHEN regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g') = ''\n                THEN NULL\n            ELSE '55' || regexp_replace(COALESCE(w.status_recipient_id, ''), '\\D', '', 'g')\n        END AS phone_norm,\n        to_timestamp(w.status_timestamp::bigint) AT TIME ZONE 'America/Sao_Paulo' AS delivered_at\n    FROM whatsapp_inbound_log w\n    WHERE w.event_type = 'status'\n      AND w.status_value = 'delivered'\n      AND COALESCE(w.pricing_category, 'unknown') = 'marketing'\n      AND w.status_timestamp IS NOT NULL\n),\nattrib AS (\n    SELECT\n        o.order_id,\n        o.phone_norm,\n        o.closed_at,\n        o.total,\n        o.rn_lifetime,\n        o.prev_order_at,\n        a.delivered_at\n    FROM order_history o\n    LEFT JOIN LATERAL (\n        SELECT m.delivered_at\n        FROM marketing_delivered m\n        WHERE m.phone_norm = o.phone_norm\n          AND m.delivered_at <= o.closed_at\n          AND o.closed_at < m.delivered_at + interval '7 days'\n        ORDER BY m.delivered_at DESC\n        LIMIT 1\n    ) a ON TRUE\n    WHERE o.closed_at >= '{{ $(\"Window Weekly\").item.json.start }}'\n      AND o.closed_at <  '{{ $(\"Window Weekly\").item.json.end }}'\n)\nSELECT\n    COUNT(*) FILTER (WHERE delivered_at IS NOT NULL) AS pedidos_atribuidos,\n    COUNT(DISTINCT phone_norm) FILTER (WHERE delivered_at IS NOT NULL) AS clientes_convertidos,\n    COUNT(DISTINCT phone_norm) FILTER (\n        WHERE delivered_at IS NOT NULL\n          AND rn_lifetime = 1\n    ) AS clientes_novos,\n    COUNT(DISTINCT phone_norm) FILTER (\n        WHERE delivered_at IS NOT NULL\n          AND rn_lifetime > 1\n          AND prev_order_at IS NOT NULL\n          AND prev_order_at < closed_at - interval '90 days'\n    ) AS clientes_recuperados,\n    COALESCE(SUM(total) FILTER (WHERE delivered_at IS NOT NULL), 0) AS receita_atribuida\nFROM attrib;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        672,
+        2288
+      ],
+      "id": "91331fb4-673e-4f49-8bd8-18124f715fd0",
+      "name": "Conversão 30d por categoria (janela diferente por categoria)",
+      "credentials": {
+        "postgres": {
+          "id": "FZVbHX9eSxiRJ1vd",
+          "name": "Postgres - VPS"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        976,
+        2160
+      ],
+      "id": "e8d20ee3-5107-4c3b-b1d2-41d630df73b3",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "jsCode": "const statsRows = $input.all(0).map(i => i.json);\nconst convRows  = $input.all(1).map(i => i.json);\n\nconst now = new Date();\nconst end = new Date(now);\nend.setHours(0,0,0,0);\n\nconst start = new Date(end);\nstart.setDate(start.getDate() - 7);\n\nconst fmt = (d) => `${String(d.getDate()).padStart(2,\"0\")}/${String(d.getMonth()+1).padStart(2,\"0\")}/${d.getFullYear()}`;\nconst periodLabel = `${fmt(start)} a ${fmt(new Date(end.getTime() - 1))}`;\n\nconst byCat = new Map();\n\nfor (const s of statsRows) {\n  const cat = String(s.category ?? \"unknown\");\n  byCat.set(cat, {\n    category: cat,\n    sent: Number(s.sent || 0),\n    delivered: Number(s.delivered || 0),\n    read: Number(s.read || 0),\n    failed: Number(s.failed || 0),\n    unique_recipients: Number(s.unique_recipients || 0),\n    unique_conversions: 0,\n    revenue: 0\n  });\n}\n\nfor (const c of convRows) {\n  const cat = String(c.category ?? \"unknown\");\n  const cur = byCat.get(cat) || {\n    category: cat,\n    sent: 0,\n    delivered: 0,\n    read: 0,\n    failed: 0,\n    unique_recipients: 0,\n    unique_conversions: 0,\n    revenue: 0\n  };\n\n  cur.unique_conversions = Number(c.unique_conversions || 0);\n  cur.revenue = Number(c.revenue || 0);\n\n  byCat.set(cat, cur);\n}\n\nconst cats = Array.from(byCat.keys()).sort((a, b) => a.localeCompare(b));\n\nconst pct = (x) => Number(x || 0).toFixed(1);\nconst brl = (v) => {\n  const n = Number(v || 0);\n  const s = n.toFixed(2);\n  const [i, dec] = s.split(\".\");\n  const withDots = i.replace(/\\B(?=(\\d{3})+(?!\\d))/g, \".\");\n  return `R$ ${withDots},${dec}`;\n};\n\nlet totalSent = 0;\nlet totalDelivered = 0;\nlet totalRead = 0;\nlet totalFailed = 0;\nlet totalUniqueRecipients = 0;\nlet totalConversions = 0;\nlet totalRevenue = 0;\n\nlet lines = [];\nlines.push(`📈 **Mr. Teddy | Relatório Semanal WhatsApp**`);\nlines.push(`Período: **${periodLabel}**`);\nlines.push(`Regra de atribuição: último **DELIVERED** do mesmo telefone normalizado até **7 dias** antes do pedido`);\nlines.push(``);\n\nfor (const cat of cats) {\n  const r = byCat.get(cat);\n  const readRate = r.delivered > 0 ? (r.read / r.delivered) * 100 : 0;\n  const convRate = r.delivered > 0 ? (r.unique_conversions / r.delivered) * 100 : 0;\n\n  totalSent += r.sent;\n  totalDelivered += r.delivered;\n  totalRead += r.read;\n  totalFailed += r.failed;\n  totalUniqueRecipients += r.unique_recipients;\n  totalConversions += r.unique_conversions;\n  totalRevenue += r.revenue;\n\n  lines.push(`**${cat.toUpperCase()}**`);\n  lines.push(`• Sent: ${r.sent}`);\n  lines.push(`• Delivered: ${r.delivered}`);\n  lines.push(`• Read: ${r.read} (${pct(readRate)}%)`);\n  lines.push(`• Failed: ${r.failed}`);\n  lines.push(`• Clientes únicos impactados: ${r.unique_recipients}`);\n  lines.push(`• Clientes que compraram: ${r.unique_conversions} (${pct(convRate)}%)`);\n  lines.push(`• Receita atribuída: ${brl(r.revenue)}`);\n  lines.push(``);\n}\n\nconst totalReadRate = totalDelivered > 0 ? (totalRead / totalDelivered) * 100 : 0;\nconst totalConvRate = totalDelivered > 0 ? (totalConversions / totalDelivered) * 100 : 0;\n\nlines.push(`**TOTAL**`);\nlines.push(`• Sent: ${totalSent}`);\nlines.push(`• Delivered: ${totalDelivered}`);\nlines.push(`• Read: ${totalRead} (${pct(totalReadRate)}%)`);\nlines.push(`• Failed: ${totalFailed}`);\nlines.push(`• Clientes únicos impactados: ${totalUniqueRecipients}`);\nlines.push(`• Clientes que compraram: ${totalConversions} (${pct(totalConvRate)}%)`);\nlines.push(`• Receita atribuída: ${brl(totalRevenue)}`);\n\nreturn [{ text_to_send: lines.join('\\n') }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1184,
+        2160
+      ],
+      "id": "a8d0ae07-88e1-444f-a1fb-9d375f865a41",
+      "name": "Build Weekly 30d Teddy Text"
+    },
+    {
+      "parameters": {
+        "content": "# Webhook test",
+        "height": 256,
+        "width": 1988,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -16,
+        0
+      ],
+      "typeVersion": 1,
+      "id": "92dc1b0c-1314-4111-bbab-1a2f451fe4f3",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "jsCode": "const now = new Date();\n\nconst end = new Date(now);\nend.setHours(0,0,0,0);\n\nconst start = new Date(end);\nstart.setDate(start.getDate() - 1);\n\nfunction isoSP(d) {\n  const pad = (n) => String(n).padStart(2, '0');\n  return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}-03:00`;\n}\n\nreturn [{\n  start: isoSP(start),\n  end: isoSP(end)\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        336,
+        1504
+      ],
+      "id": "68011b3e-eb7a-47a0-ad0e-8932c7d6353b",
+      "name": "Window Daily"
+    },
+    {
+      "parameters": {
+        "jsCode": "const now = new Date();\n\nconst end = new Date(now);\nend.setHours(0,0,0,0);\n\nconst start = new Date(end);\nstart.setDate(start.getDate() - 7);\n\nfunction isoSP(d) {\n  const pad = (n) => String(n).padStart(2, '0');\n  return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}-03:00`;\n}\n\nreturn [{\n  start: isoSP(start),\n  end: isoSP(end)\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        320,
+        2144
+      ],
+      "id": "fca98f99-7c8d-46a0-a150-10328947e5d6",
+      "name": "Window Weekly"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://discord.com/api/webhooks/1479469246206578751/AbBKvb2yu6nXA6t9DCz8NqfINCVPSnXoqNwq7JdABSi9RUunE_GIpK5zr50vIF95dA-q",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ { \"content\": $json.text_to_send } }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1920,
+        1856
+      ],
+      "id": "6a0d55b4-3c69-44fa-a74f-a2429c21d285",
+      "name": "Send to Discord"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "triggerAtMinute": 20
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        32,
+        2624
+      ],
+      "id": "22762a1a-962d-466c-86db-6cf6ba06d994",
+      "name": "Schedule Trigger2"
+    },
+    {
+      "parameters": {
+        "url": "https://vm-api.mrteddypizza.com.br/health",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 10000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        288,
+        2624
+      ],
+      "id": "892d7544-b660-4968-a08c-d96af3f6d355",
+      "name": "HTTP Request1"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "88590c19-152d-40ff-bd8d-afb9dd79d0db",
+              "leftValue": "={{ $json.status }}",
+              "rightValue": "ok",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        560,
+        2608
+      ],
+      "id": "64e8f48c-8f64-4e4c-b45b-712472c542b9",
+      "name": "If",
+      "retryOnFail": true,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://discord.com/api/webhooks/1479469246206578751/AbBKvb2yu6nXA6t9DCz8NqfINCVPSnXoqNwq7JdABSi9RUunE_GIpK5zr50vIF95dA-q",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\"content\": \"🚨 ALERTA: a API da pizzaria está offline ou com erro em vm-api.mrteddypizza.com.br\"}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        944,
+        2624
+      ],
+      "id": "888da32b-6f71-4471-b5e9-98dd085c4ce6",
+      "name": "Send to Discord1"
+    },
+    {
+      "parameters": {
+        "content": "# Firebird API Health Check\n",
+        "height": 320,
+        "width": 1280,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -16,
+        2528
+      ],
+      "typeVersion": 1,
+      "id": "6d8f6dcf-6224-4b46-875d-302133ce0db5",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "teddy_bot",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        32,
+        3056
+      ],
+      "id": "cc16795a-8a73-4abf-b0c5-ff47c8f70bdc",
+      "name": "Webhook",
+      "webhookId": "39dbf29f-787e-4016-9a35-a1c0aad21ccd"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "b6194792-0697-4b41-9caa-182938030950",
+              "name": "service",
+              "value": "={{$json.body.service || 'whatsapp-bot'}}",
+              "type": "string"
+            },
+            {
+              "id": "e9a85a4f-6b46-40a8-90ce-fb3f4982774b",
+              "name": "environment",
+              "value": "={{$json.body.environment || 'production'}}",
+              "type": "string"
+            },
+            {
+              "id": "1ebda2e9-7e99-40e0-aec6-4b143fad58bd",
+              "name": "event",
+              "value": "={{$json.body.event || 'unknown'}}",
+              "type": "string"
+            },
+            {
+              "id": "fda574d9-c34d-4834-834f-52a50ab7bfa4",
+              "name": "message",
+              "value": "={{$json.body.message || ''}}",
+              "type": "string"
+            },
+            {
+              "id": "78726bf7-e645-4feb-812c-21fc5aacb176",
+              "name": "event_timestamp",
+              "value": "={{$json.body.timestamp || null}}",
+              "type": "string"
+            },
+            {
+              "id": "4f0fc045-7b5a-408d-a58a-bd484cfe6a9a",
+              "name": "extra",
+              "value": "={{$json.body.extra || null}}",
+              "type": "object"
+            },
+            {
+              "id": "28c917fc-e680-4c23-b8ab-26cbd98990f6",
+              "name": "headers",
+              "value": "={{$json.headers}}",
+              "type": "object"
+            },
+            {
+              "id": "b0381bea-002b-4254-97e4-0d86e927ea12",
+              "name": "query_params",
+              "value": "={{ $json.query }}",
+              "type": "object"
+            },
+            {
+              "id": "a54eee55-53bd-422b-864c-4a7b4fa8e5e3",
+              "name": "route_params",
+              "value": "={{ $json.params }}",
+              "type": "object"
+            },
+            {
+              "id": "c8c4188b-87da-4ff8-b074-b9e76f63f513",
+              "name": "raw_body",
+              "value": "={{$json.body}}",
+              "type": "object"
+            },
+            {
+              "id": "779a01aa-1e2f-4ac6-a445-8b6d7b96141e",
+              "name": "webhook_url",
+              "value": "={{$json.webhookUrl || null}}",
+              "type": "string"
+            },
+            {
+              "id": "ae83e5a9-6839-4fa1-94e5-811b71322ad4",
+              "name": "execution_mode",
+              "value": "={{$json.executionMode || null}}",
+              "type": "string"
+            },
+            {
+              "id": "8f65a94e-9d65-4148-bef2-bc122788adc4",
+              "name": "source_ip",
+              "value": "={{$json.headers['x-forwarded-for'] || null}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        240,
+        3056
+      ],
+      "id": "7abde6af-bd50-49b9-934a-5d263a01e099",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "schema": {
+          "__rl": true,
+          "value": "observability",
+          "mode": "list",
+          "cachedResultName": "observability"
+        },
+        "table": {
+          "__rl": true,
+          "value": "bot_events",
+          "mode": "list",
+          "cachedResultName": "bot_events"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "service": "={{ $json.service }}",
+            "environment": "={{ $json.environment }}",
+            "message": "={{ $json.message }}",
+            "event": "={{ $json.event }}",
+            "extra": "={{ $json.extra }}",
+            "headers": "={{ $json.headers }}",
+            "query_params": "={{ $json.query_params }}",
+            "route_params": "={{ $json.route_params }}",
+            "raw_body": "={{ $json.raw_body }}",
+            "webhook_url": "={{ $json.webhook_url }}",
+            "execution_mode": "={{ $json.execution_mode }}",
+            "source_ip": "={{ $json.source_ip }}",
+            "event_timestamp": "={{ $json.event_timestamp }}"
+          },
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "received_at",
+              "displayName": "received_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "event_timestamp",
+              "displayName": "event_timestamp",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "service",
+              "displayName": "service",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "environment",
+              "displayName": "environment",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "event",
+              "displayName": "event",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "message",
+              "displayName": "message",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "extra",
+              "displayName": "extra",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "object",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "headers",
+              "displayName": "headers",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "object",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "query_params",
+              "displayName": "query_params",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "object",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "route_params",
+              "displayName": "route_params",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "object",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "raw_body",
+              "displayName": "raw_body",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "object",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "webhook_url",
+              "displayName": "webhook_url",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "execution_mode",
+              "displayName": "execution_mode",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "source_ip",
+              "displayName": "source_ip",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        448,
+        3056
+      ],
+      "id": "63484402-ca83-4871-8749-f12d27988607",
+      "name": "Insert rows in a table1",
+      "credentials": {
+        "postgres": {
+          "id": "FZVbHX9eSxiRJ1vd",
+          "name": "Postgres - VPS"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "706bf668-ce1a-4620-ae59-5a51003efeda",
+              "leftValue": "={{ $json.event }}",
+              "rightValue": "module_error",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            },
+            {
+              "id": "697ad4ae-7bef-4681-b5a8-c6f45df8b87b",
+              "leftValue": "={{ $json.event }}",
+              "rightValue": "fatal_error",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        656,
+        3056
+      ],
+      "id": "da35ad89-dede-49f8-abe3-d5b3e8e836eb",
+      "name": "If1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://discord.com/api/webhooks/1479469246206578751/AbBKvb2yu6nXA6t9DCz8NqfINCVPSnXoqNwq7JdABSi9RUunE_GIpK5zr50vIF95dA-q",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\"content\": \"🚨 ALERTA: Falha grave na aplicação do Teddy Bot\"}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1024,
+        3040
+      ],
+      "id": "b0211f07-5daf-43ef-b102-774a3c8f8852",
+      "name": "Send to Discord2"
+    },
+    {
+      "parameters": {
+        "content": "# Teddy Bot Health Check\n",
+        "height": 320,
+        "width": 1280,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -16,
+        2928
+      ],
+      "typeVersion": 1,
+      "id": "d8257d85-2fa8-48c6-9175-de2f447e138a",
+      "name": "Sticky Note5"
+    }
+  ],
+  "pinData": {
+    "Schedule Trigger": [
+      {
+        "json": {
+          "name": "First item",
+          "code": 1
+        }
+      },
+      {
+        "json": {
+          "name": "Second item",
+          "code": 2
+        }
+      }
+    ],
+    "WA webhook POST": [
+      {
+        "json": {
+          "headers": {
+            "host": "bot.mrteddypizza.com.br",
+            "user-agent": "facebookexternalua",
+            "content-length": "474",
+            "accept": "*/*",
+            "accept-encoding": "gzip, br",
+            "cdn-loop": "cloudflare; loops=1",
+            "cf-connecting-ip": "2a03:2880:10ff:50::",
+            "cf-ipcountry": "US",
+            "cf-ray": "9d730d1a98568bef-DFW",
+            "cf-visitor": "{\"scheme\":\"https\"}",
+            "cf-warp-tag-id": "c6b9d790-28c5-49df-b626-b62835f8fcac",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "x-forwarded-for": "2a03:2880:10ff:50::",
+            "x-forwarded-proto": "https",
+            "x-hub-signature": "sha1=c314fe002ebfeb894845a28058eac69cac7df947",
+            "x-hub-signature-256": "sha256=d49cdf8f43c9ec9320ffc0b8c808c470e83e934e3386ae7ca3a6084abe7a6e13"
+          },
+          "params": {},
+          "query": {},
+          "body": {
+            "object": "whatsapp_business_account",
+            "entry": [
+              {
+                "id": "908773525229980",
+                "changes": [
+                  {
+                    "value": {
+                      "messaging_product": "whatsapp",
+                      "metadata": {
+                        "display_phone_number": "551134562251",
+                        "phone_number_id": "987613187768483"
+                      },
+                      "contacts": [
+                        {
+                          "profile": {
+                            "name": "Rodrigo"
+                          },
+                          "wa_id": "5511984896954"
+                        }
+                      ],
+                      "messages": [
+                        {
+                          "from": "5511984896954",
+                          "id": "wamid.HBgNNTUxMTk4NDg5Njk1NBUCABIYFjNFQjA3OTYxRkU4NDUyQkU2QjJBQTAA",
+                          "timestamp": "1772650064",
+                          "text": {
+                            "body": "oi"
+                          },
+                          "type": "text"
+                        }
+                      ]
+                    },
+                    "field": "messages"
+                  }
+                ]
+              }
+            ]
+          },
+          "webhookUrl": "https://bot.mrteddypizza.com.br/webhook/whatsapp",
+          "executionMode": "production"
+        },
+        "pairedItem": {
+          "item": 0
+        }
+      }
+    ],
+    "Webhook": [
+      {
+        "json": {
+          "headers": {
+            "host": "teddybot.mrteddypizza.com.br",
+            "x-forwarded-host": "teddybot.mrteddypizza.com.br",
+            "x-forwarded-proto": "https",
+            "x-forwarded-for": "179.187.74.47",
+            "connection": "upgrade",
+            "content-length": "169",
+            "user-agent": "python-requests/2.32.5",
+            "accept-encoding": "gzip, deflate, zstd",
+            "accept": "*/*",
+            "content-type": "application/json"
+          },
+          "params": {},
+          "query": {},
+          "body": {
+            "service": "whatsapp-bot",
+            "environment": "production",
+            "event": "mode",
+            "message": "Execucao em DRY RUN",
+            "timestamp": "2026-03-09T16:22:10.373762-03:00",
+            "extra": {}
+          },
+          "webhookUrl": "https://teddybot.mrteddypizza.com.br/webhook/teddy_bot",
+          "executionMode": "production"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "Code in JavaScript1": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "WA webhook GET": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "WA webhook POST": {
+      "main": [
+        [
+          {
+            "node": "Parser",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parser": {
+      "main": [
+        [
+          {
+            "node": "Insert rows in a table",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert rows in a table": {
+      "main": [
+        [
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "Switch Message",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HTTP Request - Send Btn",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch Message": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request - Send Menu lnk",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HTTP Request - Snd Phone",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HTTP Request - Send Btn",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HTTP Request - Send Btn",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HTTP Request - Snd Whatsapp",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Window Daily",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Insert or update rows in a table",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert or update rows in a table": {
+      "main": [
+        [
+          {
+            "node": "Query - Stats por Categoria (Yesterday)",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Query - Conversão por Categoria (6h)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Query - Stats por Categoria (Yesterday)": {
+      "main": [
+        [
+          {
+            "node": "Merge Stats + Conversion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Query - Conversão por Categoria (6h)": {
+      "main": [
+        [
+          {
+            "node": "Merge Stats + Conversion",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Build Teddy Report Text": {
+      "main": [
+        [
+          {
+            "node": "Send to Discord",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge Stats + Conversion": {
+      "main": [
+        [
+          {
+            "node": "Build Teddy Report Text",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger1": {
+      "main": [
+        [
+          {
+            "node": "Window Weekly",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Conversão 30d por categoria (janela diferente por categoria)": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Stats 30d por categoria": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Build Weekly 30d Teddy Text",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Weekly 30d Teddy Text": {
+      "main": [
+        [
+          {
+            "node": "Send to Discord",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Daily": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Weekly": {
+      "main": [
+        [
+          {
+            "node": "Conversão 30d por categoria (janela diferente por categoria)",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Stats 30d por categoria",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger2": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Send to Discord1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send to Discord1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Insert rows in a table1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert rows in a table1": {
+      "main": [
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If1": {
+      "main": [
+        [
+          {
+            "node": "Send to Discord2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false,
+    "timeSavedMode": "fixed",
+    "callerPolicy": "workflowsFromSameOwner",
+    "executionTimeout": -1
+  },
+  "versionId": "aebb939b-5578-48f4-b657-ecb9db5e3909",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "dbf5172a52d2a2409464038c2b6aed59cbc2a8a3230b1c9891f0b3bed9356587"
+  },
+  "id": "oHFHtUakQUrG6VTW",
+  "tags": []
+}

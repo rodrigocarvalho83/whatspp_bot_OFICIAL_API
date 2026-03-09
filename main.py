@@ -38,6 +38,14 @@ modulos = [
     ("recomendador_habito_30d", recomendador_habito_30d),
 ]
 
+# Metadados de agendamento para módulos com horário fixo.
+SCHEDULED_MODULES = {
+    "recupera_clientes": {"schedule_type": "fixed_time", "schedule_time": "17:49", "schedule_tz": "America/Sao_Paulo"},
+    "novos_clientes_1pedido": {"schedule_type": "fixed_time", "schedule_time": "18:00", "schedule_tz": "America/Sao_Paulo"},
+    "clube_segundopedido": {"schedule_type": "fixed_time", "schedule_time": "18:10", "schedule_tz": "America/Sao_Paulo"},
+    "clube_segundopedido_domingo": {"schedule_type": "fixed_time", "schedule_time": "18:10", "schedule_tz": "America/Sao_Paulo"},
+}
+
 # Configuração da rotação do log
 LOG_PATH = "log/execucao.log"
 MAX_LOG_SIZE_MB = 50  # Limite máximo de 50MB, altere se desejar
@@ -95,11 +103,26 @@ def main():
     else:
         print("☁️ Cloud API configurada. Execução 100% via API oficial.")
         notify("mode", "Execucao com envio real")
+    ult_evento_agendado = {}
     try:
         while True:
             for nome, modulo in modulos:
                 if modulo.should_run():
                     print(f"⚙️ Executando módulo: {nome} Início da execução: {datetime.now().isoformat()}\n{'='*80}")
+                    schedule_meta = SCHEDULED_MODULES.get(nome)
+                    if schedule_meta:
+                        chave_minuto = datetime.now().strftime("%Y-%m-%d %H:%M")
+                        if ult_evento_agendado.get(nome) != chave_minuto:
+                            notify(
+                                "module_scheduled_run",
+                                "Modulo agendado executado",
+                                {
+                                    "module": nome,
+                                    "ran_at": datetime.now().isoformat(),
+                                    **schedule_meta,
+                                },
+                            )
+                            ult_evento_agendado[nome] = chave_minuto
                     try:
                         modulo.run(None)
                     except Exception as e:

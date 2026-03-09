@@ -1,0 +1,1084 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "CLIENTES_UNICOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  COUNT(*) AS CLIENTES_UNICOS\\nFROM (\\n  SELECT DISTINCT p.CODIGOCONTATOCLIENTE\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\n) X\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Clientes Únicos no Período",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "NOVOS_CLIENTES"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 4,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  COUNT(*) AS NOVOS_CLIENTES\\nFROM (\\n  SELECT\\n    p.CODIGOCONTATOCLIENTE\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n  GROUP BY p.CODIGOCONTATOCLIENTE\\n  HAVING MIN(p.DATAFECHAMENTO) >= ?\\n     AND MIN(p.DATAFECHAMENTO) < ?\\n) X\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Novos Clientes no Período",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "CLIENTES_RECORRENTES"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 8,
+        "y": 0
+      },
+      "id": 3,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  COUNT(*) AS CLIENTES_RECORRENTES\\nFROM (\\n  SELECT\\n    p.CODIGOCONTATOCLIENTE\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\n  GROUP BY p.CODIGOCONTATOCLIENTE\\n  HAVING COUNT(*) > 1\\n) X\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Clientes Recorrentes no Período",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "TICKET_MEDIO_PEDIDO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 12,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  AVG(p.VALORTOTAL - p.VALORENTREGA) AS TICKET_MEDIO_PEDIDO\\nFROM PEDIDOS p\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Ticket Médio por Pedido",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "TICKET_MEDIO_CLIENTE"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 16,
+        "y": 0
+      },
+      "id": 5,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  AVG(TOTAL_CLIENTE) AS TICKET_MEDIO_CLIENTE\\nFROM (\\n  SELECT\\n    p.CODIGOCONTATOCLIENTE,\\n    SUM(p.VALORTOTAL - p.VALORENTREGA) AS TOTAL_CLIENTE\\n  FROM PEDIDOS p\\n  WHERE p.DATADELETE IS NULL\\n    AND p.DATAFECHAMENTO IS NOT NULL\\n    AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\n  GROUP BY p.CODIGOCONTATOCLIENTE\\n) X\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Ticket Médio por Cliente",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS_POR_CLIENTE"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 20,
+        "y": 0
+      },
+      "id": 6,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "none",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "percentChangeColorMode": "standard",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  CAST(COUNT(*) AS DECIMAL(16,4)) / NULLIF(COUNT(DISTINCT p.CODIGOCONTATOCLIENTE), 0) AS PEDIDOS_POR_CLIENTE\\nFROM PEDIDOS p\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Pedidos por Cliente",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_PIZZARIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "TICKET_MEDIO_PEDIDO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 24,
+        "x": 0,
+        "y": 4
+      },
+      "id": 7,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT FIRST 50\\n  c.CODIGO,\\n  c.NOME,\\n  c.FONEPRINCIPAL,\\n  COUNT(p.CODIGO) AS PEDIDOS,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) AS RECEITA_PIZZARIA,\\n  AVG(p.VALORTOTAL - p.VALORENTREGA) AS TICKET_MEDIO_PEDIDO,\\n  MAX(p.DATAFECHAMENTO) AS ULTIMA_COMPRA\\nFROM PEDIDOS p\\nINNER JOIN CONTATOS c ON c.CODIGO = p.CODIGOCONTATOCLIENTE\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\nGROUP BY c.CODIGO, c.NOME, c.FONEPRINCIPAL\\nORDER BY RECEITA_PIZZARIA DESC\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Top 50 Clientes por Faturamento",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_HISTORICA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS_HISTORICOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 0,
+        "y": 14
+      },
+      "id": 8,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT FIRST 50\\n  c.CODIGO,\\n  c.NOME,\\n  c.FONEPRINCIPAL,\\n  MAX(p.DATAFECHAMENTO) AS ULTIMA_COMPRA,\\n  COUNT(p.CODIGO) AS PEDIDOS_HISTORICOS,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) AS RECEITA_HISTORICA\\nFROM PEDIDOS p\\nINNER JOIN CONTATOS c ON c.CODIGO = p.CODIGOCONTATOCLIENTE\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\nGROUP BY c.CODIGO, c.NOME, c.FONEPRINCIPAL\\nHAVING MAX(p.DATAFECHAMENTO) < CURRENT_DATE - 90\\nORDER BY ULTIMA_COMPRA DESC\\n\", \"params\": []}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Clientes Inativos (90+ dias sem comprar)",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_NO_PERIODO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS_NO_PERIODO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 12,
+        "x": 12,
+        "y": 14
+      },
+      "id": 9,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT FIRST 50\\n  c.CODIGO,\\n  c.NOME,\\n  c.FONEPRINCIPAL,\\n  MIN(p.DATAFECHAMENTO) AS PRIMEIRA_COMPRA,\\n  COUNT(p.CODIGO) AS PEDIDOS_NO_PERIODO,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) AS RECEITA_NO_PERIODO\\nFROM PEDIDOS p\\nINNER JOIN CONTATOS c ON c.CODIGO = p.CODIGOCONTATOCLIENTE\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\nGROUP BY c.CODIGO, c.NOME, c.FONEPRINCIPAL\\nHAVING MIN(p.DATAFECHAMENTO) >= ?\\n   AND MIN(p.DATAFECHAMENTO) < ?\\nORDER BY RECEITA_NO_PERIODO DESC\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\", \"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Clientes Novos do Período",
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "RECEITA_PIZZARIA"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "CLIENTES"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "PEDIDOS"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 24,
+        "x": 0,
+        "y": 24
+      },
+      "id": 10,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\n  COALESCE(d.BAIRRO, c.BAIRRO, 'SEM BAIRRO') AS BAIRRO,\\n  COUNT(DISTINCT p.CODIGOCONTATOCLIENTE) AS CLIENTES,\\n  COUNT(p.CODIGO) AS PEDIDOS,\\n  SUM(p.VALORTOTAL - p.VALORENTREGA) AS RECEITA_PIZZARIA\\nFROM PEDIDOS p\\nINNER JOIN CONTATOS c ON c.CODIGO = p.CODIGOCONTATOCLIENTE\\nLEFT JOIN DELIVERY d ON d.CODIGOPEDIDO = p.CODIGO\\nWHERE p.DATADELETE IS NULL\\n  AND p.DATAFECHAMENTO IS NOT NULL\\n  AND p.CODIGOCONTATOCLIENTE IS NOT NULL\\n\\n  AND p.DATAFECHAMENTO >= ?\\n  AND p.DATAFECHAMENTO < ?\\n\\nGROUP BY COALESCE(d.BAIRRO, c.BAIRRO, 'SEM BAIRRO')\\nORDER BY RECEITA_PIZZARIA DESC\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Base de Clientes por Bairro",
+      "type": "table"
+    }
+  ],
+  "preload": false,
+  "schemaVersion": 42,
+  "tags": [
+    "clientes",
+    "receita",
+    "ticket médio"
+  ],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-30d",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "5 - Mr Teddy Pizza - Clientes e CRM",
+  "uid": "rorcjcs",
+  "version": 3,
+  "weekStart": ""
+}

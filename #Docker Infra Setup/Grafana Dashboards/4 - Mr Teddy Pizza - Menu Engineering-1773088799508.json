@@ -1,0 +1,191 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {
+        "type": "yesoreyeram-infinity-datasource",
+        "uid": "bffer8yd1do1sa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "auto"
+            },
+            "footer": {
+              "reducers": []
+            },
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "FATURAMENTO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "CUSTO_TOTAL"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "LUCRO"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "currencyBRL"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "QTD"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "short"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "MARGEM"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "percentunit"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 16,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "cellHeight": "sm",
+        "showHeader": true,
+        "sortBy": [
+          {
+            "desc": true,
+            "displayName": "FATURAMENTO"
+          }
+        ]
+      },
+      "pluginVersion": "12.4.0",
+      "targets": [
+        {
+          "columns": [],
+          "datasource": {
+            "type": "yesoreyeram-infinity-datasource",
+            "uid": "bffer8yd1do1sa"
+          },
+          "filters": [],
+          "format": "table",
+          "global_query_id": "",
+          "parser": "backend",
+          "refId": "A",
+          "root_selector": "rows",
+          "source": "url",
+          "type": "json",
+          "url": "https://vm-api.mrteddypizza.com.br/query/select",
+          "url_options": {
+            "body_content_type": "application/json",
+            "body_type": "raw",
+            "data": "{\"sql\": \"\\nSELECT\\nCOALESCE(pr.NOME, ip.NOMEPRODUTO, 'SEM NOME') AS PRODUTO,\\nSUM(ip.QUANTIDADE) AS QTD,\\nSUM(ip.VALORTOTAL) AS FATURAMENTO,\\nSUM(ip.PRECOCUSTO * ip.QUANTIDADE) AS CUSTO_TOTAL,\\nSUM((ip.VALORUNITARIO - ip.PRECOCUSTO) * ip.QUANTIDADE) AS LUCRO,\\nAVG((ip.VALORUNITARIO - ip.PRECOCUSTO) / NULLIF(ip.VALORUNITARIO,0)) AS MARGEM\\nFROM ITENSPEDIDO ip\\nJOIN PEDIDOS p ON p.CODIGO = ip.CODIGOPEDIDO\\nLEFT JOIN PRODUTOS pr ON pr.CODIGO = ip.CODIGOPRODUTO\\nWHERE p.DATADELETE IS NULL\\nAND p.DATAFECHAMENTO IS NOT NULL\\nAND ip.DATADELETE IS NULL\\n\\nAND COALESCE(pr.NOME, ip.NOMEPRODUTO, 'SEM NOME') NOT IN (\\n'PIZZA GRANDE - 2 Sabores',\\n'PIZZA GRANDE',\\n'PIZZA BROTO',\\n'PIZZA BROTO - 2Sabores',\\n'PIZZA BROTO - 2 Sabores',\\n'BORDA TRADICIONAL',\\n'PIZZA GRANDE - 3 Sabores',\\n'TERÇA EM DOBRO'\\n)\\n\\nAND p.DATAFECHAMENTO >= ?\\nAND p.DATAFECHAMENTO < ?\\nGROUP BY COALESCE(pr.NOME, ip.NOMEPRODUTO, 'SEM NOME')\\nORDER BY QTD DESC\\n\", \"params\": [\"${__from:date:iso}\", \"${__to:date:iso}\"]}",
+            "headers": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ],
+      "title": "Menu Engineering Base",
+      "type": "table"
+    }
+  ],
+  "preload": false,
+  "schemaVersion": 42,
+  "tags": [
+    "cardápio"
+  ],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-30d",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "4 - Mr Teddy Pizza - Menu Engineering",
+  "uid": "rojz88s",
+  "version": 3,
+  "weekStart": ""
+}
