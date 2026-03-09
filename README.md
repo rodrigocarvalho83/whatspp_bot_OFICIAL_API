@@ -94,3 +94,32 @@ Esse script simula o envio de mensagens e vídeos para números fictícios sem a
 
 Feito com ❤️ para automatizar o atendimento da pizzaria Mr. Teddy 🍕  
 Ajuda um urso, e ganhe sorrisos de volta 🐻
+
+---
+
+## Execucao em VPS com API de banco
+
+Para rodar em Docker/VPS sem acesso direto ao Firebird:
+
+1. Copie `.env.example` para `.env`.
+2. Defina:
+   - `DB_PROVIDER=api`
+   - `DB_API_BASE_URL` com a URL da sua API
+   - `DB_API_TOKEN` com o token Bearer
+3. Para validar sem envio real:
+   - `WHATSAPP_DRY_RUN=1`
+
+O bot mantera os modulos existentes, trocando apenas a camada de acesso ao banco.
+
+## Monitoramento opcional com n8n + Discord
+
+Ative:
+- `MONITORING_ENABLED=1`
+- `MONITORING_WEBHOOK_URL=<webhook do n8n>`
+
+Eventos enviados pelo bot:
+- `startup`
+- `mode`
+- `module_error`
+- `shutdown`
+- `fatal_error`

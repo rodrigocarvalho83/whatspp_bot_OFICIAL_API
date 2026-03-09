@@ -28,7 +28,7 @@ TEMPLATE_HEADER_VIDEO_URL = os.getenv(
 
 def should_run():
     agora = datetime.now()
-    return agora.weekday() == 6 and agora.strftime('%H:%M') == '17:00'  # Sexta-feira às 17:00
+    return agora.weekday() == 6 and agora.strftime('%H:%M') == '18:10'  # Domingo às 18:10
 
 def dentro_do_horario():
     hora = datetime.now().time()

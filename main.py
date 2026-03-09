@@ -20,6 +20,7 @@ import modules.recupera_clientes as recupera_clientes
 import modules.recomendador_horario as recomendador_horario
 import modules.recomendador_habito_30d as recomendador_habito_30d
 import modules.disparo_sob_demanda as disparo_sob_demanda
+from utils.monitoring import notify
 
 # Adicione seus módulos na ordem desejada aqui
 modulos = [
@@ -73,6 +74,7 @@ def main():
     sys.stderr = Tee(sys.stderr, log_file)
 
     print("🟢 Iniciando bot de WhatsApp...\n")
+    notify("startup", "Bot iniciado")
     cloud_api = WhatsAppCloudAPI()
     dry_run_mode = os.getenv("WHATSAPP_DRY_RUN", "0").strip().lower() in {"1", "true", "sim", "yes"}
 
@@ -89,8 +91,10 @@ def main():
 
     if dry_run_mode:
         print("🧪 Modo DRY RUN ativo. Nenhuma mensagem será enviada para a API oficial.")
+        notify("mode", "Execucao em DRY RUN")
     else:
         print("☁️ Cloud API configurada. Execução 100% via API oficial.")
+        notify("mode", "Execucao com envio real")
     try:
         while True:
             for nome, modulo in modulos:
@@ -100,12 +104,21 @@ def main():
                         modulo.run(None)
                     except Exception as e:
                         print(f"❌ Erro no módulo {nome}: {e} Horário do erro: {datetime.now().isoformat()}\n{'='*80}")
+                        notify(
+                            "module_error",
+                            f"Erro no modulo {nome}",
+                            {"module": nome, "error": str(e)},
+                        )
                 else:
                     print(f"⏭️ Módulo {nome} ignorado nesta execução. Horário: {datetime.now().isoformat()}\n{'='*80}")
             processar_fila()
             time.sleep(15)  # Intervalo global entre verificações
     except KeyboardInterrupt:
         print(f"🛑 Execução interrompida pelo usuário. Horário: {datetime.now().isoformat()}\n{'='*80}")
+        notify("shutdown", "Execucao interrompida pelo usuario")
+    except Exception as e:
+        notify("fatal_error", "Falha fatal no loop principal", {"error": str(e)})
+        raise
 
 if __name__ == "__main__":
     main()
