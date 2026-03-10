@@ -3,6 +3,7 @@ import time
 from modules import disparo_sob_demanda
 from utils.message_queue import processar_fila
 from core.whatsapp_cloud import WhatsAppCloudAPI
+from core.database import executar_consulta, validar_configuracao_banco
 import os
 
 # logger.py (ou direto no início do main.py)
@@ -103,6 +104,16 @@ def main():
     else:
         print("☁️ Cloud API configurada. Execução 100% via API oficial.")
         notify("mode", "Execucao com envio real")
+    try:
+        validar_configuracao_banco()
+        executar_consulta("SELECT 1 FROM RDB$DATABASE")
+        print("Banco validado com sucesso.")
+    except Exception as e:
+        print("Falha na validacao inicial do banco.")
+        print(str(e))
+        notify("fatal_error", "Falha na validacao inicial do banco", {"error": str(e)})
+        return
+
     ult_evento_agendado = {}
     try:
         while True:
