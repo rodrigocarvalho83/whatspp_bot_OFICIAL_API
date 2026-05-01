@@ -9,10 +9,10 @@ import urllib.parse
 import os
 
 TEMPLATES_RECUPERA_PROMO_48 = [
-    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_PROMO_1", "template_recupera_cliente_promo_1_48"),
-    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_PROMO_2", "template_recupera_cliente_promo_2_48"),
-    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_PROMO_3", "template_recupera_cliente_promo_1_48"),
-    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_PROMO_4", "template_recupera_cliente_promo_2_48"),
+    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_PROMO_1", "template_recupera_cliente_promo_1"),
+    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_PROMO_2", "template_recupera_cliente_promo_2"),
+    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_PROMO_3", "template_recupera_cliente_promo_3"),
+    os.getenv("WHATSAPP_TEMPLATE_RECUPERA_PROMO_4", "template_recupera_cliente_promo_4"),
 ]
 
 TEMPLATES_RECUPERA_CUPOM_20 = [
@@ -26,7 +26,7 @@ TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMP
 
 TEMPLATE_HEADER_VIDEO_PROMO_48 = os.getenv(
     "WHATSAPP_TEMPLATE_RECUPERA_PROMO_VIDEO_URL",
-    "https://mrteddypizza.com.br/midia/promo/teddy_bravo.jpeg",
+    "https://mrteddypizza.com.br/midia/promo/teddy_bravo_53reais.mp4",
 )
 TEMPLATE_HEADER_VIDEO_CUPOM_20 = os.getenv(
     "WHATSAPP_TEMPLATE_RECUPERA_CUPOM_VIDEO_URL",
@@ -76,17 +76,17 @@ def run(driver):
 		ORDER BY valor_gasto desc, ultimo_pedido desc;
     """
     mensagens_promocao_48 = [
-        "{nome}, aqui é o Teddy.\nSumido hein? Tá achando que *pizza de R$48* com mais de *15 sabores* cai do céu?\n\nVolta logo antes que eu vá te buscar! 👊🍕\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
+        "{nome}, aqui é o Teddy.\nSumido hein? Tá achando que *pizza de R$53,99* com mais de *15 sabores* cai do céu?\n\nVolta logo antes que eu vá te buscar! 👊🍕\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
 
-        "{nome}, eu tava tranquilo… até lembrar que você sumiu!\nMais de *15 sabores por R$48* e você aí de dieta?\n\nNão me provoque.\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
+        "{nome}, eu tava tranquilo… até lembrar que você sumiu!\nMais de *15 sabores por R$53,99* e você aí de dieta?\n\nNão me provoque.\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
 
-        "Tô cansado de ser bonzinho, {nome}.\n*Promoção R$48, terça a quinta.*\n\nSe ignorar isso, vamos ter um problema. 😤\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
+        "Tô cansado de ser bonzinho, {nome}.\n*Promoção R$53,99, terça a quinta.*\n\nSe ignorar isso, vamos ter um problema. 😤\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
 
-        "{nome}, mais de 40 dias sem dar as caras?\nVocê não vai resistir: *15 pizzas por R$48*.\n\nVolta antes que eu vá aí te buscar. 🧸🚫\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
+        "{nome}, mais de 40 dias sem dar as caras?\nVocê não vai resistir: *15 pizzas por R$53,99*.\n\nVolta antes que eu vá aí te buscar. 🧸🚫\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
 
-        "Sumido igual fantasma, né {nome}? 👻\nMas vou te assombrar com essa promo: *15 sabores por R$48*.\n\nDe terça a quinta. Vem antes que eu vá aí te buscar.\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
+        "Sumido igual fantasma, né {nome}? 👻\nMas vou te assombrar com essa promo: *15 sabores por R$53,99*.\n\nDe terça a quinta. Vem antes que eu vá aí te buscar.\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
 
-        "{nome}, lembra da gente?\nVocê, eu, e aquela pizza delicinha…\n\nVolta logo, R$48 tá barato demais pra você perder!\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*"
+        "{nome}, lembra da gente?\nVocê, eu, e aquela pizza delicinha…\n\nVolta logo, R$53,99 tá barato demais pra você perder!\n\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*"
     ]
 
     mensagens_cupom_20 = [
@@ -125,7 +125,7 @@ def run(driver):
             caminho_video = os.path.abspath("videos/clube_fimdesemana/teddy_ultimato.mp4")
             template_name = random.choice(TEMPLATES_RECUPERA_PROMO_48)
             template_header_media = {"type": "image", "link": TEMPLATE_HEADER_VIDEO_PROMO_48}
-            log_mensagem = f"Recupera clientes mais de 90d - promoção R$48 enviada (template={template_name})"
+            log_mensagem = f"Recupera clientes mais de 90d - promoção R$53,99 enviada (template={template_name})"
         elif dia_semana in [4, 5, 6]:  # sexta, sábado, domingo
             mensagem_texto = random.choice(mensagens_cupom_20).format(nome=nome)
             caminho_video = os.path.abspath("videos/clube_fimdesemana/teddy_ultimato.mp4")

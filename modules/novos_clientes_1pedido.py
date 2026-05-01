@@ -9,9 +9,9 @@ import urllib.parse
 import os
 
 TEMPLATES_NOVO_CLIENTE_PROMO_48 = [
-    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_PROMO_1", "template_novos_clientes_1pedido_promo_1_48"),
-    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_PROMO_2", "template_novos_clientes_1pedido_promo_1_48"),
-    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_PROMO_3", "template_novos_clientes_1pedido_promo_1_48"),
+    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_PROMO_1", "template_novos_clientes_1pedido_promo_1"),
+    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_PROMO_2", "template_novos_clientes_1pedido_promo_2"),
+    os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_PROMO_3", "template_novos_clientes_1pedido_promo_3"),
 ]
 TEMPLATES_NOVO_CLIENTE_CUPOM_20 = [
     os.getenv("WHATSAPP_TEMPLATE_NOVO_CLIENTE_CUPOM_1", "template_novos_clientes_1pedido_cupom_1"),
@@ -22,11 +22,11 @@ TEMPLATE_REENGAJAMENTO_MARKETING = os.getenv("WHATSAPP_TEMPLATE_MARKETING", TEMP
 
 TEMPLATE_HEADER_IMAGE_PROMO_48 = os.getenv(
     "WHATSAPP_TEMPLATE_NOVO_CLIENTE_PROMO_IMAGE_URL",
-    "https://mrteddypizza.com.br/midia/promo/48reais.png",
+    "https://mrteddypizza.com.br/midia/promo/53reais.png",
 )
 TEMPLATE_HEADER_IMAGE_CUPOM_20 = os.getenv(
     "WHATSAPP_TEMPLATE_NOVO_CLIENTE_CUPOM_IMAGE_URL",
-    "https://mrteddypizza.com.br/midia/promo/48reais.png",
+    "https://mrteddypizza.com.br/midia/clube_fimdesemana/teddy_convite.png",
 )
 
 
@@ -76,11 +76,11 @@ def run(driver):
         ORDER BY valor_gasto desc;
     """
     mensagens_promocao_48 = [
-        "{nome}, aqui é o Teddy.\nVocê achou que podia comer uma vez, sumir, e que eu ia esquecer?\n\nAchou errado! 😠\n\nTá rolando mais de *20 SABORES por R$48*, mas só de *TERÇA a QUINTA*...\n\nAproveita antes que minha paciência acabe (e olha que já tá no fim).\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
+        "{nome}, aqui é o Teddy.\nVocê achou que podia comer uma vez, sumir, e que eu ia esquecer?\n\nAchou errado! 😠\n\nTá rolando mais de *20 SABORES por R$53,99*, mas só de *TERÇA a QUINTA*...\n\nAproveita antes que minha paciência acabe (e olha que já tá no fim).\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
 
-        "{nome}, aqui é o Teddy novamente.\nDetectei um padrão: faz o primeiro pedido e... PUF, desaparece!\n\nMas agora tem pizza boa e barata de *TERÇA A QUINTA*.\n*Mais de 20 sabores por R$48*.\n\nVai me ignorar de novo? Vai mesmo? 👀\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
+        "{nome}, aqui é o Teddy novamente.\nDetectei um padrão: faz o primeiro pedido e... PUF, desaparece!\n\nMas agora tem pizza boa e barata de *TERÇA A QUINTA*.\n*Mais de 20 sabores por R$53,99*.\n\nVai me ignorar de novo? Vai mesmo? 👀\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*",
 
-        "{nome} você experimentou e achou que tava tudo bem sumir?\n\nErrado.\n\nAqui é o Teddy.\nE eu quero te ver aqui *entre TERÇA e QUINTA*, aproveitando *20 SABORES de pizza por R$48*.\n\nSe não vier, eu coloco seu nome na lista negra dos cilentes fantasmas. 👻🍕\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*"
+        "{nome} você experimentou e achou que tava tudo bem sumir?\n\nErrado.\n\nAqui é o Teddy.\nE eu quero te ver aqui *entre TERÇA e QUINTA*, aproveitando *20 SABORES de pizza por R$53,99*.\n\nSe não vier, eu coloco seu nome na lista negra dos cilentes fantasmas. 👻🍕\nhttps://vilamaria.mrteddypizza.com.br\n\n*Abertura da pizzaria: 18:00hrs*"
     ]
 
     mensagens_cupom_20 = [
@@ -111,7 +111,7 @@ def run(driver):
             caminho_video = os.path.abspath("videos/promo/48reais.png")
             template_name = random.choice(TEMPLATES_NOVO_CLIENTE_PROMO_48)
             template_header_media = {"type": "image", "link": TEMPLATE_HEADER_IMAGE_PROMO_48}
-            log_mensagem = f"Mensagem para cliente novo - promoção R$48 enviada (template={template_name})"
+            log_mensagem = f"Mensagem para cliente novo - promoção R$53,99 enviada (template={template_name})"
         elif dia_semana in [4, 5, 6]:  # sexta, sábado, domingo
             mensagem_texto = random.choice(mensagens_cupom_20).format(nome=nome)
             caminho_video = os.path.abspath("videos/promo/teddy_bravo.jpeg")
