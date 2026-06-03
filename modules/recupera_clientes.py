@@ -124,7 +124,7 @@ def run(driver):
             mensagem_texto = random.choice(mensagens_promocao_48).format(nome=nome)
             caminho_video = os.path.abspath("videos/clube_fimdesemana/teddy_ultimato.mp4")
             template_name = random.choice(TEMPLATES_RECUPERA_PROMO_48)
-            template_header_media = {"type": "image", "link": TEMPLATE_HEADER_VIDEO_PROMO_48}
+            template_header_media = {"type": "video", "link": TEMPLATE_HEADER_VIDEO_PROMO_48}
             log_mensagem = f"Recupera clientes mais de 90d - promoção R$53,99 enviada (template={template_name})"
         elif dia_semana in [4, 5, 6]:  # sexta, sábado, domingo
             mensagem_texto = random.choice(mensagens_cupom_20).format(nome=nome)

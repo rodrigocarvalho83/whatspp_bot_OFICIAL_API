@@ -82,7 +82,7 @@ def run(driver):
         )
         
         mensagem = urllib.parse.quote(mensagem_texto)
-        caminho_video = os.path.abspath("videos/clube_fimdesemana/teddy_convite.jpg")
+        caminho_video = os.path.abspath("videos/clube_fimdesemana/teddy_convite.png")
                 
         adicionar_na_fila({
             "numero": numero,

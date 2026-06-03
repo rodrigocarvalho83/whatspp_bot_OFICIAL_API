@@ -6,41 +6,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-_PLACEHOLDER_TOKENS = {
-    "",
-    "TOKEN_SUPER_FORTE",
-    "SEU_TOKEN",
-    "YOUR_TOKEN",
-    "CHANGE_ME",
-}
-
-
-class DatabaseAPIConfigError(RuntimeError):
-    pass
-
-
-class DatabaseAPIRequestError(RuntimeError):
-    pass
-
 
 def _provider() -> str:
     return os.getenv("DB_PROVIDER", "firebird").strip().lower()
-
-
-def validar_configuracao_banco() -> None:
-    if _provider() != "api":
-        return
-
-    base_url = os.getenv("DB_API_BASE_URL", "").strip().rstrip("/")
-    token = os.getenv("DB_API_TOKEN", "").strip()
-
-    if not base_url:
-        raise DatabaseAPIConfigError("DB_API_BASE_URL nao configurada para DB_PROVIDER=api")
-    if token in _PLACEHOLDER_TOKENS:
-        raise DatabaseAPIConfigError(
-            "DB_API_TOKEN invalido para DB_PROVIDER=api. "
-            "O valor atual parece ser placeholder (ex.: TOKEN_SUPER_FORTE)."
-        )
 
 
 def _executar_consulta_firebird(sql: str, params: Iterable[Any] | None = None):
@@ -71,45 +39,23 @@ def _executar_consulta_api(sql: str, params: Iterable[Any] | None = None):
     timeout = float(os.getenv("DB_API_TIMEOUT", "20"))
 
     if not base_url:
-        raise DatabaseAPIConfigError("DB_API_BASE_URL nao configurada para DB_PROVIDER=api")
-    if token in _PLACEHOLDER_TOKENS:
-        raise DatabaseAPIConfigError(
-            "DB_API_TOKEN invalido para DB_PROVIDER=api. "
-            "Defina o token real da API de banco no ambiente/container."
-        )
+        raise RuntimeError("DB_API_BASE_URL nao configurada para DB_PROVIDER=api")
+    if not token:
+        raise RuntimeError("DB_API_TOKEN nao configurado para DB_PROVIDER=api")
 
-    try:
-        resp = requests.post(
-            f"{base_url}/query/select",
-            headers={
-                "Authorization": f"Bearer {token}",
-                "Content-Type": "application/json",
-            },
-            json={
-                "sql": sql,
-                "params": list(params or []),
-            },
-            timeout=timeout,
-        )
-        resp.raise_for_status()
-    except requests.HTTPError as exc:
-        detalhe = ""
-        try:
-            body = resp.json()
-            detalhe = body.get("detail") or body
-        except ValueError:
-            detalhe = resp.text.strip()
-
-        status = exc.response.status_code if exc.response is not None else "desconhecido"
-        raise DatabaseAPIRequestError(
-            f"Falha ao consultar API de banco ({status}) em {base_url}/query/select. "
-            f"Detalhe: {detalhe or 'sem resposta detalhada'}"
-        ) from exc
-    except requests.RequestException as exc:
-        raise DatabaseAPIRequestError(
-            f"Falha de comunicacao com a API de banco em {base_url}/query/select: {exc}"
-        ) from exc
-
+    resp = requests.post(
+        f"{base_url}/query/select",
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Content-Type": "application/json",
+        },
+        json={
+            "sql": sql,
+            "params": list(params or []),
+        },
+        timeout=timeout,
+    )
+    resp.raise_for_status()
     body = resp.json()
     rows = body.get("rows", [])
     if not isinstance(rows, list):
